@@ -1,0 +1,522 @@
+[
+  {
+    "name": "Opel Mokka-e",
+    "url": "assets/cars/opel-mokka-e.jpg",
+    "wikiFile": "2025_Opel_Mokka-e_Auto_Zuerich_2024_DSC_6710.jpg",
+    "anchorX": 50.0,
+    "anchorY": 50.0,
+    "maxScale": 2.6,
+    "distractors": [
+      "Renault Megane E-Tech",
+      "Renault 5 E-Tech Electric",
+      "Tesla Model Y"
+    ]
+  },
+  {
+    "name": "Opel Grandland",
+    "url": "assets/cars/opel-grandland.jpg",
+    "wikiFile": "Opel_Grandland_1X7A7184.jpg",
+    "anchorX": 50.0,
+    "anchorY": 50.0,
+    "maxScale": 2.6,
+    "distractors": [
+      "Jeep Wrangler",
+      "Nissan Qashqai",
+      "Renault Austral"
+    ]
+  },
+  {
+    "name": "Opel Grandland X",
+    "url": "assets/cars/opel-grandland-x.jpg",
+    "wikiFile": "Opel_Grandland_X_Monrepos_2018_IMG_0066.jpg",
+    "anchorX": 0.1,
+    "anchorY": 57.6,
+    "maxScale": 2.3,
+    "distractors": [
+      "Toyota RAV4 (1994)",
+      "Renault Kangoo III",
+      "Kia Sorento"
+    ]
+  },
+  {
+    "name": "Renault Kangoo",
+    "url": "assets/cars/renault-kangoo.jpg",
+    "wikiFile": "Renault_Kangoo_Red.jpg",
+    "anchorX": 50.0,
+    "anchorY": 50.0,
+    "maxScale": 2.6,
+    "distractors": [
+      "Volkswagen Tiguan",
+      "Toyota RAV4 (1994)",
+      "Chevrolet Colorado"
+    ]
+  },
+  {
+    "name": "Renault Kangoo III",
+    "url": "assets/cars/renault-kangoo-iii.jpg",
+    "wikiFile": "Renault_Kangoo_III_1X7A1519.jpg",
+    "anchorX": 5.5,
+    "anchorY": 78.8,
+    "maxScale": 2.6,
+    "distractors": [
+      "Land Rover Defender",
+      "Citroën C5 Aircross",
+      "Renault Espace V"
+    ]
+  },
+  {
+    "name": "Nissan Leaf",
+    "url": "assets/cars/nissan-leaf.jpg",
+    "wikiFile": "Nissan_Leaf_-_Mondial_de_l%27Automobile_de_Paris_2012_-_006.jpg",
+    "anchorX": 31.4,
+    "anchorY": 25.7,
+    "maxScale": 2.6,
+    "distractors": [
+      "Tesla Model Y",
+      "Renault Megane E-Tech",
+      "Renault 5 E-Tech Electric"
+    ]
+  },
+  {
+    "name": "Nissan Leaf (2019)",
+    "url": "assets/cars/nissan-leaf-2019.jpg",
+    "wikiFile": "2019_Nissan_Leaf_rear.jpg",
+    "anchorX": 19.0,
+    "anchorY": 32.9,
+    "maxScale": 2.6,
+    "distractors": [
+      "Nissan Leaf",
+      "Renault Megane E-Tech",
+      "Opel Mokka-e"
+    ]
+  },
+  {
+    "name": "Jaguar F-Pace",
+    "url": "assets/cars/jaguar-f-pace.jpg",
+    "wikiFile": "Jaguar_F-Pace_Shishi_02_2022-06-08.jpg",
+    "anchorX": 15.6,
+    "anchorY": 25.3,
+    "maxScale": 2.6,
+    "distractors": [
+      "Toyota RAV4 GR Sport",
+      "Nissan Ariya",
+      "Toyota RAV4 (1994)"
+    ]
+  },
+  {
+    "name": "Jaguar F-Pace (2)",
+    "url": "assets/cars/jaguar-f-pace-2.jpg",
+    "wikiFile": "Jaguar_F-Pace_IMG_8000.jpg",
+    "anchorX": 1.9,
+    "anchorY": 52.6,
+    "maxScale": 2.6,
+    "distractors": [
+      "Opel Grandland X",
+      "Opel Grandland",
+      "Toyota RAV4"
+    ]
+  },
+  {
+    "name": "Aston Martin DB7 Vantage",
+    "url": "assets/cars/aston-martin-db7-vantage.jpg",
+    "wikiFile": "Aston_Martin_DB7_Vantage_IMG_7854.jpg",
+    "anchorX": 65.9,
+    "anchorY": 56.9,
+    "maxScale": 2.6,
+    "distractors": [
+      "Porsche 911 Turbo S",
+      "Bentley Continental GT",
+      "Porsche 911"
+    ]
+  },
+  {
+    "name": "Aston Martin DB12",
+    "url": "assets/cars/aston-martin-db12.jpg",
+    "wikiFile": "Aston_Martin_DB12_1X7A1934.jpg",
+    "anchorX": 95.7,
+    "anchorY": 55.6,
+    "maxScale": 2.6,
+    "distractors": [
+      "Lamborghini Gallardo",
+      "Bentley Continental GT",
+      "Lamborghini Urus"
+    ]
+  },
+  {
+    "name": "Range Rover Sport SVR",
+    "url": "assets/cars/range-rover-sport-svr.jpg",
+    "wikiFile": "Range_Rover_Sport_SVR,_IAA_2017,_Frankfurt_(1Y7A3071).jpg",
+    "anchorX": 29.9,
+    "anchorY": 55.9,
+    "maxScale": 2.6,
+    "distractors": [
+      "Toyota RAV4 (2013)",
+      "Chevrolet Colorado",
+      "Toyota RAV4 GR Sport"
+    ]
+  },
+  {
+    "name": "Range Rover",
+    "url": "assets/cars/range-rover.jpg",
+    "wikiFile": "Range_Rover_1X7A8034.jpg",
+    "anchorX": 10.3,
+    "anchorY": 52.6,
+    "maxScale": 2.6,
+    "distractors": [
+      "Peugeot 3008 II",
+      "Renault Espace V",
+      "Jeep Grand Cherokee"
+    ]
+  },
+  {
+    "name": "Morris Mini-Minor (1959)",
+    "url": "assets/cars/morris-mini-minor-1959.jpg",
+    "wikiFile": "Morris_Mini-Minor_1959_(621_AOK).jpg",
+    "anchorX": 15.1,
+    "anchorY": 62.4,
+    "maxScale": 2.6,
+    "distractors": [
+      "Audi 100",
+      "Volvo 245",
+      "Mercedes-Benz 560 SEL (W126)"
+    ]
+  },
+  {
+    "name": "Mini John Cooper Works",
+    "url": "assets/cars/mini-john-cooper-works.jpg",
+    "wikiFile": "2021_Mini_Hatch_(F56)_John_Cooper_Works_1X7A0150.jpg",
+    "anchorX": 54.7,
+    "anchorY": 54.8,
+    "maxScale": 2.6,
+    "distractors": [
+      "Mercedes-Benz W123",
+      "BMW 323i (E21)",
+      "Renault 4L (Mk2)"
+    ]
+  },
+  {
+    "name": "Mini Cooper (1ere generation)",
+    "url": "assets/cars/mini-cooper-1ere-generation.jpg",
+    "wikiFile": "Mini_Cooper_(1._Generation).JPG",
+    "anchorX": 59.5,
+    "anchorY": 41.5,
+    "maxScale": 2.6,
+    "distractors": [
+      "Mercedes-Benz 560 SEL (W126)",
+      "Skoda Favorit",
+      "Mercedes-Benz W123"
+    ]
+  },
+  {
+    "name": "Cupra Formentor (restylee)",
+    "url": "assets/cars/cupra-formentor-restylee.jpg",
+    "wikiFile": "Cupra_Formentor_Facelift_IMG_0665.jpg",
+    "anchorX": 87.4,
+    "anchorY": 35.0,
+    "maxScale": 2.6,
+    "distractors": [
+      "Fiat Panda",
+      "Renault Twingo III (2)",
+      "Volkswagen Polo"
+    ]
+  },
+  {
+    "name": "Cupra Formentor",
+    "url": "assets/cars/cupra-formentor.jpg",
+    "wikiFile": "Cupra_Formentor_IMG_9668.jpg",
+    "anchorX": 23.5,
+    "anchorY": 60.3,
+    "maxScale": 2.6,
+    "distractors": [
+      "Renault Twingo III (2)",
+      "Volkswagen Polo",
+      "Seat Ibiza"
+    ]
+  },
+  {
+    "name": "Renault Twingo III (2)",
+    "url": "assets/cars/renault-twingo-iii-2.jpg",
+    "wikiFile": "Renault_Twingo_3.jpg",
+    "anchorX": 68.9,
+    "anchorY": 43.1,
+    "maxScale": 2.6,
+    "distractors": [
+      "Renault Twingo III",
+      "Honda Civic",
+      "Cupra Formentor (restylee)"
+    ]
+  },
+  {
+    "name": "Renault 4L (Mk2)",
+    "url": "assets/cars/renault-4l-mk2.jpg",
+    "wikiFile": "Renault_4L_Mk2.jpg",
+    "anchorX": 26.5,
+    "anchorY": 61.6,
+    "maxScale": 2.6,
+    "distractors": [
+      "Morris Mini-Minor (1959)",
+      "Volkswagen Beetle",
+      "Renault 4"
+    ]
+  },
+  {
+    "name": "Audi 100",
+    "url": "assets/cars/audi-100.jpg",
+    "wikiFile": "Audi_100_5311527.jpg",
+    "anchorX": 26.5,
+    "anchorY": 63.6,
+    "maxScale": 2.6,
+    "distractors": [
+      "Volvo 245",
+      "Skoda Favorit",
+      "Volkswagen Beetle"
+    ]
+  },
+  {
+    "name": "BYD Dolphin",
+    "url": "assets/cars/byd-dolphin.jpg",
+    "wikiFile": "BYD_Dolphin_(Global_version)_IMG_9507.jpg",
+    "anchorX": 63.1,
+    "anchorY": 42.3,
+    "maxScale": 2.6,
+    "distractors": [
+      "Nissan Leaf",
+      "Opel Mokka-e",
+      "Tesla Model Y"
+    ]
+  },
+  {
+    "name": "Kia Sportage",
+    "url": "assets/cars/kia-sportage.jpg",
+    "wikiFile": "2018_Kia_Sportage_(QL_II_MY19)_Si_2WD_wagon_(2018-11-26)_02.jpg",
+    "anchorX": 9.7,
+    "anchorY": 45.9,
+    "maxScale": 1.9,
+    "distractors": [
+      "Range Rover",
+      "Opel Grandland",
+      "Toyota RAV4"
+    ]
+  },
+  {
+    "name": "Renault Megane E-Tech",
+    "url": "assets/cars/renault-megane-e-tech.jpg",
+    "wikiFile": "Renault_M%C3%A9gane_E-Tech_IMG_8435_(cropped).jpg",
+    "anchorX": 92.6,
+    "anchorY": 45.6,
+    "maxScale": 2.6,
+    "distractors": [
+      "Opel Mokka-e",
+      "Nissan Leaf",
+      "Renault 5 E-Tech Electric"
+    ]
+  },
+  {
+    "name": "Renault Espace V",
+    "url": "assets/cars/renault-espace-v.jpg",
+    "wikiFile": "Renault_Espace_Initiale,_GIMS_2019,_Le_Grand-Saconnex_(GIMS1310).jpg",
+    "anchorX": 53.4,
+    "anchorY": 67.7,
+    "maxScale": 2.6,
+    "distractors": [
+      "Volkswagen Tiguan",
+      "Chevrolet Colorado",
+      "Toyota RAV4 GR Sport"
+    ]
+  },
+  {
+    "name": "Renault Espace VI",
+    "url": "assets/cars/renault-espace-vi.jpg",
+    "wikiFile": "Renault_Espace_VI_IMG_9423.jpg",
+    "anchorX": 2.2,
+    "anchorY": 58.9,
+    "maxScale": 2.6,
+    "distractors": [
+      "Renault Espace V",
+      "Jeep Grand Cherokee",
+      "Nissan Qashqai"
+    ]
+  },
+  {
+    "name": "Renault Espace III",
+    "url": "assets/cars/renault-espace-iii.jpg",
+    "wikiFile": "Renault_Espace_III_en_Valencia.jpg",
+    "anchorX": 98.1,
+    "anchorY": 50.8,
+    "maxScale": 2.1,
+    "distractors": [
+      "Jeep Wrangler",
+      "Opel Grandland X",
+      "Kia Sorento"
+    ]
+  },
+  {
+    "name": "Volkswagen Beetle",
+    "url": "assets/cars/volkswagen-beetle.jpg",
+    "wikiFile": "Volkswagen_Beetle_9.jpg",
+    "anchorX": 50.0,
+    "anchorY": 50.0,
+    "maxScale": 2.6,
+    "distractors": [
+      "Audi 100",
+      "Mercedes-Benz W123",
+      "BMW 2000 (classique)"
+    ]
+  },
+  {
+    "name": "Volkswagen Golf R",
+    "url": "assets/cars/volkswagen-golf-r.jpg",
+    "wikiFile": "Volkswagen_Golf_R_(2).jpg",
+    "anchorX": 89.8,
+    "anchorY": 49.1,
+    "maxScale": 2.6,
+    "distractors": [
+      "Citroën C3 III",
+      "Fiat Punto",
+      "Peugeot 208 (Mk2)"
+    ]
+  },
+  {
+    "name": "Volkswagen Tiguan",
+    "url": "assets/cars/volkswagen-tiguan.jpg",
+    "wikiFile": "2018_Volkswagen_Tiguan_SE_Nav_TDI_-_1968cc_2.0_(150PS)_Diesel_-_Indium_Grey_-_03-2024,_Front.jpg",
+    "anchorX": 21.4,
+    "anchorY": 59.5,
+    "maxScale": 2.6,
+    "distractors": [
+      "Toyota RAV4",
+      "Renault Austral",
+      "Renault Espace III"
+    ]
+  },
+  {
+    "name": "Ford Kuga",
+    "url": "assets/cars/ford-kuga.jpg",
+    "wikiFile": "Ford_Kuga_PHEV_1X7A6291_(cropped).jpg",
+    "anchorX": 95.2,
+    "anchorY": 38.7,
+    "maxScale": 2.6,
+    "distractors": [
+      "Kia Sportage",
+      "Land Rover Defender",
+      "Volkswagen Tiguan"
+    ]
+  },
+  {
+    "name": "Toyota RAV4 (1994)",
+    "url": "assets/cars/toyota-rav4-1994.jpg",
+    "wikiFile": "Toyota_RAV4_(XA10)_IMG_1260.jpg",
+    "anchorX": 74.6,
+    "anchorY": 62.1,
+    "maxScale": 2.6,
+    "distractors": [
+      "Renault Kangoo III",
+      "Toyota RAV4 Hybrid (2019)",
+      "Range Rover Sport SVR"
+    ]
+  },
+  {
+    "name": "Toyota RAV4 GR Sport",
+    "url": "assets/cars/toyota-rav4-gr-sport.jpg",
+    "wikiFile": "Toyota_RAV4_Plug-in_Hybrid_GR_Sport_IMG_9891.jpg",
+    "anchorX": 19.8,
+    "anchorY": 58.8,
+    "maxScale": 2.6,
+    "distractors": [
+      "Renault Espace V",
+      "Jeep Grand Cherokee",
+      "Renault Symbioz"
+    ]
+  },
+  {
+    "name": "Toyota RAV4 (2013)",
+    "url": "assets/cars/toyota-rav4-2013.jpg",
+    "wikiFile": "Toyota_RAV4_XA40_Shishi_02_2022-05-25.jpg",
+    "anchorX": 34.4,
+    "anchorY": 14.6,
+    "maxScale": 2.6,
+    "distractors": [
+      "Nissan Ariya",
+      "Renault Austral",
+      "Renault Kangoo III"
+    ]
+  },
+  {
+    "name": "Toyota RAV4 Hybrid (2019)",
+    "url": "assets/cars/toyota-rav4-hybrid-2019.jpg",
+    "wikiFile": "Toyota_RAV4_Hybrid,_GIMS_2019,_Le_Grand-Saconnex_(GIMS0518).jpg",
+    "anchorX": 89.9,
+    "anchorY": 37.7,
+    "maxScale": 2.6,
+    "distractors": [
+      "Range Rover Sport SVR",
+      "Renault Kangoo III",
+      "Land Rover Defender"
+    ]
+  },
+  {
+    "name": "Fiat Multipla",
+    "url": "assets/cars/fiat-multipla.jpg",
+    "wikiFile": "Fiat_Multipla_front_20080825.jpg",
+    "anchorX": 62.5,
+    "anchorY": 42.5,
+    "maxScale": 4.3,
+    "distractors": [
+      "Fiat 500e",
+      "Fiat 500 (1967)",
+      "Mazda MX-5"
+    ]
+  },
+  {
+    "name": "Lamborghini Gallardo",
+    "url": "assets/cars/lamborghini-gallardo.jpg",
+    "wikiFile": "Orange_Lamborghini_Gallardo_LP560_fl.JPG",
+    "anchorX": 30.5,
+    "anchorY": 50.3,
+    "maxScale": 2.6,
+    "distractors": [
+      "Bentley Continental GT",
+      "Aston Martin DB7 Vantage",
+      "Porsche 911"
+    ]
+  },
+  {
+    "name": "Lamborghini Urus",
+    "url": "assets/cars/lamborghini-urus.jpg",
+    "wikiFile": "Lamborghini_Urus_rear_view_dllu.jpg",
+    "anchorX": 82.5,
+    "anchorY": 49.0,
+    "maxScale": 3.3,
+    "distractors": [
+      "Porsche 911",
+      "Porsche 911 Turbo S",
+      "Rolls-Royce Silver Cloud III"
+    ]
+  },
+  {
+    "name": "Bentley Continental GT",
+    "url": "assets/cars/bentley-continental-gt.jpg",
+    "wikiFile": "Bentley_Continental_GT_(II)_%E2%80%93_Frontansicht_(3),_30._August_2011,_D%C3%BCsseldorf.jpg",
+    "anchorX": 77.5,
+    "anchorY": 67.2,
+    "maxScale": 2.6,
+    "distractors": [
+      "Lamborghini Urus",
+      "Ferrari FF",
+      "Aston Martin DB12"
+    ]
+  },
+  {
+    "name": "Rolls-Royce Silver Cloud III",
+    "url": "assets/cars/rolls-royce-silver-cloud-iii.jpg",
+    "wikiFile": "Rolls-Royce_Silver_Cloud_III,_Bj._1964_(ret).jpg",
+    "anchorX": 50.0,
+    "anchorY": 50.0,
+    "maxScale": 4.4,
+    "distractors": [
+      "Aston Martin DB12",
+      "Lamborghini Urus",
+      "Ferrari FF"
+    ]
+  }
+]
