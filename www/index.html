@@ -404,6 +404,81 @@ h1{
   margin-top: 4px;
 }
 
+.score-breakdown{
+  width: 100%;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  text-align: left;
+}
+.breakdown-total-label{
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-align: center;
+}
+.breakdown-total-value{
+  font-family: 'JetBrains Mono', monospace;
+  font-size: clamp(24px, 7vh, 36px);
+  font-weight: 700;
+  color: var(--amber);
+  text-align: center;
+  margin: 4px 0 18px;
+}
+.breakdown-total-value span{
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--muted);
+}
+.breakdown-rows{ display: flex; flex-direction: column; gap: 14px; }
+.breakdown-row-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.breakdown-row-label{
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.breakdown-row-title{
+  font-size: 14px;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.breakdown-row-sub{
+  font-size: 11px;
+  color: var(--muted);
+}
+.breakdown-count{
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+.breakdown-bar{
+  height: 10px;
+  border-radius: 5px;
+  background: var(--bg);
+  overflow: hidden;
+}
+.breakdown-bar-fill{ height: 100%; border-radius: 5px; }
+
+.score-breakdown.compact{ margin-top: 10px; padding-top: 10px; }
+.score-breakdown.compact .breakdown-total-label{ font-size: 10px; }
+.score-breakdown.compact .breakdown-total-value{ font-size: clamp(18px, 5vh, 24px); margin: 2px 0 10px; }
+.score-breakdown.compact .breakdown-total-value span{ font-size: 12px; }
+.score-breakdown.compact .breakdown-rows{ gap: 9px; }
+.score-breakdown.compact .breakdown-row-title{ font-size: 11px; }
+.score-breakdown.compact .breakdown-row-sub{ font-size: 9px; }
+.score-breakdown.compact .breakdown-count{ font-size: 12px; }
+.score-breakdown.compact .breakdown-bar{ height: 6px; }
+
 /* ---- Desktop: keep the exact same portrait/mobile layout, just presented as a centered card ---- */
 @media (min-width: 860px) and (min-height: 560px){
   .app{
@@ -544,7 +619,7 @@ const SETTINGS_BG_B64 = "/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAUDBAQEAwUEBAQFBQUGBww
 
 const COMMONS_FILE_PAGE = "https://commons.wikimedia.org/wiki/File:";
 
-const POINTS_BY_LEVEL = [100, 60, 30, 10];
+const POINTS_BY_LEVEL = [100, 50, 25];
 const N_LEVELS = POINTS_BY_LEVEL.length;
 
 // Builds this car's own zoom steps from its maxScale, going down to 1.0 (full reveal)
@@ -574,7 +649,10 @@ let resolved = false;  // question fully resolved (correct found, or forced reve
 
 let mode = 'classique';   // 'classique' (Jouer, 20) | 'facile' (pas de zoom) | 'rapide' (10) | 'illimitee' (mort subite)
 let twoPlayer = false;  // mode 2 joueurs en alternance
-let players = [{ score: 0, streak: 0, bestStreak: 0, correct: 0, active: true }];
+function newPlayer(){
+  return { score: 0, streak: 0, bestStreak: 0, correct: 0, active: true, pointsBreakdown: { 100: 0, 50: 0, 25: 0, 0: 0 } };
+}
+let players = [newPlayer()];
 let currentPlayer = 0;
 let turnPointer = 0;
 
@@ -593,10 +671,7 @@ function startGame(selectedMode){
   const total = totals[mode] || 20;
   order = shuffle(CARS.map((_, i) => i)).slice(0, total);
   qIndex = 0;
-  players = twoPlayer
-    ? [{ score: 0, streak: 0, bestStreak: 0, correct: 0, active: true },
-       { score: 0, streak: 0, bestStreak: 0, correct: 0, active: true }]
-    : [{ score: 0, streak: 0, bestStreak: 0, correct: 0, active: true }];
+  players = twoPlayer ? [newPlayer(), newPlayer()] : [newPlayer()];
   turnPointer = 0;
   currentPlayer = 0;
   loadQuestion();
@@ -673,8 +748,11 @@ function handleAnswer(picked){
   const p = players[currentPlayer];
 
   if(correct){
-    const pts = POINTS_BY_LEVEL[level];
+    const pts = mode === 'facile'
+      ? (eliminated.length === 0 ? 100 : 50) // facile : pas de zoom, le palier suit le numero d'essai
+      : POINTS_BY_LEVEL[level];
     p.score += pts;
+    p.pointsBreakdown[pts] = (p.pointsBreakdown[pts] || 0) + 1;
     p.streak += 1;
     p.bestStreak = Math.max(p.bestStreak, p.streak);
     p.correct += 1;
@@ -693,6 +771,7 @@ function handleAnswer(picked){
   if(shouldReveal){
     // mort subite (illimité) ou 2e erreur sur cette voiture : on révèle la réponse
     resolved = true;
+    p.pointsBreakdown[0] = (p.pointsBreakdown[0] || 0) + 1;
     if(suddenDeath) p.active = false; // pas de seconde chance en mode illimité
     render(picked, false);
   } else {
@@ -721,7 +800,7 @@ function pickNextPlayer(){
 function nextQuestion(){
   if(mode === 'illimitee'){
     const anyActive = players.some(p => p.active);
-    if(!anyActive || qIndex >= order.length - 1){ renderEnd(); return; }
+    if(!anyActive || qIndex >= order.length - 1){ endGame(); return; }
     qIndex += 1;
     currentPlayer = pickNextPlayer();
     loadQuestion();
@@ -732,7 +811,7 @@ function nextQuestion(){
     if(twoPlayer) currentPlayer = qIndex % players.length;
     loadQuestion();
   } else {
-    renderEnd();
+    endGame();
   }
 }
 
@@ -839,6 +918,126 @@ function render(picked, correct){
   });
 }
 
+const BEST_SCORES_KEY = "spotthecar_best_scores";
+const MODE_LABELS = { classique: "Classique", facile: "Facile", rapide: "Partie rapide", illimitee: "Mort subite" };
+
+function getBestScores(){
+  try{
+    const raw = localStorage.getItem(BEST_SCORES_KEY);
+    if(raw) return JSON.parse(raw);
+  }catch(e){}
+  return {};
+}
+function saveBestScores(scores){
+  try{ localStorage.setItem(BEST_SCORES_KEY, JSON.stringify(scores)); }catch(e){}
+}
+
+function scoreBreakdownHtml(p, compact){
+  const tiers = mode === 'facile' ? [100, 50] : [100, 50, 25];
+  const tierLabel = {
+    100: 'Du 1er coup',
+    50: mode === 'facile' ? 'Au 2e essai' : 'Apr\u00e8s 1 d\u00e9zoom',
+    25: 'Apr\u00e8s 2 d\u00e9zooms',
+  };
+  const tierColor = { 100: 'var(--green)', 50: 'var(--amber)', 25: '#c98a1f' };
+
+  const totalSeen = Object.values(p.pointsBreakdown).reduce((a, b) => a + b, 0);
+  const totalFound = tiers.reduce((sum, t) => sum + (p.pointsBreakdown[t] || 0), 0);
+  const pct = (count) => totalSeen > 0 ? Math.round((count / totalSeen) * 100) : 0;
+
+  const rowHtml = (title, sub, count, color) => `
+    <div class="breakdown-row">
+      <div class="breakdown-row-top">
+        <div class="breakdown-row-label">
+          <span class="breakdown-row-title">${title}</span>
+          <span class="breakdown-row-sub">${sub}</span>
+        </div>
+        <span class="breakdown-count" style="color:${color};">${count}</span>
+      </div>
+      <div class="breakdown-bar"><div class="breakdown-bar-fill" style="width:${pct(count)}%; background:${color};"></div></div>
+    </div>`;
+
+  const rows = tiers.map(t => rowHtml(tierLabel[t], t + ' pts', p.pointsBreakdown[t] || 0, tierColor[t])).join('');
+  const missedRow = rowHtml('Non trouv\u00e9es', '0 pt', p.pointsBreakdown[0] || 0, 'var(--red)');
+
+  return `
+    <div class="score-breakdown${compact ? ' compact' : ''}">
+      <div class="breakdown-total-label">Voitures trouv\u00e9es</div>
+      <div class="breakdown-total-value">${totalFound} <span>/ ${totalSeen}</span></div>
+      <div class="breakdown-rows">${rows}${missedRow}</div>
+    </div>
+  `;
+}
+
+// IDs DE TEST Google -- remplacer par les vrais ID une fois la fiche AdMob prete,
+// et passer ADMOB_USE_TEST_IDS a false. Ne jamais utiliser les vrais ID pendant le developpement.
+const ADMOB_APP_ID = "ca-app-pub-3940256099942544~3347511713";
+const ADMOB_INTERSTITIAL_ID = "ca-app-pub-3940256099942544/1033173712";
+const ADMOB_USE_TEST_IDS = true;
+
+let interstitialReady = false;
+
+function getAdMob(){
+  return (window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.AdMob) || null;
+}
+
+async function initAds(){
+  const AdMob = getAdMob();
+  if(!AdMob) return; // pas de pont natif Capacitor (ex: test dans un navigateur) -> pas de pub
+  try{
+    const consentInfo = await AdMob.requestConsentInfo();
+    if(consentInfo.isConsentFormAvailable && consentInfo.status === 'REQUIRED'){
+      await AdMob.showConsentForm();
+    }
+    await AdMob.initialize();
+    prepareInterstitialAd();
+  }catch(e){
+    console.warn('AdMob init failed', e);
+  }
+}
+
+function prepareInterstitialAd(){
+  const AdMob = getAdMob();
+  if(!AdMob) return;
+  interstitialReady = false;
+  AdMob.prepareInterstitial({ adId: ADMOB_INTERSTITIAL_ID, isTesting: ADMOB_USE_TEST_IDS })
+    .then(() => { interstitialReady = true; })
+    .catch(() => { interstitialReady = false; });
+}
+
+// Affiche une pub toutes les 2 parties terminees (1 sur 2), jamais a chaque fois
+function shouldShowAdThisRound(){
+  let count = 0;
+  try{ count = parseInt(localStorage.getItem('spotthecar_rounds_played') || '0', 10) || 0; }catch(e){}
+  count += 1;
+  try{ localStorage.setItem('spotthecar_rounds_played', String(count)); }catch(e){}
+  return count % 2 === 0;
+}
+
+// Affiche la pub interstitielle (si due et prete) AVANT de reveler l'ecran de score
+function endGame(){
+  const AdMob = getAdMob();
+  const isAdRound = shouldShowAdThisRound();
+  if(!AdMob || !interstitialReady || !isAdRound){
+    renderEnd();
+    return;
+  }
+  let done = false;
+  let handles = [];
+  const finish = () => {
+    if(done) return;
+    done = true;
+    handles.forEach(h => h.remove());
+    renderEnd();
+    prepareInterstitialAd();
+  };
+  Promise.all([
+    AdMob.addListener('interstitialAdDismissed', finish),
+    AdMob.addListener('interstitialAdFailedToShow', finish),
+  ]).then(hs => { handles = hs; });
+  AdMob.showInterstitial().catch(finish);
+}
+
 function renderEnd(){
   let bodyHtml;
 
@@ -854,12 +1053,14 @@ function renderEnd(){
           <div class="big">${p1.score}</div>
           <div class="dash-label" style="margin-top:8px;">${metricLabel}</div>
           <div class="end-2p-metric">${metric(p1)}</div>
+          ${scoreBreakdownHtml(p1, true)}
         </div>
         <div class="end-2p-col ${winner===2 ? 'winner' : ''}">
           <div class="dash-label">Joueur 2</div>
           <div class="big">${p2.score}</div>
           <div class="dash-label" style="margin-top:8px;">${metricLabel}</div>
           <div class="end-2p-metric">${metric(p2)}</div>
+          ${scoreBreakdownHtml(p2, true)}
         </div>
       </div>
       <div class="feedback ${winner ? 'correct' : 'reveal'}" style="margin-top:10px;">${winner ? ('\ud83c\udfc6 Joueur ' + winner + ' gagne !') : '\u00c9galit\u00e9 parfaite !'}</div>
@@ -868,11 +1069,25 @@ function renderEnd(){
     const p1 = players[0];
     const metricLabel = mode === 'illimitee' ? 'Voitures trouv\u00e9es' : 'Meilleure s\u00e9rie';
     const metric = mode === 'illimitee' ? p1.correct : (p1.bestStreak + ' \ud83d\udd25');
+
+    const bestScores = getBestScores();
+    const prevBest = bestScores[mode] || 0;
+    const isNewRecord = p1.score > prevBest;
+    if(isNewRecord){
+      bestScores[mode] = p1.score;
+      saveBestScores(bestScores);
+    }
+    const displayedBest = isNewRecord ? p1.score : prevBest;
+
     bodyHtml = `
       <div class="dash-label">Score final</div>
       <div class="big">${p1.score}</div>
+      ${isNewRecord ? '<div class="feedback correct" style="margin-top:2px;">\ud83c\udfc6 Record battu !</div>' : ''}
       <div class="dash-label" style="margin-top:14px;">${metricLabel}</div>
       <div style="font-family:'JetBrains Mono',monospace; font-size:20px; color:var(--text); margin-top:4px;">${metric}</div>
+      ${scoreBreakdownHtml(p1)}
+      <div class="dash-label" style="margin-top:12px;">Meilleur score \u00b7 ${MODE_LABELS[mode] || mode}</div>
+      <div style="font-family:'JetBrains Mono',monospace; font-size:18px; color:var(--amber); margin-top:2px;">${displayedBest}</div>
     `;
   }
 
@@ -905,6 +1120,7 @@ function handleImgError(){
 }
 
 renderHome();
+initAds();
 </script>
 </body>
 </html>

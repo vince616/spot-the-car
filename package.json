@@ -5,6 +5,7 @@
   "description": "Spot the Car - jeu de devinette de voitures",
   "scripts": {},
   "dependencies": {
+    "@capacitor-community/admob": "^8.1.0",
     "@capacitor/android": "^7.6.8",
     "@capacitor/core": "^7.0.0"
   },
