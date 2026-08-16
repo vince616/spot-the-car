@@ -40,7 +40,7 @@ html,body{
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  padding: 1.4vh 3vw 1vh;
+  padding: calc(1.4vh + env(safe-area-inset-top, 0px)) 3vw calc(1vh + env(safe-area-inset-bottom, 0px));
   gap: 0.6vh;
 }
 
