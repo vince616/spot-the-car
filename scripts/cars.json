@@ -3,7 +3,6 @@
     "name": "Peugeot 208 (Mk2)",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Peugeot%20208%20A%20Facelift%20(80915).jpg",
     "wikiFile": "Peugeot%20208%20A%20Facelift%20(80915).jpg",
-    "slug": "peugeot-208-mk2",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -17,7 +16,6 @@
     "name": "Fiat 500L Cross",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2018%20Fiat%20500L%20Cross%20facelift%201.4%20Front.jpg",
     "wikiFile": "2018%20Fiat%20500L%20Cross%20facelift%201.4%20Front.jpg",
-    "slug": "fiat-500l-cross",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -31,7 +29,6 @@
     "name": "Mazda MX-5",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2015%20Mazda%20MX-5%20ND%202.0%20SKYACTIV-G%20160%20i-ELOOP%20Rubinrot-Metallic%20LED-Scheinwerfer%20Front-Draufsicht.jpg",
     "wikiFile": "2015%20Mazda%20MX-5%20ND%202.0%20SKYACTIV-G%20160%20i-ELOOP%20Rubinrot-Metallic%20LED-Scheinwerfer%20Front-Draufsicht.jpg",
-    "slug": "mazda-mx-5",
     "anchorX": 98.5,
     "anchorY": 88.9,
     "maxScale": 1.8,
@@ -45,7 +42,6 @@
     "name": "Volvo 245",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Auto%20Volvo%20245%20Mayakovskogo%20street%20Mayakovskogo%20street%202025-01%20040.JPG",
     "wikiFile": "Auto%20Volvo%20245%20Mayakovskogo%20street%20Mayakovskogo%20street%202025-01%20040.JPG",
-    "slug": "volvo-245",
     "anchorX": 43.5,
     "anchorY": 72.3,
     "maxScale": 4.7,
@@ -59,7 +55,6 @@
     "name": "Skoda Favorit",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/1991%20Skoda%20Favrorit%20Forum%20Plus%20(14587340313).jpg",
     "wikiFile": "1991%20Skoda%20Favrorit%20Forum%20Plus%20(14587340313).jpg",
-    "slug": "skoda-favorit",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -73,7 +68,6 @@
     "name": "Hyundai Veloster",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/%2712%20Hyundai%20Veloster%20(%2712%20MIAS).JPG",
     "wikiFile": "%2712%20Hyundai%20Veloster%20(%2712%20MIAS).JPG",
-    "slug": "hyundai-veloster",
     "anchorX": 43.1,
     "anchorY": 86.2,
     "maxScale": 2.6,
@@ -87,7 +81,6 @@
     "name": "Chevrolet Corvette",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Chevrelet%20Corvette%20Front.jpg",
     "wikiFile": "Chevrelet%20Corvette%20Front.jpg",
-    "slug": "chevrolet-corvette",
     "anchorX": 99.3,
     "anchorY": 53.4,
     "maxScale": 2.0,
@@ -101,7 +94,6 @@
     "name": "Mini (classique)",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/1992%20Mini%20Mark%20VI%201275cc%20at%20Hatfield%20Heath%20Festival%202017.jpg",
     "wikiFile": "1992%20Mini%20Mark%20VI%201275cc%20at%20Hatfield%20Heath%20Festival%202017.jpg",
-    "slug": "mini-classique",
     "anchorX": 28.2,
     "anchorY": 71.7,
     "maxScale": 2.6,
@@ -115,7 +107,6 @@
     "name": "Jeep Wrangler",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2017%20Jeep%20Wrangler%20Sahara%20in%20Granite%20Crystal%20Metallic,%20Front%20Right,%2007-29-2023.jpg",
     "wikiFile": "2017%20Jeep%20Wrangler%20Sahara%20in%20Granite%20Crystal%20Metallic,%20Front%20Right,%2007-29-2023.jpg",
-    "slug": "jeep-wrangler",
     "anchorX": 59.1,
     "anchorY": 50.1,
     "maxScale": 5.0,
@@ -129,7 +120,6 @@
     "name": "Kia Sorento",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/%2709%20Kia%20Sorento%20EX%20(MIAS).JPG",
     "wikiFile": "%2709%20Kia%20Sorento%20EX%20(MIAS).JPG",
-    "slug": "kia-sorento",
     "anchorX": 46.0,
     "anchorY": 67.1,
     "maxScale": 2.6,
@@ -143,7 +133,6 @@
     "name": "Land Rover Defender",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Land%20Rover%20DEFENDER%20110%20X-DYNAMIC%20HSE%20(L663).jpg",
     "wikiFile": "Land%20Rover%20DEFENDER%20110%20X-DYNAMIC%20HSE%20(L663).jpg",
-    "slug": "land-rover-defender",
     "anchorX": 79.8,
     "anchorY": 46.6,
     "maxScale": 4.2,
@@ -154,24 +143,9 @@
     ]
   },
   {
-    "name": "Chevrolet Colorado",
-    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/%2715%20Chevrolet%20Colorado%20(MIAS%20%2715).JPG",
-    "wikiFile": "%2715%20Chevrolet%20Colorado%20(MIAS%20%2715).JPG",
-    "slug": "chevrolet-colorado",
-    "anchorX": 36.2,
-    "anchorY": 51.0,
-    "maxScale": 3.7,
-    "distractors": [
-      "Ford Mustang",
-      "Jeep Grand Cherokee",
-      "Lincoln MKZ"
-    ]
-  },
-  {
     "name": "Jeep Grand Cherokee",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/%2712%20Jeep%20Grand%20Cherokee%20SRT-8%20(MIAS%20%2712).JPG",
     "wikiFile": "%2712%20Jeep%20Grand%20Cherokee%20SRT-8%20(MIAS%20%2712).JPG",
-    "slug": "jeep-grand-cherokee",
     "anchorX": 51.9,
     "anchorY": 61.3,
     "maxScale": 3.3,
@@ -185,7 +159,6 @@
     "name": "Renault 4",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Deluxe%20Renault%204,%20with%20headlamp%20wipers,%20probably%20to%20get%20rid%20of%20mosquitos%20in%20the%20north%20(10759067994).jpg",
     "wikiFile": "Deluxe%20Renault%204,%20with%20headlamp%20wipers,%20probably%20to%20get%20rid%20of%20mosquitos%20in%20the%20north%20(10759067994).jpg",
-    "slug": "renault-4",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -199,7 +172,6 @@
     "name": "Renault Clio",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Renault%20Clio%20(front%20quarter)%20red.JPG",
     "wikiFile": "Renault%20Clio%20(front%20quarter)%20red.JPG",
-    "slug": "renault-clio",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -213,7 +185,6 @@
     "name": "Peugeot 208 GTi",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20frontview%20of%20Peugeot%20208%20GTi.JPG",
     "wikiFile": "The%20frontview%20of%20Peugeot%20208%20GTi.JPG",
-    "slug": "peugeot-208-gti",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -227,7 +198,6 @@
     "name": "Porsche 911",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2013%20Porsche%20911%20Carrera%204S%20(991)%20(9626546987).jpg",
     "wikiFile": "2013%20Porsche%20911%20Carrera%204S%20(991)%20(9626546987).jpg",
-    "slug": "porsche-911",
     "anchorX": 49.9,
     "anchorY": 50.4,
     "maxScale": 5.0,
@@ -241,7 +211,6 @@
     "name": "Ford Mustang",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2015%20Ford%20Mustang%20Front%20View.jpg",
     "wikiFile": "2015%20Ford%20Mustang%20Front%20View.jpg",
-    "slug": "ford-mustang",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -255,7 +224,6 @@
     "name": "Ford Mustang (1968)",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ford%20Mustang%20GT,%201968%20(1).jpg",
     "wikiFile": "Ford%20Mustang%20GT,%201968%20(1).jpg",
-    "slug": "ford-mustang-1968",
     "anchorX": 4.0,
     "anchorY": 72.3,
     "maxScale": 2.6,
@@ -269,7 +237,6 @@
     "name": "Ford Edge",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2019%20Ford%20Edge%20ST,%20White%20Platinum,%206.24.19.jpg",
     "wikiFile": "2019%20Ford%20Edge%20ST,%20White%20Platinum,%206.24.19.jpg",
-    "slug": "ford-edge",
     "anchorX": 94.8,
     "anchorY": 50.1,
     "maxScale": 2.6,
@@ -283,7 +250,6 @@
     "name": "Citroën C2",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Citroen%20C2,%2040.%20ADAC%20Stormarn%20Rallye,%20Luetjensee%20(TR256803).jpg",
     "wikiFile": "Citroen%20C2,%2040.%20ADAC%20Stormarn%20Rallye,%20Luetjensee%20(TR256803).jpg",
-    "slug": "citroen-c2",
     "anchorX": 40.1,
     "anchorY": 54.5,
     "maxScale": 5.0,
@@ -297,7 +263,6 @@
     "name": "BMW X6 M",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/%2715%20BMW%20X6%20M%20(MIAS%20%2715).jpg",
     "wikiFile": "%2715%20BMW%20X6%20M%20(MIAS%20%2715).jpg",
-    "slug": "bmw-x6-m",
     "anchorX": 68.3,
     "anchorY": 53.1,
     "maxScale": 2.6,
@@ -311,7 +276,6 @@
     "name": "BMW 323i (E21)",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/BMW%20323i%20E21%20(6806823446).jpg",
     "wikiFile": "BMW%20323i%20E21%20(6806823446).jpg",
-    "slug": "bmw-323i-e21",
     "anchorX": 9.7,
     "anchorY": 68.2,
     "maxScale": 2.6,
@@ -325,7 +289,6 @@
     "name": "Nissan Ariya",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nissan%20ARIYA%20B6%20limited%20(1).jpg",
     "wikiFile": "Nissan%20ARIYA%20B6%20limited%20(1).jpg",
-    "slug": "nissan-ariya",
     "anchorX": 13.2,
     "anchorY": 52.6,
     "maxScale": 3.0,
@@ -339,7 +302,6 @@
     "name": "Fiat 500 (1967)",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fiat%20500%20L%20(1967%E2%80%9371%20model).jpg",
     "wikiFile": "Fiat%20500%20L%20(1967%E2%80%9371%20model).jpg",
-    "slug": "fiat-500-1967",
     "anchorX": 35.1,
     "anchorY": 7.5,
     "maxScale": 3.2,
@@ -353,7 +315,6 @@
     "name": "Audi A4",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2015%20Audi%20A4%20B9%20S%20line%20Tangorot%20LED-Matrix-Scheinwerfer%20Detail.jpg",
     "wikiFile": "2015%20Audi%20A4%20B9%20S%20line%20Tangorot%20LED-Matrix-Scheinwerfer%20Detail.jpg",
-    "slug": "audi-a4",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -367,7 +328,6 @@
     "name": "Fiat Punto",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/%22%2012%20-%20ITALY%20-%20Fiat%20Punto%202012%2004.JPG",
     "wikiFile": "%22%2012%20-%20ITALY%20-%20Fiat%20Punto%202012%2004.JPG",
-    "slug": "fiat-punto",
     "anchorX": 9.5,
     "anchorY": 64.1,
     "maxScale": 2.6,
@@ -381,7 +341,6 @@
     "name": "Honda Civic",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2015%20Honda%20Civic%20Si%20Coupe%20(21027301342).jpg",
     "wikiFile": "2015%20Honda%20Civic%20Si%20Coupe%20(21027301342).jpg",
-    "slug": "honda-civic",
     "anchorX": 3.4,
     "anchorY": 62.7,
     "maxScale": 2.6,
@@ -395,7 +354,6 @@
     "name": "Mercedes-Benz SL (R107)",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-Benz%20SL%20R107%20-%20Flickr%20-%20exfordy.jpg",
     "wikiFile": "Mercedes-Benz%20SL%20R107%20-%20Flickr%20-%20exfordy.jpg",
-    "slug": "mercedes-benz-sl-r107",
     "anchorX": 4.0,
     "anchorY": 57.2,
     "maxScale": 2.6,
@@ -409,7 +367,6 @@
     "name": "Alfa Romeo Giulia",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/%22%2015%20-%20ITALY%20-%20Alfa%20Romeo%20Giulia%20QV%20(pre%20series)%20at%20Museo%20Alfa%20Romeo%20Arese%20world%20premiere%2005.jpg",
     "wikiFile": "%22%2015%20-%20ITALY%20-%20Alfa%20Romeo%20Giulia%20QV%20(pre%20series)%20at%20Museo%20Alfa%20Romeo%20Arese%20world%20premiere%2005.jpg",
-    "slug": "alfa-romeo-giulia",
     "anchorX": 71.6,
     "anchorY": 38.4,
     "maxScale": 2.6,
@@ -423,7 +380,6 @@
     "name": "BMW 320d Touring",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/BMW%20320d%20%E2%80%94%20E46-3%20(Touring)%20%E2%80%94%20blue%20livery%20%E2%80%94%20parked%20%E2%80%94%20Munich,%20Germany%20%E2%80%94%202005.jpg",
     "wikiFile": "BMW%20320d%20%E2%80%94%20E46-3%20(Touring)%20%E2%80%94%20blue%20livery%20%E2%80%94%20parked%20%E2%80%94%20Munich,%20Germany%20%E2%80%94%202005.jpg",
-    "slug": "bmw-320d-touring",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -437,7 +393,6 @@
     "name": "Dacia Duster",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dacia%20Duster%20III%20GIMS%202024%201X7A2016.jpg",
     "wikiFile": "Dacia%20Duster%20III%20GIMS%202024%201X7A2016.jpg",
-    "slug": "dacia-duster",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -451,7 +406,6 @@
     "name": "Porsche 911 Turbo S",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Porsche%20911%20(991)%20Turbo%20S%20LED%20headlight.jpg",
     "wikiFile": "Porsche%20911%20(991)%20Turbo%20S%20LED%20headlight.jpg",
-    "slug": "porsche-911-turbo-s",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -465,7 +419,6 @@
     "name": "Toyota RAV4",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2016%20Toyota%20RAV4%20Hybrid%202.5%20VVT-i%20marlingrau-metallic%20Frontalansicht.jpg",
     "wikiFile": "2016%20Toyota%20RAV4%20Hybrid%202.5%20VVT-i%20marlingrau-metallic%20Frontalansicht.jpg",
-    "slug": "toyota-rav4",
     "anchorX": 20.2,
     "anchorY": 59.2,
     "maxScale": 3.6,
@@ -479,7 +432,6 @@
     "name": "Fiat Panda",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/%22%2012%20-%20ITALY%20-%20Fiat%20Panda%204x4%20Off-road%20drive%20-%20Motorshow%20di%20Bologna%20011.JPG",
     "wikiFile": "%22%2012%20-%20ITALY%20-%20Fiat%20Panda%204x4%20Off-road%20drive%20-%20Motorshow%20di%20Bologna%20011.JPG",
-    "slug": "fiat-panda",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -493,7 +445,6 @@
     "name": "BMW 2000 (classique)",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/BMW%202000%20touring,%2018.%20ADAC%20Stormarn%20Classic,%20Luetjensee%20(P1045451).jpg",
     "wikiFile": "BMW%202000%20touring,%2018.%20ADAC%20Stormarn%20Classic,%20Luetjensee%20(P1045451).jpg",
-    "slug": "bmw-2000-classique",
     "anchorX": 85.6,
     "anchorY": 71.4,
     "maxScale": 3.9,
@@ -504,24 +455,22 @@
     ]
   },
   {
-    "name": "Volkswagen Golf",
+    "name": "Volkswagen Golf (2008)",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2009%20Volkswagen%20Golf%20(5K%20MY10)%20118TSI%20Comfortline%205-door%20hatchback%20(2011-11-08)%2001.jpg",
     "wikiFile": "2009%20Volkswagen%20Golf%20(5K%20MY10)%20118TSI%20Comfortline%205-door%20hatchback%20(2011-11-08)%2001.jpg",
-    "slug": "volkswagen-golf",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
     "distractors": [
-      "BMW 3.0 CSL",
-      "Mercedes-Benz Classe C",
-      "BMW 320d Touring"
+      "BMW 3.0 CSL (2007)",
+      "Mercedes-Benz Classe C (2006)",
+      "BMW 320d Touring (2001)"
     ]
   },
   {
     "name": "Toyota Corolla",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2014%20Toyota%20Corolla%20LED%20Headlight.jpg",
     "wikiFile": "2014%20Toyota%20Corolla%20LED%20Headlight.jpg",
-    "slug": "toyota-corolla",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -535,7 +484,6 @@
     "name": "Toyota Yaris",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2022%20Toyota%20Yaris%201.5%20GR%20Sport,%20IIMS%20Hybrid,%20Grand%20City,%20Central%20Surabaya.jpg",
     "wikiFile": "2022%20Toyota%20Yaris%201.5%20GR%20Sport,%20IIMS%20Hybrid,%20Grand%20City,%20Central%20Surabaya.jpg",
-    "slug": "toyota-yaris",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -549,7 +497,6 @@
     "name": "Audi TT",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Audi%20TT%202014%20(13558536333).jpg",
     "wikiFile": "Audi%20TT%202014%20(13558536333).jpg",
-    "slug": "audi-tt",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -563,7 +510,6 @@
     "name": "Ford Ranger",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2023%20Ford%20Ranger%20Raptor%20Double-Cab%202.0L%20Bi-Turbo%204x4.jpg",
     "wikiFile": "2023%20Ford%20Ranger%20Raptor%20Double-Cab%202.0L%20Bi-Turbo%204x4.jpg",
-    "slug": "ford-ranger",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -577,10 +523,9 @@
     "name": "Mercedes-Benz Classe E",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2014%20Mercedes-Benz%20E-Class%20LED%20Headlight.jpg",
     "wikiFile": "2014%20Mercedes-Benz%20E-Class%20LED%20Headlight.jpg",
-    "slug": "mercedes-benz-classe-e",
     "anchorX": 50.0,
     "anchorY": 50.0,
-    "maxScale": 2.6,
+    "maxScale": 1.4,
     "distractors": [
       "BMW 2000 (classique)",
       "Audi A4",
@@ -591,7 +536,6 @@
     "name": "Volkswagen Phaeton",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2003%20Volkswagen%20Phaeton%20VR,%20Techno-Classica%202025,%20Essen%20(P1045896).jpg",
     "wikiFile": "2003%20Volkswagen%20Phaeton%20VR,%20Techno-Classica%202025,%20Essen%20(P1045896).jpg",
-    "slug": "volkswagen-phaeton",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -605,7 +549,6 @@
     "name": "Honda HR-V",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2016%20Honda%20HR-V%20EX-L%20front%20(21028254132).jpg",
     "wikiFile": "2016%20Honda%20HR-V%20EX-L%20front%20(21028254132).jpg",
-    "slug": "honda-hr-v",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -619,7 +562,6 @@
     "name": "Alfa Romeo Giulia Quadrifoglio",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carabinieri%20Alfa%20Romeo%20Giulia%20Quadrifoglio.jpg",
     "wikiFile": "Carabinieri%20Alfa%20Romeo%20Giulia%20Quadrifoglio.jpg",
-    "slug": "alfa-romeo-giulia-quadrifoglio",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -633,7 +575,6 @@
     "name": "Fiat 500L",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/%22%2013%20-%20Italian%20fashion%20SUV%20-%20Fiat%20500L%20Trekking%20front%20grey%20and%20green.jpg",
     "wikiFile": "%22%2013%20-%20Italian%20fashion%20SUV%20-%20Fiat%20500L%20Trekking%20front%20grey%20and%20green.jpg",
-    "slug": "fiat-500l",
     "anchorX": 2.6,
     "anchorY": 19.3,
     "maxScale": 2.6,
@@ -647,7 +588,6 @@
     "name": "Fiat 500e",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/%22%2015%20-%20EXPO%20MILANO%202015%20-%20Front%20view%20of%20500e%20(FIAT).jpg",
     "wikiFile": "%22%2015%20-%20EXPO%20MILANO%202015%20-%20Front%20view%20of%20500e%20(FIAT).jpg",
-    "slug": "fiat-500e",
     "anchorX": 72.6,
     "anchorY": 60.8,
     "maxScale": 4.1,
@@ -661,7 +601,6 @@
     "name": "Ferrari FF",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/%22%2012%20-%20ITALY%20-%20Ferrari%20FF%20a%20Bologna%2005.jpg",
     "wikiFile": "%22%2012%20-%20ITALY%20-%20Ferrari%20FF%20a%20Bologna%2005.jpg",
-    "slug": "ferrari-ff",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -675,7 +614,6 @@
     "name": "Toyota Land Cruiser",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2024%20Toyota%20Land%20Cruiser%20(United%20States)%20front%20view.jpg",
     "wikiFile": "2024%20Toyota%20Land%20Cruiser%20(United%20States)%20front%20view.jpg",
-    "slug": "toyota-land-cruiser",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -689,7 +627,6 @@
     "name": "Lexus GS-F",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2016%20Lexus%20GS-F%20Fujiweiss%20LED-Scheinwerfer.jpg",
     "wikiFile": "2016%20Lexus%20GS-F%20Fujiweiss%20LED-Scheinwerfer.jpg",
-    "slug": "lexus-gs-f",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -703,7 +640,6 @@
     "name": "Peugeot 2008 II",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2020%20Peugeot%202008%20Allure%20Front.jpg",
     "wikiFile": "2020%20Peugeot%202008%20Allure%20Front.jpg",
-    "slug": "peugeot-2008-ii",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -717,7 +653,6 @@
     "name": "Opel Corsa",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Opel%20Corsa%20D%2020090912%20front.JPG",
     "wikiFile": "Opel%20Corsa%20D%2020090912%20front.JPG",
-    "slug": "opel-corsa",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -731,7 +666,6 @@
     "name": "Renault Captur",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2017%20Renault%20Captur%20front%20tq%20(red%20phase%20II)%20crop.jpg",
     "wikiFile": "2017%20Renault%20Captur%20front%20tq%20(red%20phase%20II)%20crop.jpg",
-    "slug": "renault-captur",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -745,7 +679,6 @@
     "name": "Citroën C4 III",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2021%20Citroen%20C4%20Shine%20Front.jpg",
     "wikiFile": "2021%20Citroen%20C4%20Shine%20Front.jpg",
-    "slug": "citroen-c4-iii",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -759,7 +692,6 @@
     "name": "Volkswagen Polo",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/1986%20Volkswagen%20Polo%20C%20Formel%20E%201.3%20Front.jpg",
     "wikiFile": "1986%20Volkswagen%20Polo%20C%20Formel%20E%201.3%20Front.jpg",
-    "slug": "volkswagen-polo",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -773,7 +705,6 @@
     "name": "Skoda Octavia",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2005%20Skoda%20Octavia%20VRS%201.8%20Front.jpg",
     "wikiFile": "2005%20Skoda%20Octavia%20VRS%201.8%20Front.jpg",
-    "slug": "skoda-octavia",
     "anchorX": 99.5,
     "anchorY": 78.8,
     "maxScale": 2.6,
@@ -787,7 +718,6 @@
     "name": "Renault Mégane IV",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2017%20Renault%20Megane%20Dynamique%20NAV%20DCi%201.5.jpg",
     "wikiFile": "2017%20Renault%20Megane%20Dynamique%20NAV%20DCi%201.5.jpg",
-    "slug": "renault-megane-iv",
     "anchorX": 71.4,
     "anchorY": 62.4,
     "maxScale": 2.6,
@@ -801,7 +731,6 @@
     "name": "Peugeot 3008 II",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Peugeot3008II-av-byRundvald.jpg",
     "wikiFile": "Peugeot3008II-av-byRundvald.jpg",
-    "slug": "peugeot-3008-ii",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -812,24 +741,9 @@
     ]
   },
   {
-    "name": "Peugeot 308 III",
-    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2021%20-%20Peugeot%20308%20III%20(C)%20Allure%20-%2001.jpg",
-    "wikiFile": "2021%20-%20Peugeot%20308%20III%20(C)%20Allure%20-%2001.jpg",
-    "slug": "peugeot-308-iii",
-    "anchorX": 13.2,
-    "anchorY": 30.5,
-    "maxScale": 2.6,
-    "distractors": [
-      "Renault Mégane IV",
-      "Volkswagen Golf",
-      "Citroën C3 III"
-    ]
-  },
-  {
     "name": "Seat Ibiza",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Seat%20Ibiza%206J%20Facelift%20front%2020140401.jpg",
     "wikiFile": "Seat%20Ibiza%206J%20Facelift%20front%2020140401.jpg",
-    "slug": "seat-ibiza",
     "anchorX": 2.2,
     "anchorY": 74.7,
     "maxScale": 2.6,
@@ -843,7 +757,6 @@
     "name": "Renault Twingo III",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2016%20Renault%20Twingo%20III%20SCe%2070.jpg",
     "wikiFile": "2016%20Renault%20Twingo%20III%20SCe%2070.jpg",
-    "slug": "renault-twingo-iii",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -857,7 +770,6 @@
     "name": "Dacia Sandero",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2019%20Dacia%20Sandero%20Stepway%20Techroad%20Front.jpg",
     "wikiFile": "2019%20Dacia%20Sandero%20Stepway%20Techroad%20Front.jpg",
-    "slug": "dacia-sandero",
     "anchorX": 76.1,
     "anchorY": 73.4,
     "maxScale": 2.6,
@@ -871,7 +783,6 @@
     "name": "Nissan Qashqai",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nissan%20Qashqai%2020090620%20front.JPG",
     "wikiFile": "Nissan%20Qashqai%2020090620%20front.JPG",
-    "slug": "nissan-qashqai",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -885,7 +796,6 @@
     "name": "Renault Mégane",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Renault%20M%C3%A9gane%20III%2020090801%20front.JPG",
     "wikiFile": "Renault%20M%C3%A9gane%20III%2020090801%20front.JPG",
-    "slug": "renault-megane",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -899,7 +809,6 @@
     "name": "Mercedes-Benz 560 SEL (W126)",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Picture%20of%20Mercedes%20Benz%20W126%20560%20SEL.jpg",
     "wikiFile": "Picture%20of%20Mercedes%20Benz%20W126%20560%20SEL.jpg",
-    "slug": "mercedes-benz-560-sel-w126",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -913,7 +822,6 @@
     "name": "Mercedes-Benz Classe C",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-Benz%20C-Class,%2018.%20ADAC%20Stormarn%20Classic,%20Luetjensee%20(20250405-TR257069).jpg",
     "wikiFile": "Mercedes-Benz%20C-Class,%2018.%20ADAC%20Stormarn%20Classic,%20Luetjensee%20(20250405-TR257069).jpg",
-    "slug": "mercedes-benz-classe-c",
     "anchorX": 82.1,
     "anchorY": 50.7,
     "maxScale": 2.6,
@@ -927,7 +835,6 @@
     "name": "Citroën C3 III",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2017%20Citroen%20C3%201.2%20Feel.jpg",
     "wikiFile": "2017%20Citroen%20C3%201.2%20Feel.jpg",
-    "slug": "citroen-c3-iii",
     "anchorX": 42.7,
     "anchorY": 63.8,
     "maxScale": 2.6,
@@ -941,7 +848,6 @@
     "name": "Mercedes-Benz W123",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-Benz%20W123%20Sedan%20(Orange%20Julep%20%2710).jpg",
     "wikiFile": "Mercedes-Benz%20W123%20Sedan%20(Orange%20Julep%20%2710).jpg",
-    "slug": "mercedes-benz-w123",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -955,7 +861,6 @@
     "name": "Renault Symbioz",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Renault%20Symbioz%20IMG%202251.jpg",
     "wikiFile": "Renault%20Symbioz%20IMG%202251.jpg",
-    "slug": "renault-symbioz",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -969,7 +874,6 @@
     "name": "Renault 5 E-Tech Electric",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/White%20Renault%205%20E-Tech%20Electric%20-%202026-02-26.jpg",
     "wikiFile": "White%20Renault%205%20E-Tech%20Electric%20-%202026-02-26.jpg",
-    "slug": "renault-5-e-tech-electric",
     "anchorX": 80.8,
     "anchorY": 37.8,
     "maxScale": 3.7,
@@ -983,7 +887,6 @@
     "name": "Citroën C5 Aircross",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Citroen%20C5%20AIRCROSS%20SUV%20SHINE%20(3BA-C845G06)%20front.jpg",
     "wikiFile": "Citroen%20C5%20AIRCROSS%20SUV%20SHINE%20(3BA-C845G06)%20front.jpg",
-    "slug": "citroen-c5-aircross",
     "anchorX": 81.0,
     "anchorY": 19.8,
     "maxScale": 2.4,
@@ -997,7 +900,6 @@
     "name": "Tesla Model Y",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2022%20Tesla%20Model%20Y%20Long%20Range%20AWD%20Front.jpg",
     "wikiFile": "2022%20Tesla%20Model%20Y%20Long%20Range%20AWD%20Front.jpg",
-    "slug": "tesla-model-y",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -1011,7 +913,6 @@
     "name": "Renault Austral",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2023%20Renault%20Austral%201.2%20E-Tech%20Hybrid%20techno%20at%20Renault%20Manchester%2001.jpg",
     "wikiFile": "2023%20Renault%20Austral%201.2%20E-Tech%20Hybrid%20techno%20at%20Renault%20Manchester%2001.jpg",
-    "slug": "renault-austral",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -1025,7 +926,6 @@
     "name": "Ford Puma",
     "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2020%20Ford%20Puma%20Titanium%20EcoBoost%20Hybrid%201.0%20Front.jpg",
     "wikiFile": "2020%20Ford%20Puma%20Titanium%20EcoBoost%20Hybrid%201.0%20Front.jpg",
-    "slug": "ford-puma",
     "anchorX": 50.0,
     "anchorY": 50.0,
     "maxScale": 2.6,
@@ -1594,5 +1494,467 @@
       "Ferrari FF"
     ],
     "slug": "rolls-royce-silver-cloud-iii"
+  },
+  {
+    "name": "Fiat Punto GT (1993)",
+    "url": "assets/cars/fiat-punto-gt-1993.jpg",
+    "wikiFile": "Fiat_Punto_GT_-_Modell_1993.jpg",
+    "anchorX": 0.0,
+    "anchorY": 44.4,
+    "maxScale": 1.5,
+    "distractors": [
+      "Volvo 245",
+      "Mini Cooper (1ere generation)",
+      "BMW 2000 (classique)"
+    ],
+    "slug": "fiat-punto-gt-1993"
+  },
+  {
+    "name": "Fiat 500X (2024)",
+    "url": "assets/cars/fiat-500x-2024.jpg",
+    "wikiFile": "Fiat_500X_Lounge_%E2%80%93_f_08062024.jpg",
+    "anchorX": 40.1,
+    "anchorY": 51.5,
+    "maxScale": 2.6,
+    "distractors": [
+      "Cupra Formentor",
+      "Lancia Ypsilon (2010)",
+      "Nissan Micra (2017)"
+    ],
+    "slug": "fiat-500x-2024"
+  },
+  {
+    "name": "Fiat Topolino (2023)",
+    "url": "assets/cars/fiat-topolino-2023.jpg",
+    "wikiFile": "Fiat_Topolino_Paris.jpg",
+    "anchorX": 70.6,
+    "anchorY": 46.3,
+    "maxScale": 3.0,
+    "distractors": [
+      "Mini (classique)",
+      "Skoda Favorit",
+      "Mercedes-Benz W123"
+    ],
+    "slug": "fiat-topolino-2023"
+  },
+  {
+    "name": "Citroen 2CV",
+    "url": "assets/cars/citroen-2cv.jpg",
+    "wikiFile": "Citroen-2CV6Special-Gris-Rose-Rosado-AC136-EVA-EVK-GVC-01-byRundvald.jpg",
+    "anchorX": 55.5,
+    "anchorY": 53.2,
+    "maxScale": 4.9,
+    "distractors": [
+      "Fiat Topolino (2023)",
+      "BMW 323i (E21)",
+      "BMW 2000 (classique)"
+    ],
+    "slug": "citroen-2cv"
+  },
+  {
+    "name": "Citroen DS",
+    "url": "assets/cars/citroen-ds.jpg",
+    "wikiFile": "Citroen_vom_Oldtimertreffen_2019_Bauma_03.jpg",
+    "anchorX": 12.5,
+    "anchorY": 57.4,
+    "maxScale": 3.2,
+    "distractors": [
+      "Mini Cooper (1ere generation)",
+      "Citroen Traction Avant 11B",
+      "Mini John Cooper Works"
+    ],
+    "slug": "citroen-ds"
+  },
+  {
+    "name": "Citroen e-Mehari (2016)",
+    "url": "assets/cars/citroen-e-mehari-2016.jpg",
+    "wikiFile": "Citroen-e-Mehari-av-Belle-Ile-en-Mer-byRundvald.jpg",
+    "anchorX": 19.2,
+    "anchorY": 49.2,
+    "maxScale": 3.2,
+    "distractors": [
+      "Opel Mokka-e",
+      "Tesla Cybertruck (2024)",
+      "Renault 5 E-Tech Electric"
+    ],
+    "slug": "citroen-e-mehari-2016"
+  },
+  {
+    "name": "Citroen Traction Avant 11B",
+    "url": "assets/cars/citroen-traction-avant-11b.jpg",
+    "wikiFile": "2008-06-28_0979_Citroen_Traction_Avant_11_B_(Heck).JPG",
+    "anchorX": 42.9,
+    "anchorY": 65.8,
+    "maxScale": 3.8,
+    "distractors": [
+      "Audi 100",
+      "BMW 323i (E21)",
+      "Renault 4"
+    ],
+    "slug": "citroen-traction-avant-11b"
+  },
+  {
+    "name": "Citroen C4 Picasso",
+    "url": "assets/cars/citroen-c4-picasso.jpg",
+    "wikiFile": "CITROEN_C4_PICASSO_China.jpg",
+    "anchorX": 54.5,
+    "anchorY": 24.1,
+    "maxScale": 3.6,
+    "distractors": [
+      "Dacia Duster",
+      "Ford Kuga",
+      "Renault Espace III"
+    ],
+    "slug": "citroen-c4-picasso"
+  },
+  {
+    "name": "DS 4 E-Tense (2021)",
+    "url": "assets/cars/ds-4-e-tense-2021.jpg",
+    "wikiFile": "DS_4_E-Tense_IMG_7454.jpg",
+    "anchorX": 16.6,
+    "anchorY": 31.9,
+    "maxScale": 3.3,
+    "distractors": [
+      "Opel Mokka-e",
+      "Citroen e-Mehari (2016)",
+      "Tesla Model Y"
+    ],
+    "slug": "ds-4-e-tense-2021"
+  },
+  {
+    "name": "Alpine A110 (1963)",
+    "url": "assets/cars/alpine-a110-1963.jpg",
+    "wikiFile": "Alpine-A110-Berlinette-avant.jpg",
+    "anchorX": 35.8,
+    "anchorY": 61.2,
+    "maxScale": 3.1,
+    "distractors": [
+      "Lamborghini Gallardo",
+      "Porsche 911",
+      "Rolls-Royce Silver Cloud III"
+    ],
+    "slug": "alpine-a110-1963"
+  },
+  {
+    "name": "Alpine A110 Gendarmerie",
+    "url": "assets/cars/alpine-a110-gendarmerie.jpg",
+    "wikiFile": "Alpine-A110-Brigade-Rapide-dIntervention-Gendarmerie-Francaise.jpg",
+    "anchorX": 60.1,
+    "anchorY": 48.9,
+    "maxScale": 4.5,
+    "distractors": [
+      "Ferrari FF",
+      "Porsche Macan Electrique (2024)",
+      "Alpine A110 (1963)"
+    ],
+    "slug": "alpine-a110-gendarmerie"
+  },
+  {
+    "name": "Tesla Cybertruck (2024)",
+    "url": "assets/cars/tesla-cybertruck-2024.jpg",
+    "wikiFile": "2024_Tesla_Cybertruck_Foundation_Series_IMG_0642.jpg",
+    "anchorX": 50.0,
+    "anchorY": 50.0,
+    "maxScale": 5.2,
+    "distractors": [
+      "Opel Mokka-e",
+      "DS 4 E-Tense (2021)",
+      "BYD Dolphin"
+    ],
+    "slug": "tesla-cybertruck-2024"
+  },
+  {
+    "name": "Peugeot 806",
+    "url": "assets/cars/peugeot-806.jpg",
+    "wikiFile": "Peugeot_806_(46898249652).jpg",
+    "anchorX": 50.0,
+    "anchorY": 50.0,
+    "maxScale": 3.8,
+    "distractors": [
+      "Renault Symbioz",
+      "Nissan Ariya",
+      "Chevrolet Colorado"
+    ],
+    "slug": "peugeot-806"
+  },
+  {
+    "name": "Peugeot RCZ",
+    "url": "assets/cars/peugeot-rcz.jpg",
+    "wikiFile": "Peugeot_RCZ_a_St_Trond.jpg",
+    "anchorX": 50.0,
+    "anchorY": 50.0,
+    "maxScale": 2.6,
+    "distractors": [
+      "Fiat 500L Cross",
+      "Ford Mustang",
+      "Opel Corsa"
+    ],
+    "slug": "peugeot-rcz"
+  },
+  {
+    "name": "Peugeot 3008 (2023)",
+    "url": "assets/cars/peugeot-3008-2023.jpg",
+    "wikiFile": "Peugeot_3008_C_DSC_8318.jpg",
+    "anchorX": 44.4,
+    "anchorY": 49.7,
+    "maxScale": 2.6,
+    "distractors": [
+      "Jeep Grand Cherokee",
+      "Renault Kangoo III",
+      "Nissan Ariya"
+    ],
+    "slug": "peugeot-3008-2023"
+  },
+  {
+    "name": "Peugeot 5008 (2024)",
+    "url": "assets/cars/peugeot-5008-2024.jpg",
+    "wikiFile": "Peugeot_5008_C_Automesse_Ludwigsburg_2024_IMG_1460.jpg",
+    "anchorX": 95.4,
+    "anchorY": 27.6,
+    "maxScale": 3.3,
+    "distractors": [
+      "Volvo XC40",
+      "Renault Symbioz",
+      "Jeep Grand Cherokee"
+    ],
+    "slug": "peugeot-5008-2024"
+  },
+  {
+    "name": "Ford Focus (2016)",
+    "url": "assets/cars/ford-focus-2016.jpg",
+    "wikiFile": "FordFocus-Tandil-ago2016.jpg",
+    "anchorX": 98.6,
+    "anchorY": 27.6,
+    "maxScale": 3.2,
+    "distractors": [
+      "Opel Corsa",
+      "Mazda MX-5",
+      "Dacia Sandero"
+    ],
+    "slug": "ford-focus-2016"
+  },
+  {
+    "name": "Nissan Micra (2017)",
+    "url": "assets/cars/nissan-micra-2017.jpg",
+    "wikiFile": "2017_Nissan_Micra_N-Connecta_IG-T_900cc_Front_(1).jpg",
+    "anchorX": 82.2,
+    "anchorY": 49.1,
+    "maxScale": 2.6,
+    "distractors": [
+      "Volkswagen Golf R",
+      "Toyota Yaris",
+      "Lancia Ypsilon (2010)"
+    ],
+    "slug": "nissan-micra-2017"
+  },
+  {
+    "name": "Nissan Micra (2003)",
+    "url": "assets/cars/nissan-micra-2003.jpg",
+    "wikiFile": "2003_Nissan_Micra_E_1.0_(Front).jpg",
+    "anchorX": 50.0,
+    "anchorY": 50.0,
+    "maxScale": 2.6,
+    "distractors": [
+      "Seat Ibiza",
+      "Cupra Formentor (restylee)",
+      "Fiat Punto"
+    ],
+    "slug": "nissan-micra-2003"
+  },
+  {
+    "name": "Nissan Juke (2019)",
+    "url": "assets/cars/nissan-juke-2019.jpg",
+    "wikiFile": "2019_Nissan_Juke_Tekna_-_1598cc_1.6_(110PS)_Petrol_-_Black_-_02-2024,_Front.jpg",
+    "anchorX": 50.0,
+    "anchorY": 50.0,
+    "maxScale": 2.6,
+    "distractors": [
+      "Volkswagen Golf R",
+      "Lancia Ypsilon (2010)",
+      "Renault Twingo III (2)"
+    ],
+    "slug": "nissan-juke-2019"
+  },
+  {
+    "name": "Nissan Note (2009)",
+    "url": "assets/cars/nissan-note-2009.jpg",
+    "wikiFile": "NISSAN_NOTE.jpg",
+    "anchorX": 95.9,
+    "anchorY": 58.8,
+    "maxScale": 2.6,
+    "distractors": [
+      "Lancia Ypsilon (2010)",
+      "Fiat 500X (2024)",
+      "Volvo C30 (2008)"
+    ],
+    "slug": "nissan-note-2009"
+  },
+  {
+    "name": "Nissan Patrol (2019)",
+    "url": "assets/cars/nissan-patrol-2019.jpg",
+    "wikiFile": "2019_Nissan_Patrol_Ti_(49325469561).jpg",
+    "anchorX": 96.1,
+    "anchorY": 51.3,
+    "maxScale": 2.6,
+    "distractors": [
+      "Land Rover Defender",
+      "Dacia Duster",
+      "Ford Kuga"
+    ],
+    "slug": "nissan-patrol-2019"
+  },
+  {
+    "name": "MG ZS",
+    "url": "assets/cars/mg-zs.jpg",
+    "wikiFile": "MG_ZS_Facelift_1X7A6412.jpg",
+    "anchorX": 18.6,
+    "anchorY": 57.5,
+    "maxScale": 2.6,
+    "distractors": [
+      "Nissan Juke (2019)",
+      "Volvo C30 (2008)",
+      "Renault Twingo III (2)"
+    ],
+    "slug": "mg-zs"
+  },
+  {
+    "name": "MG 3 Hybrid (2024)",
+    "url": "assets/cars/mg-3-hybrid-2024.jpg",
+    "wikiFile": "2024_MG_3_Trophy_Hybrid_4.jpg",
+    "anchorX": 66.3,
+    "anchorY": 68.5,
+    "maxScale": 2.6,
+    "distractors": [
+      "MG ZS",
+      "Cupra Formentor",
+      "Lancia Ypsilon (2010)"
+    ],
+    "slug": "mg-3-hybrid-2024"
+  },
+  {
+    "name": "Volvo XC40",
+    "url": "assets/cars/volvo-xc40.jpg",
+    "wikiFile": "Volvo_XC40_(rear_three-quarter_view)_at_Japan_Mobility_Show_Kansai_2025.jpg",
+    "anchorX": 30.8,
+    "anchorY": 45.1,
+    "maxScale": 5.2,
+    "distractors": [
+      "Renault Kangoo",
+      "Jaguar F-Pace",
+      "Ford Kuga"
+    ],
+    "slug": "volvo-xc40"
+  },
+  {
+    "name": "Volvo C30 (2008)",
+    "url": "assets/cars/volvo-c30-2008.jpg",
+    "wikiFile": "2008-2009_Volvo_C30_T5_hatchback_02.jpg",
+    "anchorX": 5.3,
+    "anchorY": 26.9,
+    "maxScale": 4.4,
+    "distractors": [
+      "Fiat Panda",
+      "Peugeot 208 GTi",
+      "Peugeot 208 (Mk2)"
+    ],
+    "slug": "volvo-c30-2008"
+  },
+  {
+    "name": "Jaecoo 5 (2025)",
+    "url": "assets/cars/jaecoo-5-2025.jpg",
+    "wikiFile": "2025_Jaecoo_5_1.6_Luxury_(United_Kingdom)_front_view.jpg",
+    "anchorX": 44.3,
+    "anchorY": 49.9,
+    "maxScale": 3.0,
+    "distractors": [
+      "Nissan Ariya",
+      "Toyota RAV4 GR Sport",
+      "Dacia Duster"
+    ],
+    "slug": "jaecoo-5-2025"
+  },
+  {
+    "name": "Lancia Ypsilon (2010)",
+    "url": "assets/cars/lancia-ypsilon-2010.jpg",
+    "wikiFile": "Lancia_Ypsilon_2010.jpg",
+    "anchorX": 84.5,
+    "anchorY": 59.0,
+    "maxScale": 3.1,
+    "distractors": [
+      "MG 3 Hybrid (2024)",
+      "Peugeot 208 (Mk2)",
+      "Fiat Panda"
+    ],
+    "slug": "lancia-ypsilon-2010"
+  },
+  {
+    "name": "Lancia Ypsilon (2025)",
+    "url": "assets/cars/lancia-ypsilon-2025.jpg",
+    "wikiFile": "Lancia_Ypsilon_2025_Hybrid.jpg",
+    "anchorX": 32.0,
+    "anchorY": 51.5,
+    "maxScale": 3.3,
+    "distractors": [
+      "Peugeot 208 (Mk2)",
+      "Renault Twingo III",
+      "Cupra Formentor"
+    ],
+    "slug": "lancia-ypsilon-2025"
+  },
+  {
+    "name": "Lexus CT 200h",
+    "url": "assets/cars/lexus-ct-200h.jpg",
+    "wikiFile": "LEXUS_CT_200h_China_(21).jpg",
+    "anchorX": 84.0,
+    "anchorY": 28.1,
+    "maxScale": 2.6,
+    "distractors": [
+      "Volkswagen Phaeton",
+      "Fiat Multipla",
+      "Fiat 500e"
+    ],
+    "slug": "lexus-ct-200h"
+  },
+  {
+    "name": "Lexus LBX (2024)",
+    "url": "assets/cars/lexus-lbx-2024.jpg",
+    "wikiFile": "Lexus_LBX_IMG_8839.jpg",
+    "anchorX": 72.5,
+    "anchorY": 57.0,
+    "maxScale": 2.6,
+    "distractors": [
+      "Renault Mégane IV",
+      "Mercedes-Benz Classe C",
+      "Alfa Romeo Giulia"
+    ],
+    "slug": "lexus-lbx-2024"
+  },
+  {
+    "name": "Porsche 911 Turbo S (992)",
+    "url": "assets/cars/porsche-911-turbo-s-992.jpg",
+    "wikiFile": "Porsche_992_Turbo_S_1X7A0413.jpg",
+    "anchorX": 93.9,
+    "anchorY": 50.2,
+    "maxScale": 2.6,
+    "distractors": [
+      "Lamborghini Urus",
+      "Aston Martin DB12",
+      "Porsche 911 Turbo S"
+    ],
+    "slug": "porsche-911-turbo-s-992"
+  },
+  {
+    "name": "Porsche Macan Electrique (2024)",
+    "url": "assets/cars/porsche-macan-electrique-2024.jpg",
+    "wikiFile": "Porsche_Macan_4_IMG_2153.jpg",
+    "anchorX": 31.7,
+    "anchorY": 56.7,
+    "maxScale": 2.6,
+    "distractors": [
+      "Alpine A110 Gendarmerie",
+      "Aston Martin DB12",
+      "Ferrari FF"
+    ],
+    "slug": "porsche-macan-electrique-2024"
   }
 ]

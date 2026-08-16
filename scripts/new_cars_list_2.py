@@ -1,0 +1,42 @@
+# Batch 2 - initial name guesses (dates added where I can infer them from the
+# filename; ambiguous ones get checked visually after download and finalized
+# in integrate_new_cars_2.py before compression).
+NEW_CARS_2 = [
+    {"wikiFile": "Fiat_Punto_GT_-_Modell_1993.jpg", "name_guess": "Fiat Punto GT (1993)"},
+    {"wikiFile": "Fiat_500X_Lounge_%E2%80%93_f_08062024.jpg", "name_guess": "Fiat 500X"},
+    {"wikiFile": "Fiat_Topolino_Paris.jpg", "name_guess": "Fiat Topolino"},
+    {"wikiFile": "Citroen-2CV6Special-Gris-Rose-Rosado-AC136-EVA-EVK-GVC-01-byRundvald.jpg", "name_guess": "Citroen 2CV"},
+    {"wikiFile": "Citroen_vom_Oldtimertreffen_2019_Bauma_03.jpg", "name_guess": "Citroen (a identifier)"},
+    {"wikiFile": "Citroen-e-Mehari-av-Belle-Ile-en-Mer-byRundvald.jpg", "name_guess": "Citroen e-Mehari"},
+    {"wikiFile": "2008-06-28_0979_Citroen_Traction_Avant_11_B_(Heck).JPG", "name_guess": "Citroen Traction Avant"},
+    {"wikiFile": "CITROEN_C4_PICASSO_China.jpg", "name_guess": "Citroen C4 Picasso"},
+    {"wikiFile": "DS_4_E-Tense_IMG_7454.jpg", "name_guess": "DS 4 E-Tense"},
+    {"wikiFile": "Alpine-A110-Berlinette-avant.jpg", "name_guess": "Alpine A110 (1963)"},
+    {"wikiFile": "Alpine-A110-Brigade-Rapide-dIntervention-Gendarmerie-Francaise.jpg", "name_guess": "Alpine A110 Gendarmerie"},
+    {"wikiFile": "2024_Tesla_Cybertruck_Foundation_Series_IMG_0634_(cropped).jpg", "name_guess": "Tesla Cybertruck"},
+    {"wikiFile": "2024_Tesla_Cybertruck_Foundation_Series_IMG_0642.jpg", "name_guess": "Tesla Cybertruck (2)"},
+    {"wikiFile": "Peugeot_806_(46898249652).jpg", "name_guess": "Peugeot 806"},
+    {"wikiFile": "Peugeot_RCZ_a_St_Trond.jpg", "name_guess": "Peugeot RCZ"},
+    {"wikiFile": "Peugeot_3008_C_DSC_8318.jpg", "name_guess": "Peugeot 3008"},
+    {"wikiFile": "Peugeot_5008_C_Automesse_Ludwigsburg_2024_IMG_1460.jpg", "name_guess": "Peugeot 5008"},
+    {"wikiFile": "FordFocus-Tandil-ago2016.jpg", "name_guess": "Ford Focus (2016)"},
+    {"wikiFile": "2017_Nissan_Micra_N-Connecta_IG-T_900cc_Front_(1).jpg", "name_guess": "Nissan Micra (2017)"},
+    {"wikiFile": "2003_Nissan_Micra_E_1.0_(Front).jpg", "name_guess": "Nissan Micra (2003)"},
+    {"wikiFile": "2019_Nissan_Juke_Tekna_-_1598cc_1.6_(110PS)_Petrol_-_Black_-_02-2024,_Front.jpg", "name_guess": "Nissan Juke"},
+    {"wikiFile": "NISSAN_NOTE.jpg", "name_guess": "Nissan Note"},
+    {"wikiFile": "2019_Nissan_Patrol_Ti_(49325469561).jpg", "name_guess": "Nissan Patrol"},
+    {"wikiFile": "MG_ZS_Facelift_1X7A6412.jpg", "name_guess": "MG ZS"},
+    {"wikiFile": "2024_MG_3_Trophy_Hybrid_4.jpg", "name_guess": "MG 3 Hybrid"},
+    {"wikiFile": "Volvo_XC40_(rear_three-quarter_view)_at_Japan_Mobility_Show_Kansai_2025.jpg", "name_guess": "Volvo XC40"},
+    {"wikiFile": "2008-2009_Volvo_C30_T5_hatchback_02.jpg", "name_guess": "Volvo C30 (2008)"},
+    {"wikiFile": "2025_Jaecoo_5_1.6_Luxury_(United_Kingdom)_front_view.jpg", "name_guess": "Jaecoo 5"},
+    {"wikiFile": "Lancia_Ypsilon_2010.jpg", "name_guess": "Lancia Ypsilon (2010)"},
+    {"wikiFile": "Lancia_Ypsilon_2025_Hybrid.jpg", "name_guess": "Lancia Ypsilon (2025)"},
+    {"wikiFile": "LEXUS_CT_200h_China_(21).jpg", "name_guess": "Lexus CT 200h"},
+    {"wikiFile": "Lexus_LBX_IMG_8504.jpg", "name_guess": "Lexus LBX"},
+    {"wikiFile": "Lexus_LBX_IMG_8839.jpg", "name_guess": "Lexus LBX (2)"},
+    {"wikiFile": "Porsche_992_Turbo_S_1X7A0413.jpg", "name_guess": "Porsche 911 Turbo S (992)"},
+    {"wikiFile": "Porsche_Macan_4_IMG_2153.jpg", "name_guess": "Porsche Macan"},
+]
+
+print(len(NEW_CARS_2), "new cars queued (batch 2)")
