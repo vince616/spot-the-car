@@ -1000,6 +1000,10 @@ function scoreBreakdownHtml(p, compact){
   `;
 }
 
+// Interrupteur simple pour desactiver toute la pub (ex: build de test sans pub a montrer).
+// Remettre a true quand on veut retester/valider le flux AdMob.
+const ADS_ENABLED = false;
+
 // IDs DE TEST Google -- remplacer par les vrais ID une fois la fiche AdMob prete,
 // et passer ADMOB_USE_TEST_IDS a false. Ne jamais utiliser les vrais ID pendant le developpement.
 const ADMOB_APP_ID = "ca-app-pub-3940256099942544~3347511713";
@@ -1013,6 +1017,7 @@ function getAdMob(){
 }
 
 async function initAds(){
+  if(!ADS_ENABLED) return;
   const AdMob = getAdMob();
   if(!AdMob) return; // pas de pont natif Capacitor (ex: test dans un navigateur) -> pas de pub
   try{
@@ -1049,7 +1054,7 @@ function shouldShowAdThisRound(){
 function endGame(){
   const AdMob = getAdMob();
   const isAdRound = shouldShowAdThisRound();
-  if(!AdMob || !interstitialReady || !isAdRound){
+  if(!ADS_ENABLED || !AdMob || !interstitialReady || !isAdRound){
     renderEnd();
     return;
   }
