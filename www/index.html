@@ -698,7 +698,7 @@ function shuffle(arr){
 
 function startGame(selectedMode){
   if(selectedMode) mode = selectedMode;
-  const totals = { classique: 20, facile: CARS.length, rapide: 10, illimitee: CARS.length };
+  const totals = { classique: 20, facile: 20, rapide: 10, illimitee: CARS.length };
   const total = totals[mode] || 20;
   order = shuffle(CARS.map((_, i) => i)).slice(0, total);
   qIndex = 0;
