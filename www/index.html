@@ -1369,13 +1369,9 @@ function prepareInterstitialAd(){
     .catch((e) => { interstitialReady = false; adLog('prepareInterstitial FAILED: ' + (e && (e.message || JSON.stringify(e)))); });
 }
 
-// Affiche une pub toutes les 2 parties terminees (1 sur 2), jamais a chaque fois
+// Affiche une pub a chaque fin de partie, quel que soit le mode
 function shouldShowAdThisRound(){
-  let count = 0;
-  try{ count = parseInt(localStorage.getItem('spotthecar_rounds_played') || '0', 10) || 0; }catch(e){}
-  count += 1;
-  try{ localStorage.setItem('spotthecar_rounds_played', String(count)); }catch(e){}
-  return count % 2 === 0;
+  return true;
 }
 
 // Affiche la pub interstitielle (si due et prete) AVANT de reveler l'ecran de score
