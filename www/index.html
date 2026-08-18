@@ -312,7 +312,7 @@ h1{
 .opt:active:not(:disabled){ transform: translateY(0); }
 .opt:focus-visible{ outline: 2px solid var(--amber); outline-offset: 2px; }
 
-.opt.correct{ background: rgba(63,174,106,0.18); border-color: var(--green); color: #d9f5e4; }
+.opt.correct{ background: var(--green); border-color: var(--green); color: #06210f; font-weight: 800; }
 .opt.wrong{ background: rgba(232,67,63,0.16); border-color: var(--red); color: #ffd9d7; transition: background 0.5s, border-color 0.5s, color 0.5s, opacity 0.5s; }
 .opt.wrong.settled{ background: var(--surface-2); border-color: var(--line); color: var(--muted); opacity: 0.6; }
 .opt.dim{ opacity: 0.45; }
@@ -1384,7 +1384,7 @@ function renderEnd(){
       ${isNewRecord ? '<div class="feedback correct" style="margin-top:2px;">\ud83c\udfc6 Record battu !</div>' : ''}
       <div class="dash-label" style="margin-top:14px;">${metricLabel}</div>
       <div style="font-family:'JetBrains Mono',monospace; font-size:20px; color:var(--text); margin-top:4px;">${metric}</div>
-      ${scoreBreakdownHtml(p1)}
+      ${mode === 'illimitee' ? '' : scoreBreakdownHtml(p1)}
       <div class="dash-label" style="margin-top:12px;">Meilleur score \u00b7 ${MODE_LABELS[mode] || mode}</div>
       <div style="font-family:'JetBrains Mono',monospace; font-size:18px; color:var(--amber); margin-top:2px;">${displayedBest}</div>
     `;
