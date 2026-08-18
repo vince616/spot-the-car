@@ -82,7 +82,8 @@ h1{
 
 .subtitle{
   text-align:center;
-  color: var(--muted);
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.85);
   font-size: clamp(9px, 2.1vh, 12px);
   flex-shrink: 0;
   line-height: 1.25;
@@ -718,14 +719,21 @@ const CARS = [
   { name: "Porsche Macan Electrique (2024)", url: "assets/cars/porsche-macan-electrique-2024.jpg", wikiFile: "Porsche_Macan_4_IMG_2153.jpg", brand: "Porsche", model: "Macan", anchorX: 31.7, anchorY: 56.7, maxScale: 2.6, distractors: ["Alpine A110 Gendarmerie", "Aston Martin DB12", "Ferrari FF"] }
 ];
 
-// Mode Expert : marque/modele deduits du catalogue, pour les listes deroulantes
+// Mode Expert : marque/modele deduits du catalogue, pour les listes deroulantes.
+// EXTRA_MODELS_BY_BRAND ajoute de vrais modeles supplementaires (sans photo) pour
+// garantir au moins ~6 choix par marque meme quand le catalogue photo n'en a qu'1 ou 2
+// -- sinon la liste "Modele" trahirait presque la reponse a elle seule.
+const EXTRA_MODELS_BY_BRAND = {"Mazda": ["3", "6", "2", "CX-5", "RX-7"], "Hyundai": ["i30", "Tucson", "Kona", "Santa Fe", "Ioniq 5"], "Chevrolet": ["Camaro", "Silverado", "Malibu", "Cruze", "Spark"], "Alfa Romeo": ["Giulietta", "Stelvio", "4C", "156", "Spider"], "Ferrari": ["488", "F40", "Roma", "Portofino", "Testarossa"], "Seat": ["Leon", "Arona", "Ateca", "Tarraco", "Alhambra"], "Jaguar": ["XE", "XF", "F-Type", "E-Pace", "I-Pace"], "Morris": ["Marina", "Oxford", "Minor", "Ital", "1100"], "Cupra": ["Leon", "Ateca", "Born", "Tavascan", "Terramar"], "BYD": ["Atto 3", "Seal", "Han", "Tang", "Yuan"], "Bentley": ["Bentayga", "Flying Spur", "Mulsanne", "Arnage", "Azure"], "Rolls-Royce": ["Phantom", "Ghost", "Wraith", "Cullinan", "Corniche"], "DS": ["DS3", "DS3 Crossback", "DS5", "DS7", "DS9"], "Alpine": ["A290", "A106", "A108", "A310", "A610"], "Jaecoo": ["6", "7", "8", "J7", "J8"], "Lancia": ["Delta", "Fulvia", "Stratos", "Thema", "Musa"], "Skoda": ["Fabia", "Superb", "Kodiaq", "Kamiq"], "Mini": ["Clubman", "Countryman", "Paceman", "Coupe"], "Jeep": ["Renegade", "Compass", "Cherokee", "Gladiator"], "Kia": ["Picanto", "Ceed", "Niro", "Stonic"], "Porsche": ["Cayenne", "Panamera", "Taycan", "Boxster"], "Honda": ["Jazz", "CR-V", "Accord", "e:Ny1"], "Dacia": ["Spring", "Jogger", "Logan", "Bigster"], "Tesla": ["Model 3", "Model S", "Model X", "Roadster"], "Aston Martin": ["Vantage", "DBS", "DB11", "Vanquish"], "Lamborghini": ["Huracan", "Aventador", "Revuelto", "Diablo"], "MG": ["HS", "MG4", "Cyberster", "5"], "Volvo": ["XC60", "XC90", "S60"], "Land Rover": ["Discovery", "Range Rover Evoque", "Range Rover Velar"], "Audi": ["A3", "Q5", "e-tron"], "Lexus": ["RX", "NX", "IS"], "Opel": ["Astra", "Insignia", "Crossland"], "BMW": ["Serie 5", "X3"], "Mercedes-Benz": ["Classe A", "GLC"], "Toyota": ["Prius", "C-HR"], "Volkswagen": ["Passat"]};
 const ALL_BRANDS = [...new Set(CARS.map(c => c.brand))].sort();
 const MODELS_BY_BRAND = {};
 CARS.forEach(c => {
   if(!MODELS_BY_BRAND[c.brand]) MODELS_BY_BRAND[c.brand] = new Set();
   MODELS_BY_BRAND[c.brand].add(c.model);
 });
-Object.keys(MODELS_BY_BRAND).forEach(b => { MODELS_BY_BRAND[b] = [...MODELS_BY_BRAND[b]].sort(); });
+Object.keys(MODELS_BY_BRAND).forEach(b => {
+  (EXTRA_MODELS_BY_BRAND[b] || []).forEach(m => MODELS_BY_BRAND[b].add(m));
+  MODELS_BY_BRAND[b] = [...MODELS_BY_BRAND[b]].sort();
+});
 const ALL_MODELS = [...new Set(CARS.map(c => c.model))].sort();
 
 function normalizeAnswer(s){
@@ -1204,7 +1212,7 @@ function render(picked, correct){
 
   document.getElementById("app").innerHTML = `
     <img src="data:image/png;base64,${LOGO_B64}" alt="Spot the Car" class="logo-title" onclick="renderHome()" role="button" aria-label="Retour a l accueil">
-    <div class="subtitle">${mode === 'expert' ? 'Un détail zoomé. Écris la marque et le modèle exacts.<br>Tu as 3 jokers.' : 'Un détail zoomé. Quatre choix. À toi de reconnaître le modèle.'}</div>
+    <div class="subtitle">${mode === 'expert' ? 'Un détail zoomé. Écris la marque et le modèle exacts.<br>Tu as 3 jokers.' : 'Un détail zoomé. Quatre choix.<br>À toi de reconnaître le modèle.'}</div>
     ${twoPlayer ? `<div class="turn-banner">Au tour du Joueur ${currentPlayer+1}</div>` : ``}
 
     <div class="dash">
