@@ -852,12 +852,52 @@ function chooseMode(m){
   startGame(m);
 }
 
+// Cle marque+modele d'un nom de voiture du catalogue (null si le nom n'existe pas
+// dans CARS -- dans ce cas on le considere toujours distinct, il n'y a pas de risque
+// de confusion avec un vrai variant du meme modele).
+function brandModelKeyForName(name){
+  const c = CARS.find(x => x.name === name);
+  return c ? normalizeAnswer(c.brand) + '|' + normalizeAnswer(c.model) : null;
+}
+
+// Construit les 4 options d'une question en s'assurant qu'aucune paire ne partage
+// la meme marque+modele (ex: "Renault Twingo III" et "Renault Twingo III (2)" ne
+// doivent jamais apparaitre ensemble) -- un distracteur en collision est remplace
+// par un nom pioche aleatoirement dans le reste du catalogue.
+function buildOptionsFor(car){
+  const usedNames = new Set([car.name]);
+  const usedKeys = new Set([normalizeAnswer(car.brand) + '|' + normalizeAnswer(car.model)]);
+  const fallbackPool = shuffle(CARS.filter(c => c !== car).map(c => c.name));
+  let fbIdx = 0;
+
+  function nextFallback(){
+    while(fbIdx < fallbackPool.length){
+      const candidate = fallbackPool[fbIdx++];
+      const key = brandModelKeyForName(candidate);
+      if(!usedNames.has(candidate) && (key === null || !usedKeys.has(key))) return candidate;
+    }
+    return null;
+  }
+
+  const options = [car.name];
+  for(const d of car.distractors){
+    const key = brandModelKeyForName(d);
+    const collides = usedNames.has(d) || (key !== null && usedKeys.has(key));
+    const finalName = collides ? (nextFallback() || d) : d;
+    options.push(finalName);
+    usedNames.add(finalName);
+    const finalKey = brandModelKeyForName(finalName);
+    if(finalKey !== null) usedKeys.add(finalKey);
+  }
+  return options;
+}
+
 function loadQuestion(){
   level = (mode === 'facile') ? N_LEVELS - 1 : 0;
   eliminated = [];
   resolved = false;
   const car = CARS[order[qIndex]];
-  currentOptions = shuffle([car.name, ...car.distractors]);
+  currentOptions = shuffle(buildOptionsFor(car));
   render();
 }
 
