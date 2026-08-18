@@ -1311,15 +1311,11 @@ function scoreBreakdownHtml(p, compact){
   `;
 }
 
-// Interrupteur simple pour desactiver toute la pub (ex: build de test sans pub a montrer).
-// Remettre a true quand on veut retester/valider le flux AdMob.
-const ADS_ENABLED = false;
+const ADS_ENABLED = true;
 
-// IDs DE TEST Google -- remplacer par les vrais ID une fois la fiche AdMob prete,
-// et passer ADMOB_USE_TEST_IDS a false. Ne jamais utiliser les vrais ID pendant le developpement.
-const ADMOB_APP_ID = "ca-app-pub-3940256099942544~3347511713";
-const ADMOB_INTERSTITIAL_ID = "ca-app-pub-3940256099942544/1033173712";
-const ADMOB_USE_TEST_IDS = true;
+const ADMOB_APP_ID = "ca-app-pub-6262147498535174~7950228465";
+const ADMOB_INTERSTITIAL_ID = "ca-app-pub-6262147498535174/7830080012";
+const ADMOB_USE_TEST_IDS = false;
 
 let interstitialReady = false;
 
