@@ -1319,6 +1319,23 @@ const ADMOB_USE_TEST_IDS = false;
 
 let interstitialReady = false;
 
+// Panneau de debug temporaire (a retirer une fois la pub confirmee fonctionnelle en prod).
+const AD_DEBUG = true;
+function adLog(msg){
+  if(!AD_DEBUG) return;
+  console.warn('[AdDebug]', msg);
+  let box = document.getElementById('ad-debug-box');
+  if(!box){
+    box = document.createElement('div');
+    box.id = 'ad-debug-box';
+    box.style.cssText = 'position:fixed;top:0;left:0;right:0;max-height:40vh;overflow-y:auto;background:rgba(0,0,0,.85);color:#0f0;font:11px/1.4 monospace;padding:6px;z-index:99999;white-space:pre-wrap;';
+    document.body.appendChild(box);
+  }
+  const line = document.createElement('div');
+  line.textContent = new Date().toLocaleTimeString() + ' ' + msg;
+  box.appendChild(line);
+}
+
 function getAdMob(){
   return (window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.AdMob) || null;
 }
@@ -1326,16 +1343,19 @@ function getAdMob(){
 async function initAds(){
   if(!ADS_ENABLED) return;
   const AdMob = getAdMob();
-  if(!AdMob) return; // pas de pont natif Capacitor (ex: test dans un navigateur) -> pas de pub
+  if(!AdMob){ adLog('AdMob plugin absent (pas de pont natif)'); return; }
   try{
     const consentInfo = await AdMob.requestConsentInfo();
+    adLog('consentInfo: ' + JSON.stringify(consentInfo));
     if(consentInfo.isConsentFormAvailable && consentInfo.status === 'REQUIRED'){
       await AdMob.showConsentForm();
+      adLog('consent form affiche et resolu');
     }
     await AdMob.initialize();
+    adLog('AdMob.initialize OK');
     prepareInterstitialAd();
   }catch(e){
-    console.warn('AdMob init failed', e);
+    adLog('AdMob init FAILED: ' + (e && (e.message || JSON.stringify(e))));
   }
 }
 
@@ -1343,9 +1363,10 @@ function prepareInterstitialAd(){
   const AdMob = getAdMob();
   if(!AdMob) return;
   interstitialReady = false;
+  adLog('prepareInterstitial appele...');
   AdMob.prepareInterstitial({ adId: ADMOB_INTERSTITIAL_ID, isTesting: ADMOB_USE_TEST_IDS })
-    .then(() => { interstitialReady = true; })
-    .catch(() => { interstitialReady = false; });
+    .then(() => { interstitialReady = true; adLog('prepareInterstitial OK, prete'); })
+    .catch((e) => { interstitialReady = false; adLog('prepareInterstitial FAILED: ' + (e && (e.message || JSON.stringify(e)))); });
 }
 
 // Affiche une pub toutes les 2 parties terminees (1 sur 2), jamais a chaque fois
@@ -1361,24 +1382,28 @@ function shouldShowAdThisRound(){
 function endGame(){
   const AdMob = getAdMob();
   const isAdRound = shouldShowAdThisRound();
+  adLog(`endGame: AdMob=${!!AdMob} interstitialReady=${interstitialReady} isAdRound=${isAdRound}`);
   if(!ADS_ENABLED || !AdMob || !interstitialReady || !isAdRound){
     renderEnd();
     return;
   }
   let done = false;
   let handles = [];
-  const finish = () => {
+  const finish = (info) => {
     if(done) return;
     done = true;
+    if(info) adLog('interstitial event: ' + JSON.stringify(info));
     handles.forEach(h => h.remove());
     renderEnd();
     prepareInterstitialAd();
   };
   Promise.all([
-    AdMob.addListener('interstitialAdDismissed', finish),
-    AdMob.addListener('interstitialAdFailedToShow', finish),
+    AdMob.addListener('interstitialAdDismissed', () => finish({ event: 'dismissed' })),
+    AdMob.addListener('interstitialAdFailedToShow', (e) => finish({ event: 'failedToShow', e })),
   ]).then(hs => { handles = hs; });
-  AdMob.showInterstitial().catch(finish);
+  AdMob.showInterstitial()
+    .then(() => adLog('showInterstitial() resolved (pub affichee)'))
+    .catch((e) => { adLog('showInterstitial FAILED: ' + (e && (e.message || JSON.stringify(e)))); finish(); });
 }
 
 function renderEnd(){
