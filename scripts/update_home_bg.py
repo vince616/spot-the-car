@@ -1,7 +1,7 @@
 import base64, io
 from PIL import Image
 
-SRC = r"C:\Users\vincent.krief\Downloads\Spot the car page d'accueil.png"
+SRC = r"C:\Users\vincent.krief\Downloads\Spot the car page d'accueil v2.png"
 HTML = r"C:\Users\vincent.krief\Downloads\spot-the-car-app\www\index.html"
 
 im = Image.open(SRC).convert("RGB")
