@@ -777,24 +777,20 @@ let currentPlayer = 0;
 let turnPointer = 0;
 let jokers = 3; // mode expert : 3 erreurs/dezooms tolérés sur toute la partie
 
-// Le bouton retour materiel Android ferme l'appli par defaut (la WebView n'a pas
-// d'historique puisqu'on ne charge jamais qu'une seule page) -- on simule un historique
-// d'un seul cran pour que "retour" ramene a l'accueil au lieu de quitter l'appli.
-function pushBackGuard(){
-  if(!history.state || !history.state.stcGuard){
-    history.pushState({ stcGuard: true }, '');
-  }
+// Le bouton retour materiel Android quitte l'appli par defaut. Le plugin @capacitor/app
+// est le seul moyen fiable d'intercepter cet evenement cote natif : on revient a l'accueil
+// depuis n'importe quel ecran, et on quitte vraiment seulement si on y est deja.
+function initBackButton(){
+  const CapApp = window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.App;
+  if(!CapApp) return;
+  CapApp.addListener('backButton', function(){
+    if(document.querySelector('.home-screen')){
+      CapApp.exitApp();
+    } else {
+      renderHome();
+    }
+  });
 }
-function goHome(){
-  if(history.state && history.state.stcGuard){
-    history.back(); // declenche popstate -> renderHome()
-  } else {
-    renderHome();
-  }
-}
-window.addEventListener('popstate', function(){
-  renderHome();
-});
 
 function shuffle(arr){
   const a = [...arr];
@@ -806,7 +802,6 @@ function shuffle(arr){
 }
 
 function startGame(selectedMode){
-  pushBackGuard();
   if(selectedMode) mode = selectedMode;
   const totals = { classique: 20, facile: 20, rapide: 10, illimitee: CARS.length, expert: CARS.length };
   const total = totals[mode] || 20;
@@ -846,17 +841,16 @@ function openSettings(){
 }
 
 function renderSettings(){
-  pushBackGuard();
   document.getElementById("app").innerHTML = `
     <div class="home-screen">
       <div class="home-photo" style="background-image:url('data:image/jpeg;base64,${SETTINGS_BG_B64}'); aspect-ratio: 941 / 1672;">
-        <div class="home-hit" style="left:26.6%; top:8.4%; width:44.1%; height:15.1%;" onclick="goHome()" role="button" aria-label="Retour a l accueil (logo)"></div>
+        <div class="home-hit" style="left:26.6%; top:8.4%; width:44.1%; height:15.1%;" onclick="renderHome()" role="button" aria-label="Retour a l accueil (logo)"></div>
         <div class="home-hit" style="left:17.5%; top:31.8%; width:63.3%; height:10.2%;" onclick="startTwoPlayerGame()" role="button" aria-label="2 joueurs"></div>
         <div class="home-hit" style="left:17.5%; top:42.7%; width:63.3%; height:10.1%;" onclick="chooseMode('facile')" role="button" aria-label="Mode facile"></div>
         <div class="home-hit" style="left:17.5%; top:53.5%; width:63.3%; height:9.7%;" onclick="chooseMode('expert')" role="button" aria-label="Mode expert"></div>
         <div class="home-hit" style="left:17.5%; top:63.9%; width:63.3%; height:9.5%;" onclick="chooseMode('rapide')" role="button" aria-label="Partie rapide"></div>
         <div class="home-hit" style="left:17.5%; top:73.9%; width:63.3%; height:9.6%;" onclick="chooseMode('illimitee')" role="button" aria-label="Mort subite"></div>
-        <div class="home-hit" style="left:43.4%; top:84.7%; width:12.6%; height:4.5%;" onclick="goHome()" role="button" aria-label="Retour a l accueil"></div>
+        <div class="home-hit" style="left:43.4%; top:84.7%; width:12.6%; height:4.5%;" onclick="renderHome()" role="button" aria-label="Retour a l accueil"></div>
       </div>
     </div>
   `;
@@ -1214,7 +1208,7 @@ function render(picked, correct){
     : `<div class="options">${optionsHtml}</div>`;
 
   document.getElementById("app").innerHTML = `
-    <img src="data:image/png;base64,${LOGO_B64}" alt="Spot the Car" class="logo-title" onclick="goHome()" role="button" aria-label="Retour a l accueil">
+    <img src="data:image/png;base64,${LOGO_B64}" alt="Spot the Car" class="logo-title" onclick="renderHome()" role="button" aria-label="Retour a l accueil">
     <div class="subtitle">${mode === 'expert' ? 'Un détail zoomé. Écris la marque et le modèle exacts.<br>Tu as 3 jokers.' : 'Un détail zoomé. Quatre choix.<br>À toi de reconnaître le modèle.'}</div>
     ${twoPlayer ? `<div class="turn-banner">Au tour du Joueur ${currentPlayer+1}</div>` : ``}
 
@@ -1465,7 +1459,7 @@ function renderEnd(){
     </div>
     <div class="controls" style="margin-top:18px;">
       <button class="btn btn-primary" onclick="startGame()">\ud83d\udd01 Rejouer</button>
-      <button class="btn btn-ghost" onclick="goHome()" style="margin-top:8px;">Menu principal</button>
+      <button class="btn btn-ghost" onclick="renderHome()" style="margin-top:8px;">Menu principal</button>
     </div>
     <div class="credit">
       Toutes les photos proviennent de Wikimedia Commons, sous licences libres. Cliquez sur chaque cr\u00e9dit pendant la partie pour voir la source et l'auteur exact.
@@ -1487,6 +1481,7 @@ function handleImgError(){
 
 renderHome();
 initAds();
+initBackButton();
 </script>
 </body>
 </html>
