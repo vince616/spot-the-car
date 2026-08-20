@@ -1162,9 +1162,7 @@ function render(picked, correct){
       feedbackHtml = `<div class="feedback wrong">✗ C'était la ${car.name}</div>`;
     }
   } else {
-    feedbackHtml = mode === 'facile'
-      ? `<div class="feedback reveal">Regarde bien et devine le modèle</div>`
-      : ``;
+    feedbackHtml = ``;
   }
 
   let controlsHtml = "";
