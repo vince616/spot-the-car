@@ -40,7 +40,7 @@ html,body{
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  padding: calc(1.4vh + env(safe-area-inset-top, 0px)) 3vw calc(1vh + env(safe-area-inset-bottom, 0px));
+  padding: calc(1.4vh + env(safe-area-inset-top, 0px)) 3vw calc(1vh + max(40px, env(safe-area-inset-bottom, 0px)));
   gap: 0.6vh;
   background-image: var(--game-bg);
   background-size: cover;
@@ -266,7 +266,9 @@ h1{
   font-size: clamp(12px, 2.2vh, 14px);
   cursor: pointer;
 }
-.expert-dropdown-item:hover{ background: var(--surface); }
+@media (hover: hover){
+  .expert-dropdown-item:hover{ background: var(--surface); }
+}
 .expert-dropdown-empty{
   padding: 1.1vh 10px;
   color: var(--muted);
@@ -294,7 +296,9 @@ h1{
   line-height: 1.2;
   transition: transform 0.12s ease, border-color 0.2s, background 0.2s;
 }
-.opt:hover:not(:disabled){ border-color: var(--amber); transform: translateY(-1px); }
+@media (hover: hover){
+  .opt:hover:not(:disabled){ border-color: var(--amber); transform: translateY(-1px); }
+}
 .opt:active:not(:disabled){ transform: translateY(0); }
 .opt:focus-visible{ outline: 2px solid var(--amber); outline-offset: 2px; }
 
@@ -325,9 +329,11 @@ h1{
 }
 .btn:active{ transform: translateY(1px); }
 .btn-primary{ background: var(--amber); color: #1a1305; }
-.btn-primary:hover{ filter: brightness(1.08); }
 .btn-ghost{ background: var(--surface-2); color: var(--text); border: 1px solid var(--line); }
-.btn-ghost:hover{ filter: brightness(1.15); }
+@media (hover: hover){
+  .btn-primary:hover{ filter: brightness(1.08); }
+  .btn-ghost:hover{ filter: brightness(1.15); }
+}
 .btn:disabled{ opacity: 0.4; cursor: default; }
 
 .credit{
@@ -771,6 +777,25 @@ let currentPlayer = 0;
 let turnPointer = 0;
 let jokers = 3; // mode expert : 3 erreurs/dezooms tolérés sur toute la partie
 
+// Le bouton retour materiel Android ferme l'appli par defaut (la WebView n'a pas
+// d'historique puisqu'on ne charge jamais qu'une seule page) -- on simule un historique
+// d'un seul cran pour que "retour" ramene a l'accueil au lieu de quitter l'appli.
+function pushBackGuard(){
+  if(!history.state || !history.state.stcGuard){
+    history.pushState({ stcGuard: true }, '');
+  }
+}
+function goHome(){
+  if(history.state && history.state.stcGuard){
+    history.back(); // declenche popstate -> renderHome()
+  } else {
+    renderHome();
+  }
+}
+window.addEventListener('popstate', function(){
+  renderHome();
+});
+
 function shuffle(arr){
   const a = [...arr];
   for(let i = a.length - 1; i > 0; i--){
@@ -781,6 +806,7 @@ function shuffle(arr){
 }
 
 function startGame(selectedMode){
+  pushBackGuard();
   if(selectedMode) mode = selectedMode;
   const totals = { classique: 20, facile: 20, rapide: 10, illimitee: CARS.length, expert: CARS.length };
   const total = totals[mode] || 20;
@@ -820,16 +846,17 @@ function openSettings(){
 }
 
 function renderSettings(){
+  pushBackGuard();
   document.getElementById("app").innerHTML = `
     <div class="home-screen">
       <div class="home-photo" style="background-image:url('data:image/jpeg;base64,${SETTINGS_BG_B64}'); aspect-ratio: 941 / 1672;">
-        <div class="home-hit" style="left:26.6%; top:9.6%; width:45.7%; height:16.1%;" onclick="renderHome()" role="button" aria-label="Retour a l accueil (logo)"></div>
+        <div class="home-hit" style="left:26.6%; top:9.6%; width:45.7%; height:16.1%;" onclick="goHome()" role="button" aria-label="Retour a l accueil (logo)"></div>
         <div class="home-hit" style="left:17.0%; top:35.9%; width:65.6%; height:11.1%;" onclick="startTwoPlayerGame()" role="button" aria-label="2 joueurs"></div>
         <div class="home-hit" style="left:17.0%; top:47.9%; width:65.6%; height:10.9%;" onclick="chooseMode('facile')" role="button" aria-label="Mode facile"></div>
         <div class="home-hit" style="left:17.0%; top:59.6%; width:65.6%; height:10.6%;" onclick="chooseMode('expert')" role="button" aria-label="Mode expert"></div>
         <div class="home-hit" style="left:17.0%; top:70.9%; width:65.6%; height:10.1%;" onclick="chooseMode('rapide')" role="button" aria-label="Partie rapide"></div>
         <div class="home-hit" style="left:17.0%; top:81.9%; width:65.6%; height:10.3%;" onclick="chooseMode('illimitee')" role="button" aria-label="Mort subite"></div>
-        <div class="home-hit" style="left:43.1%; top:93.6%; width:13.4%; height:4.8%;" onclick="renderHome()" role="button" aria-label="Retour a l accueil"></div>
+        <div class="home-hit" style="left:43.1%; top:93.6%; width:13.4%; height:4.8%;" onclick="goHome()" role="button" aria-label="Retour a l accueil"></div>
       </div>
     </div>
   `;
@@ -1189,7 +1216,7 @@ function render(picked, correct){
     : `<div class="options">${optionsHtml}</div>`;
 
   document.getElementById("app").innerHTML = `
-    <img src="data:image/png;base64,${LOGO_B64}" alt="Spot the Car" class="logo-title" onclick="renderHome()" role="button" aria-label="Retour a l accueil">
+    <img src="data:image/png;base64,${LOGO_B64}" alt="Spot the Car" class="logo-title" onclick="goHome()" role="button" aria-label="Retour a l accueil">
     <div class="subtitle">${mode === 'expert' ? 'Un détail zoomé. Écris la marque et le modèle exacts.<br>Tu as 3 jokers.' : 'Un détail zoomé. Quatre choix.<br>À toi de reconnaître le modèle.'}</div>
     ${twoPlayer ? `<div class="turn-banner">Au tour du Joueur ${currentPlayer+1}</div>` : ``}
 
@@ -1440,7 +1467,7 @@ function renderEnd(){
     </div>
     <div class="controls" style="margin-top:18px;">
       <button class="btn btn-primary" onclick="startGame()">\ud83d\udd01 Rejouer</button>
-      <button class="btn btn-ghost" onclick="renderHome()" style="margin-top:8px;">Menu principal</button>
+      <button class="btn btn-ghost" onclick="goHome()" style="margin-top:8px;">Menu principal</button>
     </div>
     <div class="credit">
       Toutes les photos proviennent de Wikimedia Commons, sous licences libres. Cliquez sur chaque cr\u00e9dit pendant la partie pour voir la source et l'auteur exact.
