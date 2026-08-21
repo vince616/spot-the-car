@@ -1,125 +1,1490 @@
 {
-  "assets/cars/peugeot-208-mk2.jpg": [[36.1, 30.1, 2.2, 4.1]],
-  "assets/cars/fiat-500l-cross.jpg": [[80.4, 46.5, 6.8, 8.2]],
-  "assets/cars/mazda-mx-5.jpg": [[23.6, 49.4, 10.2, 12.8]],
-  "assets/cars/volvo-245.jpg": [[56.1, 71.2, 1.5, 3.7]],
-  "assets/cars/hyundai-veloster.jpg": [[72, 65.9, 8, 6.2]],
-  "assets/cars/chevrolet-corvette.jpg": [[38, 66.8, 18.5, 18.1]],
-  "assets/cars/jeep-wrangler.jpg": [[67.8, 39.6, 7.1, 5.4]],
-  "assets/cars/kia-sorento.jpg": [[67, 55.7, 9, 7.8]],
-  "assets/cars/land-rover-defender.jpg": [[24.7, 54.5, 11.7, 4.5]],
-  "assets/cars/renault-4.jpg": [[26.4, 38.4, 5.9, 8.6]],
-  "assets/cars/renault-clio.jpg": [[88.5, 47.5, 7.4, 10.7], [89.4, 69.7, 6.8, 4.9]],
-  "assets/cars/peugeot-208-gti.jpg": [[19.1, 46.7, 5.6, 9.1], [76.5, 8, 21, 10.7], [76.2, 6.7, 21, 15.2]],
-  "assets/cars/porsche-911.jpg": [[68.2, 37.3, 5.3, 6.2]],
-  "assets/cars/ford-mustang.jpg": [[66.5, 41.4, 11.4, 7]],
-  "assets/cars/ford-mustang-1968.jpg": [[44.6, 66.9, 13.9, 5.8]],
-  "assets/cars/ford-edge.jpg": [[42.8, 51.3, 14.2, 10.3]],
-  "assets/cars/citroen-c2.jpg": [[50.9, 50, 4.9, 3.7]],
-  "assets/cars/bmw-x6-m.jpg": [[24.7, 43.5, 13.6, 9.5]],
-  "assets/cars/bmw-323i-e21.jpg": [[45.2, 53.4, 8, 7.4]],
-  "assets/cars/nissan-ariya.jpg": [[47.7, 51.7, 8.6, 7], [44.3, 65.3, 13.6, 7]],
-  "assets/cars/fiat-500-1967.jpg": [[43.4, 53.4, 9.6, 9.1]],
-  "assets/cars/fiat-punto.jpg": [[49.4, 43.6, 6.5, 8.6]],
-  "assets/cars/honda-civic.jpg": [[44.2, 59.2, 9.9, 10.7]],
-  "assets/cars/mercedes-benz-sl-r107.jpg": [[44.3, 47.7, 11.7, 11.9]],
-  "assets/cars/alfa-romeo-giulia.jpg": [[82.6, 30.8, 6.2, 7.4]],
-  "assets/cars/dacia-duster.jpg": [[83.4, 36.2, 9.9, 13.6]],
-  "assets/cars/toyota-rav4.jpg": [[45.5, 51.9, 9.6, 11.9]],
-  "assets/cars/fiat-panda.jpg": [[27.1, 54.7, 11.1, 13.6]],
-  "assets/cars/bmw-2000-classique.jpg": [[52.1, 60.9, 4, 6.2]],
-  "assets/cars/volkswagen-golf.jpg": [[12.7, 47.8, 8.3, 11.1]],
-  "assets/cars/toyota-yaris.jpg": [[79.5, 42.5, 9.6, 19.4]],
-  "assets/cars/ford-ranger.jpg": [[9.5, 37.5, 31.2, 9.1], [15.4, 52.3, 11.4, 6.6]],
-  "assets/cars/honda-hr-v.jpg": [[68.4, 39.6, 13, 21.4]],
-  "assets/cars/alfa-romeo-giulia-quadrifoglio.jpg": [[74.3, 36.3, 6.2, 7], [85.1, 36.3, 3.4, 4.1]],
-  "assets/cars/fiat-500l.jpg": [[52.4, 75, 14.8, 7.4], [52.4, 49.9, 11.7, 12.8]],
-  "assets/cars/fiat-500e.jpg": [[39.2, 50.8, 6.2, 9.1]],
-  "assets/cars/toyota-land-cruiser.jpg": [[65.6, 49.2, 15.8, 5.8]],
-  "assets/cars/peugeot-2008-ii.jpg": [[13.8, 42.2, 6.5, 16.1]],
-  "assets/cars/opel-corsa.jpg": [[10.5, 52.5, 8.6, 10.3]],
-  "assets/cars/renault-captur.jpg": [[21.4, 47.6, 11.1, 11.9]],
-  "assets/cars/citroen-c4-iii.jpg": [[14, 49.6, 13.6, 11.9]],
-  "assets/cars/volkswagen-polo.jpg": [[18.1, 50.9, 10.8, 9.9]],
-  "assets/cars/skoda-octavia.jpg": [[80.9, 48.8, 4.9, 6.2]],
-  "assets/cars/renault-megane-iv.jpg": [[81.5, 53.4, 8, 11.9]],
-  "assets/cars/peugeot-3008-ii.jpg": [[16.1, 49.3, 6.5, 9.5]],
-  "assets/cars/seat-ibiza.jpg": [[8.5, 51.4, 4.3, 6.6]],
-  "assets/cars/renault-twingo-iii.jpg": [[70.3, 46, 8.3, 13.6]],
-  "assets/cars/dacia-sandero.jpg": [[80.5, 48.5, 6.2, 8.2]],
-  "assets/cars/nissan-qashqai.jpg": [[11.7, 46.9, 10.5, 12.8]],
-  "assets/cars/renault-megane.jpg": [[77.6, 46.5, 7.4, 11.5]],
-  "assets/cars/mercedes-benz-560-sel-w126.jpg": [[19, 44, 8, 10.3]],
-  "assets/cars/mercedes-benz-classe-c.jpg": [[45.3, 45.2, 4, 5.4]],
-  "assets/cars/citroen-c3-iii.jpg": [[68.8, 42.8, 9.6, 9.5], [67.9, 59.7, 13, 9.5]],
-  "assets/cars/mercedes-benz-w123.jpg": [[76.6, 43.7, 9.3, 9.1]],
-  "assets/cars/renault-symbioz.jpg": [[75.7, 35, 4.9, 7.4], [70.2, 42.4, 15.8, 4.9]],
-  "assets/cars/citroen-c5-aircross.jpg": [[13.8, 42.8, 12.7, 10.7]],
-  "assets/cars/tesla-model-y.jpg": [[81.2, 45.7, 7.4, 9.1]],
-  "assets/cars/renault-austral.jpg": [[17, 36.7, 9.6, 14.4]],
-  "assets/cars/ford-puma.jpg": [[14.3, 42.9, 6.8, 9.5]],
-  "assets/cars/opel-mokka-e.jpg": [[72.1, 36.7, 10.8, 8.2], [64.7, 47.8, 21.3, 5.4]],
-  "assets/cars/opel-grandland.jpg": [[18.4, 38.4, 10.2, 9.1], [10.1, 45, 29, 5.8]],
-  "assets/cars/opel-grandland-x.jpg": [[4.6, 42.5, 5.9, 10.3], [1.5, 57.3, 7.1, 8.6]],
-  "assets/cars/renault-kangoo.jpg": [[14.5, 52, 8, 9.1]],
-  "assets/cars/renault-kangoo-iii.jpg": [[12.1, 51.2, 10.5, 11.1]],
-  "assets/cars/nissan-leaf.jpg": [[15.6, 35.1, 6.8, 7.8], [24.2, 50, 6.8, 4.5], [8.8, 59.9, 14.2, 8.2]],
-  "assets/cars/nissan-leaf-2019.jpg": [[15, 40.5, 9.9, 5.8], [16.6, 49.6, 10.2, 5.8]],
-  "assets/cars/jaguar-f-pace.jpg": [[16, 31.8, 7.4, 5.8], [30.2, 42.6, 5.9, 7.4], [4.3, 44.6, 5.6, 4.5]],
-  "assets/cars/jaguar-f-pace-2.jpg": [[9.3, 45.1, 10.2, 11.9]],
-  "assets/cars/aston-martin-db7-vantage.jpg": [[75.4, 45.1, 10.5, 7.4], [68.3, 54.2, 7.4, 6.2], [88.4, 53.7, 5.6, 3.7]],
-  "assets/cars/aston-martin-db12.jpg": [[77.6, 43, 15.1, 11.1]],
-  "assets/cars/range-rover-sport-svr.jpg": [[12.2, 40.6, 18.5, 7.8], [17.5, 52.5, 4.9, 1.6]],
-  "assets/cars/range-rover.jpg": [[8, 45.1, 13.6, 7.4]],
-  "assets/cars/morris-mini-minor-1959.jpg": [[13.6, 51.3, 9, 6.6]],
-  "assets/cars/mini-john-cooper-works.jpg": [[79.1, 43.1, 6.2, 6.2]],
-  "assets/cars/mini-cooper-1ere-generation.jpg": [[72.1, 49.3, 7.7, 5.4], [83.5, 54.2, 5.6, 5.4]],
-  "assets/cars/cupra-formentor-restylee.jpg": [[77.4, 41, 8.3, 5.4], [73.7, 49.7, 16.7, 3.7]],
-  "assets/cars/cupra-formentor.jpg": [[12, 51.3, 9.3, 7.8]],
-  "assets/cars/renault-twingo-iii-2.jpg": [[15.1, 54.3, 9.3, 7]],
-  "assets/cars/renault-4l-mk2.jpg": [[67.4, 58, 9.9, 7.4]],
-  "assets/cars/audi-100.jpg": [[55.7, 51.8, 15.1, 7]],
-  "assets/cars/byd-dolphin.jpg": [[68.4, 37.8, 19.8, 7], [83.6, 48.5, 10.8, 5.8]],
-  "assets/cars/kia-sportage.jpg": [[15.4, 38.6, 6.8, 4.9]],
-  "assets/cars/renault-megane-e-tech.jpg": [[77.2, 39.1, 11.1, 12.4]],
-  "assets/cars/renault-espace-v.jpg": [[19.2, 44.9, 9.3, 15.2], [14.9, 62.2, 14.5, 7.4]],
-  "assets/cars/volkswagen-golf-r.jpg": [[86.5, 35.9, 8.3, 8.6]],
-  "assets/cars/volkswagen-tiguan.jpg": [[10.6, 51.1, 8.6, 8.6]],
-  "assets/cars/ford-kuga.jpg": [[75.5, 37.9, 16.4, 7.8]],
-  "assets/cars/toyota-rav4-1994.jpg": [[75.9, 48.2, 7.7, 6.6]],
-  "assets/cars/toyota-rav4-gr-sport.jpg": [[13.2, 45.3, 6.2, 12.8], [8, 64.7, 14.5, 6.2]],
-  "assets/cars/toyota-rav4-2013.jpg": [[18.2, 31.4, 7.7, 6.6], [29.6, 46.2, 10.2, 7.8], [11.1, 45, 6.8, 7]],
-  "assets/cars/toyota-rav4-hybrid-2019.jpg": [[80.7, 45.8, 6.5, 6.6], [78.8, 59.4, 12.7, 6.2]],
-  "assets/cars/lamborghini-gallardo.jpg": [[10.1, 45.4, 3.7, 9.1], [63.8, 38.4, 13, 5.8]],
-  "assets/cars/lamborghini-urus.jpg": [[44.4, 46.6, 13.9, 5.4]],
-  "assets/cars/bentley-continental-gt.jpg": [[75.4, 43.8, 11.1, 7.4], [78.4, 60.3, 10.5, 5.8]],
-  "assets/cars/rolls-royce-silver-cloud-iii.jpg": [[37.4, 32.3, 8.6, 10.7]],
-  "assets/cars/fiat-500x-2024.jpg": [[14.1, 46.3, 5.9, 9.9]],
-  "assets/cars/fiat-topolino-2023.jpg": [[75.9, 50.4, 7.4, 10.7]],
-  "assets/cars/citroen-2cv.jpg": [[67.9, 52.1, 8, 13.2]],
-  "assets/cars/citroen-ds.jpg": [[52.9, 49.2, 5.3, 14]],
-  "assets/cars/citroen-e-mehari-2016.jpg": [[81, 42.7, 8.3, 8.6]],
-  "assets/cars/citroen-c4-picasso.jpg": [[21.9, 43.1, 11.7, 7.8], [46.9, 46, 8.3, 5.8], [10.4, 47.2, 3.4, 2.5]],
-  "assets/cars/ds-4-e-tense-2021.jpg": [[4, 46.8, 7.1, 5.8], [11.7, 46.4, 7.4, 3.7], [24.4, 48.9, 6.2, 2.9]],
-  "assets/cars/alpine-a110-gendarmerie.jpg": [[27, 49.7, 18.2, 7.4]],
-  "assets/cars/peugeot-806.jpg": [[20.3, 47.3, 8, 11.5]],
-  "assets/cars/peugeot-rcz.jpg": [[74.7, 43.6, 5.6, 7]],
-  "assets/cars/peugeot-3008-2023.jpg": [[10.9, 53.1, 10.2, 9.5]],
-  "assets/cars/peugeot-5008-2024.jpg": [[77.3, 39.9, 15.8, 8.6]],
-  "assets/cars/nissan-micra-2017.jpg": [[79.3, 51.8, 9.3, 9.5]],
-  "assets/cars/nissan-micra-2003.jpg": [[15.8, 53.1, 6.2, 8.6]],
-  "assets/cars/nissan-juke-2019.jpg": [[11.8, 46.6, 8.6, 6.6]],
-  "assets/cars/nissan-note-2009.jpg": [[79.5, 47.4, 12.4, 10.3]],
-  "assets/cars/nissan-patrol-2019.jpg": [[78.3, 44.1, 12, 8.2]],
-  "assets/cars/mg-zs.jpg": [[12.9, 54.8, 7.1, 7.4]],
-  "assets/cars/mg-3-hybrid-2024.jpg": [[73.2, 55.3, 5.6, 4.1], [74.4, 65.6, 6.8, 7]],
-  "assets/cars/volvo-xc40.jpg": [[41.1, 55.7, 9.9, 5.8], [56.3, 50.3, 20.4, 7], [79.1, 56.1, 1.9, 3.3]],
-  "assets/cars/volvo-c30-2008.jpg": [[10.9, 43.7, 17, 4.5]],
-  "assets/cars/jaecoo-5-2025.jpg": [[12.9, 42.9, 13, 10.3]],
-  "assets/cars/lancia-ypsilon-2010.jpg": [[82.7, 52.4, 6.8, 6.2]],
-  "assets/cars/lancia-ypsilon-2025.jpg": [[11.1, 41.3, 21, 6.6]],
-  "assets/cars/lexus-ct-200h.jpg": [[86.2, 39.3, 4, 3.3], [71.1, 48.3, 8.3, 6.6], [92.4, 44.2, 4.9, 4.1]],
-  "assets/cars/lexus-lbx-2024.jpg": [[26.7, 50.8, 6.8, 6.2]],
-  "assets/cars/porsche-911-turbo-s-992.jpg": [[77.7, 45.9, 15.4, 7]],
-  "assets/cars/porsche-macan-electrique-2024.jpg": [[17.5, 50, 4.3, 2.9]]
+  "assets/cars/peugeot-208-mk2.jpg": [
+    [
+      36.1,
+      30.1,
+      2.2,
+      4.1
+    ]
+  ],
+  "assets/cars/fiat-500l-cross.jpg": [
+    [
+      80.4,
+      46.5,
+      6.8,
+      8.2
+    ]
+  ],
+  "assets/cars/mazda-mx-5.jpg": [
+    [
+      23.6,
+      49.4,
+      10.2,
+      12.8
+    ]
+  ],
+  "assets/cars/hyundai-veloster.jpg": [
+    [
+      72,
+      65.9,
+      8,
+      6.2
+    ]
+  ],
+  "assets/cars/jeep-wrangler.jpg": [
+    [
+      67.8,
+      39.6,
+      7.1,
+      5.4
+    ]
+  ],
+  "assets/cars/kia-sorento.jpg": [
+    [
+      67,
+      55.7,
+      9,
+      7.8
+    ]
+  ],
+  "assets/cars/land-rover-defender.jpg": [
+    [
+      24.7,
+      54.5,
+      11.7,
+      4.5
+    ]
+  ],
+  "assets/cars/renault-4.jpg": [
+    [
+      26.4,
+      38.4,
+      5.9,
+      8.6
+    ]
+  ],
+  "assets/cars/renault-clio.jpg": [
+    [
+      88.5,
+      47.5,
+      7.4,
+      10.7
+    ],
+    [
+      89.4,
+      69.7,
+      6.8,
+      4.9
+    ]
+  ],
+  "assets/cars/peugeot-208-gti.jpg": [
+    [
+      19.1,
+      46.7,
+      5.6,
+      9.1
+    ],
+    [
+      76.5,
+      8,
+      21,
+      10.7
+    ],
+    [
+      76.2,
+      6.7,
+      21,
+      15.2
+    ]
+  ],
+  "assets/cars/porsche-911.jpg": [
+    [
+      68.2,
+      37.3,
+      5.3,
+      6.2
+    ]
+  ],
+  "assets/cars/ford-mustang.jpg": [
+    [
+      66.5,
+      41.4,
+      11.4,
+      7
+    ]
+  ],
+  "assets/cars/ford-mustang-1968.jpg": [
+    [
+      44.6,
+      66.9,
+      13.9,
+      5.8
+    ]
+  ],
+  "assets/cars/ford-edge.jpg": [
+    [
+      42.8,
+      51.3,
+      14.2,
+      10.3
+    ]
+  ],
+  "assets/cars/citroen-c2.jpg": [
+    [
+      50.9,
+      50,
+      4.9,
+      3.7
+    ]
+  ],
+  "assets/cars/bmw-x6-m.jpg": [
+    [
+      24.7,
+      43.5,
+      13.6,
+      9.5
+    ]
+  ],
+  "assets/cars/bmw-323i-e21.jpg": [
+    [
+      45.2,
+      53.4,
+      8,
+      7.4
+    ]
+  ],
+  "assets/cars/nissan-ariya.jpg": [
+    [
+      47.7,
+      51.7,
+      8.6,
+      7
+    ],
+    [
+      44.3,
+      65.3,
+      13.6,
+      7
+    ]
+  ],
+  "assets/cars/fiat-500-1967.jpg": [
+    [
+      43.4,
+      53.4,
+      9.6,
+      9.1
+    ]
+  ],
+  "assets/cars/fiat-punto.jpg": [
+    [
+      49.4,
+      43.6,
+      6.5,
+      8.6
+    ]
+  ],
+  "assets/cars/honda-civic.jpg": [
+    [
+      44.2,
+      59.2,
+      9.9,
+      10.7
+    ]
+  ],
+  "assets/cars/mercedes-benz-sl-r107.jpg": [
+    [
+      44.3,
+      47.7,
+      11.7,
+      11.9
+    ]
+  ],
+  "assets/cars/alfa-romeo-giulia.jpg": [
+    [
+      82.6,
+      30.8,
+      6.2,
+      7.4
+    ]
+  ],
+  "assets/cars/dacia-duster.jpg": [
+    [
+      83.4,
+      36.2,
+      9.9,
+      13.6
+    ]
+  ],
+  "assets/cars/toyota-rav4.jpg": [
+    [
+      45.5,
+      51.9,
+      9.6,
+      11.9
+    ]
+  ],
+  "assets/cars/fiat-panda.jpg": [
+    [
+      27.1,
+      54.7,
+      11.1,
+      13.6
+    ]
+  ],
+  "assets/cars/bmw-2000-classique.jpg": [
+    [
+      52.1,
+      60.9,
+      4,
+      6.2
+    ]
+  ],
+  "assets/cars/volkswagen-golf.jpg": [
+    [
+      12.7,
+      47.8,
+      8.3,
+      11.1
+    ]
+  ],
+  "assets/cars/toyota-yaris.jpg": [
+    [
+      79.5,
+      42.5,
+      9.6,
+      19.4
+    ]
+  ],
+  "assets/cars/ford-ranger.jpg": [
+    [
+      9.5,
+      37.5,
+      31.2,
+      9.1
+    ],
+    [
+      15.4,
+      52.3,
+      11.4,
+      6.6
+    ]
+  ],
+  "assets/cars/honda-hr-v.jpg": [
+    [
+      68.4,
+      39.6,
+      13,
+      21.4
+    ]
+  ],
+  "assets/cars/alfa-romeo-giulia-quadrifoglio.jpg": [
+    [
+      74.3,
+      36.3,
+      6.2,
+      7
+    ],
+    [
+      85.1,
+      36.3,
+      3.4,
+      4.1
+    ]
+  ],
+  "assets/cars/fiat-500l.jpg": [
+    [
+      52.4,
+      75,
+      14.8,
+      7.4
+    ],
+    [
+      52.4,
+      49.9,
+      11.7,
+      12.8
+    ]
+  ],
+  "assets/cars/fiat-500e.jpg": [
+    [
+      39.2,
+      50.8,
+      6.2,
+      9.1
+    ]
+  ],
+  "assets/cars/toyota-land-cruiser.jpg": [
+    [
+      65.6,
+      49.2,
+      15.8,
+      5.8
+    ]
+  ],
+  "assets/cars/peugeot-2008-ii.jpg": [
+    [
+      13.8,
+      42.2,
+      6.5,
+      16.1
+    ]
+  ],
+  "assets/cars/opel-corsa.jpg": [
+    [
+      10.5,
+      52.5,
+      8.6,
+      10.3
+    ]
+  ],
+  "assets/cars/renault-captur.jpg": [
+    [
+      21.4,
+      47.6,
+      11.1,
+      11.9
+    ]
+  ],
+  "assets/cars/citroen-c4-iii.jpg": [
+    [
+      14,
+      49.6,
+      13.6,
+      11.9
+    ]
+  ],
+  "assets/cars/volkswagen-polo.jpg": [
+    [
+      18.1,
+      50.9,
+      10.8,
+      9.9
+    ]
+  ],
+  "assets/cars/skoda-octavia.jpg": [
+    [
+      80.9,
+      48.8,
+      4.9,
+      6.2
+    ]
+  ],
+  "assets/cars/renault-megane-iv.jpg": [
+    [
+      81.5,
+      53.4,
+      8,
+      11.9
+    ]
+  ],
+  "assets/cars/peugeot-3008-ii.jpg": [
+    [
+      16.1,
+      49.3,
+      6.5,
+      9.5
+    ]
+  ],
+  "assets/cars/seat-ibiza.jpg": [
+    [
+      8.5,
+      51.4,
+      4.3,
+      6.6
+    ]
+  ],
+  "assets/cars/renault-twingo-iii.jpg": [
+    [
+      70.3,
+      46,
+      8.3,
+      13.6
+    ]
+  ],
+  "assets/cars/dacia-sandero.jpg": [
+    [
+      80.5,
+      48.5,
+      6.2,
+      8.2
+    ]
+  ],
+  "assets/cars/nissan-qashqai.jpg": [
+    [
+      11.7,
+      46.9,
+      10.5,
+      12.8
+    ]
+  ],
+  "assets/cars/renault-megane.jpg": [
+    [
+      77.6,
+      46.5,
+      7.4,
+      11.5
+    ]
+  ],
+  "assets/cars/mercedes-benz-560-sel-w126.jpg": [
+    [
+      19,
+      44,
+      8,
+      10.3
+    ]
+  ],
+  "assets/cars/mercedes-benz-classe-c.jpg": [
+    [
+      45.3,
+      45.2,
+      4,
+      5.4
+    ]
+  ],
+  "assets/cars/citroen-c3-iii.jpg": [
+    [
+      68.8,
+      42.8,
+      9.6,
+      9.5
+    ],
+    [
+      67.9,
+      59.7,
+      13,
+      9.5
+    ]
+  ],
+  "assets/cars/mercedes-benz-w123.jpg": [
+    [
+      76.6,
+      43.7,
+      9.3,
+      9.1
+    ]
+  ],
+  "assets/cars/renault-symbioz.jpg": [
+    [
+      75.7,
+      35,
+      4.9,
+      7.4
+    ],
+    [
+      70.2,
+      42.4,
+      15.8,
+      4.9
+    ]
+  ],
+  "assets/cars/citroen-c5-aircross.jpg": [
+    [
+      13.8,
+      42.8,
+      12.7,
+      10.7
+    ]
+  ],
+  "assets/cars/tesla-model-y.jpg": [
+    [
+      81.2,
+      45.7,
+      7.4,
+      9.1
+    ]
+  ],
+  "assets/cars/renault-austral.jpg": [
+    [
+      17,
+      36.7,
+      9.6,
+      14.4
+    ]
+  ],
+  "assets/cars/ford-puma.jpg": [
+    [
+      14.3,
+      42.9,
+      6.8,
+      9.5
+    ]
+  ],
+  "assets/cars/opel-mokka-e.jpg": [
+    [
+      72.1,
+      36.7,
+      10.8,
+      8.2
+    ],
+    [
+      64.7,
+      47.8,
+      21.3,
+      5.4
+    ]
+  ],
+  "assets/cars/opel-grandland.jpg": [
+    [
+      18.4,
+      38.4,
+      10.2,
+      9.1
+    ],
+    [
+      10.1,
+      45,
+      29,
+      5.8
+    ]
+  ],
+  "assets/cars/opel-grandland-x.jpg": [
+    [
+      4.6,
+      42.5,
+      5.9,
+      10.3
+    ],
+    [
+      1.5,
+      57.3,
+      7.1,
+      8.6
+    ]
+  ],
+  "assets/cars/renault-kangoo.jpg": [
+    [
+      14.5,
+      52,
+      8,
+      9.1
+    ]
+  ],
+  "assets/cars/renault-kangoo-iii.jpg": [
+    [
+      12.1,
+      51.2,
+      10.5,
+      11.1
+    ]
+  ],
+  "assets/cars/nissan-leaf.jpg": [
+    [
+      15.6,
+      35.1,
+      6.8,
+      7.8
+    ],
+    [
+      24.2,
+      50,
+      6.8,
+      4.5
+    ],
+    [
+      8.8,
+      59.9,
+      14.2,
+      8.2
+    ]
+  ],
+  "assets/cars/nissan-leaf-2019.jpg": [
+    [
+      15,
+      40.5,
+      9.9,
+      5.8
+    ],
+    [
+      16.6,
+      49.6,
+      10.2,
+      5.8
+    ]
+  ],
+  "assets/cars/jaguar-f-pace.jpg": [
+    [
+      16,
+      31.8,
+      7.4,
+      5.8
+    ],
+    [
+      30.2,
+      42.6,
+      5.9,
+      7.4
+    ],
+    [
+      4.3,
+      44.6,
+      5.6,
+      4.5
+    ]
+  ],
+  "assets/cars/jaguar-f-pace-2.jpg": [
+    [
+      9.3,
+      45.1,
+      10.2,
+      11.9
+    ]
+  ],
+  "assets/cars/aston-martin-db7-vantage.jpg": [
+    [
+      75.4,
+      45.1,
+      10.5,
+      7.4
+    ],
+    [
+      68.3,
+      54.2,
+      7.4,
+      6.2
+    ],
+    [
+      88.4,
+      53.7,
+      5.6,
+      3.7
+    ]
+  ],
+  "assets/cars/aston-martin-db12.jpg": [
+    [
+      77.6,
+      43,
+      15.1,
+      11.1
+    ]
+  ],
+  "assets/cars/range-rover-sport-svr.jpg": [
+    [
+      12.2,
+      40.6,
+      18.5,
+      7.8
+    ],
+    [
+      17.5,
+      52.5,
+      4.9,
+      1.6
+    ]
+  ],
+  "assets/cars/range-rover.jpg": [
+    [
+      8,
+      45.1,
+      13.6,
+      7.4
+    ]
+  ],
+  "assets/cars/morris-mini-minor-1959.jpg": [
+    [
+      13.6,
+      51.3,
+      9,
+      6.6
+    ]
+  ],
+  "assets/cars/mini-john-cooper-works.jpg": [
+    [
+      79.1,
+      43.1,
+      6.2,
+      6.2
+    ]
+  ],
+  "assets/cars/mini-cooper-1ere-generation.jpg": [
+    [
+      72.1,
+      49.3,
+      7.7,
+      5.4
+    ],
+    [
+      83.5,
+      54.2,
+      5.6,
+      5.4
+    ]
+  ],
+  "assets/cars/cupra-formentor-restylee.jpg": [
+    [
+      77.4,
+      41,
+      8.3,
+      5.4
+    ],
+    [
+      73.7,
+      49.7,
+      16.7,
+      3.7
+    ]
+  ],
+  "assets/cars/cupra-formentor.jpg": [
+    [
+      12,
+      51.3,
+      9.3,
+      7.8
+    ]
+  ],
+  "assets/cars/renault-twingo-iii-2.jpg": [
+    [
+      15.1,
+      54.3,
+      9.3,
+      7
+    ]
+  ],
+  "assets/cars/renault-4l-mk2.jpg": [
+    [
+      67.4,
+      58,
+      9.9,
+      7.4
+    ]
+  ],
+  "assets/cars/audi-100.jpg": [
+    [
+      55.7,
+      51.8,
+      15.1,
+      7
+    ]
+  ],
+  "assets/cars/byd-dolphin.jpg": [
+    [
+      68.4,
+      37.8,
+      19.8,
+      7
+    ],
+    [
+      83.6,
+      48.5,
+      10.8,
+      5.8
+    ]
+  ],
+  "assets/cars/kia-sportage.jpg": [
+    [
+      15.4,
+      38.6,
+      6.8,
+      4.9
+    ]
+  ],
+  "assets/cars/renault-megane-e-tech.jpg": [
+    [
+      77.2,
+      39.1,
+      11.1,
+      12.4
+    ]
+  ],
+  "assets/cars/renault-espace-v.jpg": [
+    [
+      19.2,
+      44.9,
+      9.3,
+      15.2
+    ],
+    [
+      14.9,
+      62.2,
+      14.5,
+      7.4
+    ]
+  ],
+  "assets/cars/volkswagen-golf-r.jpg": [
+    [
+      86.5,
+      35.9,
+      8.3,
+      8.6
+    ]
+  ],
+  "assets/cars/volkswagen-tiguan.jpg": [
+    [
+      10.6,
+      51.1,
+      8.6,
+      8.6
+    ]
+  ],
+  "assets/cars/ford-kuga.jpg": [
+    [
+      75.5,
+      37.9,
+      16.4,
+      7.8
+    ]
+  ],
+  "assets/cars/toyota-rav4-1994.jpg": [
+    [
+      75.9,
+      48.2,
+      7.7,
+      6.6
+    ]
+  ],
+  "assets/cars/toyota-rav4-gr-sport.jpg": [
+    [
+      13.2,
+      45.3,
+      6.2,
+      12.8
+    ],
+    [
+      8,
+      64.7,
+      14.5,
+      6.2
+    ]
+  ],
+  "assets/cars/toyota-rav4-2013.jpg": [
+    [
+      18.2,
+      31.4,
+      7.7,
+      6.6
+    ],
+    [
+      29.6,
+      46.2,
+      10.2,
+      7.8
+    ],
+    [
+      11.1,
+      45,
+      6.8,
+      7
+    ]
+  ],
+  "assets/cars/toyota-rav4-hybrid-2019.jpg": [
+    [
+      80.7,
+      45.8,
+      6.5,
+      6.6
+    ],
+    [
+      78.8,
+      59.4,
+      12.7,
+      6.2
+    ]
+  ],
+  "assets/cars/lamborghini-gallardo.jpg": [
+    [
+      10.1,
+      45.4,
+      3.7,
+      9.1
+    ],
+    [
+      63.8,
+      38.4,
+      13,
+      5.8
+    ]
+  ],
+  "assets/cars/lamborghini-urus.jpg": [
+    [
+      44.4,
+      46.6,
+      13.9,
+      5.4
+    ]
+  ],
+  "assets/cars/bentley-continental-gt.jpg": [
+    [
+      75.4,
+      43.8,
+      11.1,
+      7.4
+    ],
+    [
+      78.4,
+      60.3,
+      10.5,
+      5.8
+    ]
+  ],
+  "assets/cars/rolls-royce-silver-cloud-iii.jpg": [
+    [
+      37.4,
+      32.3,
+      8.6,
+      10.7
+    ]
+  ],
+  "assets/cars/fiat-500x-2024.jpg": [
+    [
+      14.1,
+      46.3,
+      5.9,
+      9.9
+    ]
+  ],
+  "assets/cars/fiat-topolino-2023.jpg": [
+    [
+      75.9,
+      50.4,
+      7.4,
+      10.7
+    ]
+  ],
+  "assets/cars/citroen-2cv.jpg": [
+    [
+      67.9,
+      52.1,
+      8,
+      13.2
+    ]
+  ],
+  "assets/cars/citroen-ds.jpg": [
+    [
+      52.9,
+      49.2,
+      5.3,
+      14
+    ]
+  ],
+  "assets/cars/citroen-e-mehari-2016.jpg": [
+    [
+      81,
+      42.7,
+      8.3,
+      8.6
+    ]
+  ],
+  "assets/cars/citroen-c4-picasso.jpg": [
+    [
+      21.9,
+      43.1,
+      11.7,
+      7.8
+    ],
+    [
+      46.9,
+      46,
+      8.3,
+      5.8
+    ],
+    [
+      10.4,
+      47.2,
+      3.4,
+      2.5
+    ]
+  ],
+  "assets/cars/ds-4-e-tense-2021.jpg": [
+    [
+      4,
+      46.8,
+      7.1,
+      5.8
+    ],
+    [
+      11.7,
+      46.4,
+      7.4,
+      3.7
+    ],
+    [
+      24.4,
+      48.9,
+      6.2,
+      2.9
+    ]
+  ],
+  "assets/cars/alpine-a110-gendarmerie.jpg": [
+    [
+      27,
+      49.7,
+      18.2,
+      7.4
+    ]
+  ],
+  "assets/cars/peugeot-806.jpg": [
+    [
+      20.3,
+      47.3,
+      8,
+      11.5
+    ]
+  ],
+  "assets/cars/peugeot-rcz.jpg": [
+    [
+      74.7,
+      43.6,
+      5.6,
+      7
+    ]
+  ],
+  "assets/cars/peugeot-3008-2023.jpg": [
+    [
+      10.9,
+      53.1,
+      10.2,
+      9.5
+    ]
+  ],
+  "assets/cars/peugeot-5008-2024.jpg": [
+    [
+      77.3,
+      39.9,
+      15.8,
+      8.6
+    ]
+  ],
+  "assets/cars/nissan-micra-2017.jpg": [
+    [
+      79.3,
+      51.8,
+      9.3,
+      9.5
+    ]
+  ],
+  "assets/cars/nissan-micra-2003.jpg": [
+    [
+      15.8,
+      53.1,
+      6.2,
+      8.6
+    ]
+  ],
+  "assets/cars/nissan-juke-2019.jpg": [
+    [
+      11.8,
+      46.6,
+      8.6,
+      6.6
+    ]
+  ],
+  "assets/cars/nissan-note-2009.jpg": [
+    [
+      79.5,
+      47.4,
+      12.4,
+      10.3
+    ]
+  ],
+  "assets/cars/nissan-patrol-2019.jpg": [
+    [
+      78.3,
+      44.1,
+      12,
+      8.2
+    ]
+  ],
+  "assets/cars/mg-zs.jpg": [
+    [
+      12.9,
+      54.8,
+      7.1,
+      7.4
+    ]
+  ],
+  "assets/cars/mg-3-hybrid-2024.jpg": [
+    [
+      73.2,
+      55.3,
+      5.6,
+      4.1
+    ],
+    [
+      74.4,
+      65.6,
+      6.8,
+      7
+    ]
+  ],
+  "assets/cars/volvo-xc40.jpg": [
+    [
+      41.1,
+      55.7,
+      9.9,
+      5.8
+    ],
+    [
+      56.3,
+      50.3,
+      20.4,
+      7
+    ],
+    [
+      79.1,
+      56.1,
+      1.9,
+      3.3
+    ]
+  ],
+  "assets/cars/volvo-c30-2008.jpg": [
+    [
+      10.9,
+      43.7,
+      17,
+      4.5
+    ]
+  ],
+  "assets/cars/jaecoo-5-2025.jpg": [
+    [
+      12.9,
+      42.9,
+      13,
+      10.3
+    ]
+  ],
+  "assets/cars/lancia-ypsilon-2010.jpg": [
+    [
+      82.7,
+      52.4,
+      6.8,
+      6.2
+    ]
+  ],
+  "assets/cars/lancia-ypsilon-2025.jpg": [
+    [
+      11.1,
+      41.3,
+      21,
+      6.6
+    ]
+  ],
+  "assets/cars/lexus-ct-200h.jpg": [
+    [
+      86.2,
+      39.3,
+      4,
+      3.3
+    ],
+    [
+      71.1,
+      48.3,
+      8.3,
+      6.6
+    ],
+    [
+      92.4,
+      44.2,
+      4.9,
+      4.1
+    ]
+  ],
+  "assets/cars/lexus-lbx-2024.jpg": [
+    [
+      26.7,
+      50.8,
+      6.8,
+      6.2
+    ]
+  ],
+  "assets/cars/porsche-911-turbo-s-992.jpg": [
+    [
+      77.7,
+      45.9,
+      15.4,
+      7
+    ]
+  ],
+  "assets/cars/porsche-macan-electrique-2024.jpg": [
+    [
+      17.5,
+      50,
+      4.3,
+      2.9
+    ]
+  ],
+  "assets/cars/alfa-romeo-tonale.jpg": [
+    [
+      85.7,
+      46.7,
+      6.8,
+      4
+    ],
+    [
+      90.9,
+      55.4,
+      8.4,
+      4
+    ]
+  ],
+  "assets/cars/alfa-romeo-junior.jpg": [
+    [
+      81.5,
+      52.1,
+      6,
+      12.7
+    ],
+    [
+      81.2,
+      46.3,
+      4.9,
+      5.1
+    ]
+  ],
+  "assets/cars/alfa-romeo-junior-2.jpg": [
+    [
+      77.3,
+      45.6,
+      4.9,
+      3.6
+    ],
+    [
+      77.8,
+      52.1,
+      9.8,
+      12.3
+    ]
+  ],
+  "assets/cars/audi-q2.jpg": [
+    [
+      14.8,
+      52.8,
+      11.7,
+      6.2
+    ]
+  ],
+  "assets/cars/dacia-spring.jpg": [
+    [
+      10.6,
+      54.4,
+      8.2,
+      6.5
+    ]
+  ],
+  "assets/cars/citroen-e-c5-aircross.jpg": [
+    [
+      81.2,
+      46.1,
+      6,
+      13.1
+    ],
+    [
+      80.9,
+      63.1,
+      8.2,
+      5.1
+    ]
+  ],
+  "assets/cars/bmw-i8.jpg": [
+    [
+      12.2,
+      49.3,
+      5.7,
+      4
+    ]
+  ],
+  "assets/cars/ford-explorer-ev.jpg": [
+    [
+      9.7,
+      44.3,
+      21.5,
+      4
+    ],
+    [
+      13.2,
+      49,
+      8.2,
+      4
+    ]
+  ],
+  "assets/cars/ford-capri-2024.jpg": [
+    [
+      87.1,
+      35.9,
+      6.5,
+      3.3
+    ],
+    [
+      83.3,
+      43.5,
+      14.7,
+      2.2
+    ]
+  ],
+  "assets/cars/hyundai-inster.jpg": [
+    [
+      19.5,
+      48.3,
+      4.1,
+      5.8
+    ]
+  ],
+  "assets/cars/suzuki-jimny.jpg": [
+    [
+      18,
+      50.9,
+      1.9,
+      4.3
+    ]
+  ],
+  "assets/cars/hyundai-kona.jpg": [
+    [
+      82.6,
+      43.3,
+      4.9,
+      4
+    ],
+    [
+      73.6,
+      48,
+      20.4,
+      2.5
+    ]
+  ],
+  "assets/cars/hyundai-ioniq-6.jpg": [
+    [
+      89.3,
+      48,
+      3.5,
+      4.3
+    ]
+  ],
+  "assets/cars/jeep-renegade.jpg": [
+    [
+      80.7,
+      40.8,
+      7.3,
+      5.1
+    ]
+  ],
+  "assets/cars/jeep-avenger.jpg": [
+    [
+      16.6,
+      42.9,
+      5.2,
+      5.1
+    ],
+    [
+      9.5,
+      60,
+      13.6,
+      7.3
+    ]
+  ],
+  "assets/cars/range-rover-evoque.jpg": [
+    [
+      5.6,
+      38.6,
+      22.6,
+      5.8
+    ],
+    [
+      28.4,
+      48,
+      3.5,
+      4
+    ]
+  ],
+  "assets/cars/mini-countryman.jpg": [
+    [
+      12.5,
+      45.6,
+      10.6,
+      3.6
+    ],
+    [
+      9.3,
+      60.5,
+      10.9,
+      4.3
+    ]
+  ],
+  "assets/cars/peugeot-308.jpg": [
+    [
+      14.6,
+      47.8,
+      4.9,
+      6.2
+    ],
+    [
+      5.9,
+      51.8,
+      5.4,
+      4
+    ]
+  ],
+  "assets/cars/skoda-fabia.jpg": [
+    [
+      12.5,
+      49.3,
+      2.7,
+      4.3
+    ]
+  ],
+  "assets/cars/seat-ateca.jpg": [
+    [
+      69.5,
+      47.8,
+      9,
+      6.2
+    ],
+    [
+      70.3,
+      57.2,
+      11.7,
+      6.2
+    ]
+  ],
+  "assets/cars/seat-arona.jpg": [
+    [
+      11.7,
+      50.3,
+      4.9,
+      6.5
+    ]
+  ],
+  "assets/cars/toyota-gr86.jpg": [
+    [
+      14,
+      53.2,
+      3.3,
+      6.5
+    ]
+  ],
+  "assets/cars/volkswagen-t-cross.jpg": [
+    [
+      12.5,
+      51.9,
+      6,
+      6.9
+    ]
+  ],
+  "assets/cars/volkswagen-t-roc-2021.jpg": [
+    [
+      11.8,
+      50.5,
+      7.1,
+      5.8
+    ]
+  ],
+  "assets/cars/volkswagen-id-5-gtx.jpg": [
+    [
+      77.3,
+      47.2,
+      6.8,
+      8.3
+    ]
+  ],
+  "assets/cars/smart-3.jpg": [
+    [
+      76.9,
+      49,
+      8.4,
+      4.3
+    ],
+    [
+      40.4,
+      46.5,
+      2.4,
+      5.4
+    ]
+  ]
 }

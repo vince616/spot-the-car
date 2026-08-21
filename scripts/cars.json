@@ -42,34 +42,6 @@
     "slug": "mazda-mx-5"
   },
   {
-    "name": "Volvo 245",
-    "url": "assets/cars/volvo-245.jpg",
-    "wikiFile": "Auto%20Volvo%20245%20Mayakovskogo%20street%20Mayakovskogo%20street%202025-01%20040.JPG",
-    "anchorX": 43.5,
-    "anchorY": 72.3,
-    "maxScale": 4.7,
-    "distractors": [
-      "Mercedes-Benz Classe E",
-      "Hyundai Genesis",
-      "Nissan Kicks"
-    ],
-    "slug": "volvo-245"
-  },
-  {
-    "name": "Skoda Favorit",
-    "url": "assets/cars/skoda-favorit.jpg",
-    "wikiFile": "1991%20Skoda%20Favrorit%20Forum%20Plus%20(14587340313).jpg",
-    "anchorX": 50.0,
-    "anchorY": 50.0,
-    "maxScale": 2.6,
-    "distractors": [
-      "Mini (classique)",
-      "Fiat 500 (1967)",
-      "BMW 326 Cabriolet (1936)"
-    ],
-    "slug": "skoda-favorit"
-  },
-  {
     "name": "Hyundai Veloster",
     "url": "assets/cars/hyundai-veloster.jpg",
     "wikiFile": "%2712%20Hyundai%20Veloster%20(%2712%20MIAS).JPG",
@@ -82,20 +54,6 @@
       "Nissan Altima"
     ],
     "slug": "hyundai-veloster"
-  },
-  {
-    "name": "Chevrolet Corvette",
-    "url": "assets/cars/chevrolet-corvette.jpg",
-    "wikiFile": "Chevrelet%20Corvette%20Front.jpg",
-    "anchorX": 99.3,
-    "anchorY": 53.4,
-    "maxScale": 2.0,
-    "distractors": [
-      "Ford F-350",
-      "Ford Mustang",
-      "Lincoln MKZ"
-    ],
-    "slug": "chevrolet-corvette"
   },
   {
     "name": "Mini (classique)",
@@ -1963,8 +1921,8 @@
     "name": "Alfa Romeo Tonale",
     "url": "assets/cars/alfa-romeo-tonale.jpg",
     "wikiFile": "Alfa_Romeo_Tonale_1X7A0319.jpg",
-    "anchorX": 50,
-    "anchorY": 50,
+    "anchorX": 98.8,
+    "anchorY": 52.2,
     "maxScale": 2.6,
     "distractors": [
       "Alfa Romeo Giulia",
@@ -1977,8 +1935,8 @@
     "name": "Alfa Romeo Junior",
     "url": "assets/cars/alfa-romeo-junior.jpg",
     "wikiFile": "Alfa_Romeo_Junior_IMG_0462.jpg",
-    "anchorX": 50,
-    "anchorY": 50,
+    "anchorX": 96.4,
+    "anchorY": 52.2,
     "maxScale": 2.6,
     "distractors": [
       "Alfa Romeo Tonale",
@@ -1991,8 +1949,8 @@
     "name": "Alfa Romeo Junior (2)",
     "url": "assets/cars/alfa-romeo-junior-2.jpg",
     "wikiFile": "Alfa_Romeo_Junior_Auto_Zuerich_2024_DSC_6376.jpg",
-    "anchorX": 50,
-    "anchorY": 50,
+    "anchorX": 90.7,
+    "anchorY": 53.8,
     "maxScale": 2.6,
     "distractors": [
       "Alfa Romeo Giulia Quadrifoglio",
@@ -2005,8 +1963,8 @@
     "name": "Audi Q2",
     "url": "assets/cars/audi-q2.jpg",
     "wikiFile": "Audi_Q2_FL_1X7A0303.jpg",
-    "anchorX": 50,
-    "anchorY": 50,
+    "anchorX": 25.8,
+    "anchorY": 55.3,
     "maxScale": 2.6,
     "distractors": [
       "Audi TT",
@@ -2019,8 +1977,8 @@
     "name": "Dacia Spring",
     "url": "assets/cars/dacia-spring.jpg",
     "wikiFile": "2023_Dacia_Spring_1X7A6282.jpg",
-    "anchorX": 50,
-    "anchorY": 50,
+    "anchorX": 6.3,
+    "anchorY": 60.7,
     "maxScale": 2.6,
     "distractors": [
       "Dacia Sandero",
@@ -2033,8 +1991,8 @@
     "name": "Citroen e-C5 Aircross",
     "url": "assets/cars/citroen-e-c5-aircross.jpg",
     "wikiFile": "Citro%C3%ABn_%C3%AB-C5_Aircross_Auto_Zuerich_2025_DSC_3486.jpg",
-    "anchorX": 50,
-    "anchorY": 50,
+    "anchorX": 88.8,
+    "anchorY": 55.2,
     "maxScale": 2.6,
     "distractors": [
       "Citroën C5 Aircross",
@@ -2047,9 +2005,9 @@
     "name": "BMW i8",
     "url": "assets/cars/bmw-i8.jpg",
     "wikiFile": "2016_BMW_i8.jpg",
-    "anchorX": 50,
-    "anchorY": 50,
-    "maxScale": 2.6,
+    "anchorX": 91.9,
+    "anchorY": 0.9,
+    "maxScale": 1.4,
     "distractors": [
       "BMW X6 M",
       "Porsche 911",
@@ -2061,8 +2019,8 @@
     "name": "Ford Explorer EV",
     "url": "assets/cars/ford-explorer-ev.jpg",
     "wikiFile": "Ford_Explorer_EV_IMG_2120.jpg",
-    "anchorX": 50,
-    "anchorY": 50,
+    "anchorX": 21.4,
+    "anchorY": 51.5,
     "maxScale": 2.6,
     "distractors": [
       "Ford Kuga",
@@ -2075,9 +2033,9 @@
     "name": "Ford Capri (2024)",
     "url": "assets/cars/ford-capri-2024.jpg",
     "wikiFile": "Ford_Capri_(2024)_Autofr%C3%BChling_Ulm_2025_DSC_8745.jpg",
-    "anchorX": 50,
-    "anchorY": 50,
-    "maxScale": 2.6,
+    "anchorX": 97.3,
+    "anchorY": 16.7,
+    "maxScale": 2.0,
     "distractors": [
       "Ford Puma",
       "Volkswagen ID.5 GTX",
@@ -2089,8 +2047,8 @@
     "name": "Hyundai Inster",
     "url": "assets/cars/hyundai-inster.jpg",
     "wikiFile": "Hyundai_Inster_DSC_7945.jpg",
-    "anchorX": 50,
-    "anchorY": 50,
+    "anchorX": 25.6,
+    "anchorY": 68.2,
     "maxScale": 2.6,
     "distractors": [
       "Dacia Spring",
@@ -2103,8 +2061,8 @@
     "name": "Suzuki Jimny",
     "url": "assets/cars/suzuki-jimny.jpg",
     "wikiFile": "Suzuki_Jimny_on_the_parking_near_%C3%9Eorbj%C3%B6rn_Mountain,_Iceland,_20230430_1630_3697.jpg",
-    "anchorX": 50,
-    "anchorY": 50,
+    "anchorX": 22.4,
+    "anchorY": 46.4,
     "maxScale": 2.6,
     "distractors": [
       "Jeep Wrangler",
@@ -2117,8 +2075,8 @@
     "name": "Hyundai Kona",
     "url": "assets/cars/hyundai-kona.jpg",
     "wikiFile": "Hyundai_Kona_(SX2)_1X7A1647.jpg",
-    "anchorX": 50,
-    "anchorY": 50,
+    "anchorX": 78.4,
+    "anchorY": 50.1,
     "maxScale": 2.6,
     "distractors": [
       "Hyundai Ioniq 6",
@@ -2131,9 +2089,9 @@
     "name": "Hyundai Ioniq 6",
     "url": "assets/cars/hyundai-ioniq-6.jpg",
     "wikiFile": "Hyundai_Ioniq_6_1X7A7083.jpg",
-    "anchorX": 50,
-    "anchorY": 50,
-    "maxScale": 2.6,
+    "anchorX": 99.4,
+    "anchorY": 63.3,
+    "maxScale": 1.2,
     "distractors": [
       "Tesla Model Y",
       "Volkswagen ID.5 GTX",
@@ -2145,8 +2103,8 @@
     "name": "Jeep Renegade",
     "url": "assets/cars/jeep-renegade.jpg",
     "wikiFile": "2019_Jeep_Renegade_1.6_Multijet.jpg",
-    "anchorX": 50,
-    "anchorY": 50,
+    "anchorX": 70.9,
+    "anchorY": 45.3,
     "maxScale": 2.6,
     "distractors": [
       "Jeep Avenger",
@@ -2159,8 +2117,8 @@
     "name": "Jeep Avenger",
     "url": "assets/cars/jeep-avenger.jpg",
     "wikiFile": "Jeep_Avenger_IMG_7815.jpg",
-    "anchorX": 50,
-    "anchorY": 50,
+    "anchorX": 9.9,
+    "anchorY": 63.8,
     "maxScale": 2.6,
     "distractors": [
       "Jeep Renegade",
@@ -2173,8 +2131,8 @@
     "name": "Range Rover Evoque",
     "url": "assets/cars/range-rover-evoque.jpg",
     "wikiFile": "Range_Rover_Evoque_(L551)_1X7A7459.jpg",
-    "anchorX": 50,
-    "anchorY": 50,
+    "anchorX": 30.3,
+    "anchorY": 52.4,
     "maxScale": 2.6,
     "distractors": [
       "Range Rover",
@@ -2187,8 +2145,8 @@
     "name": "Mini Countryman",
     "url": "assets/cars/mini-countryman.jpg",
     "wikiFile": "Mini_Countryman_(U25)_IMG_9521.jpg",
-    "anchorX": 50,
-    "anchorY": 50,
+    "anchorX": 0.7,
+    "anchorY": 55.3,
     "maxScale": 2.6,
     "distractors": [
       "Mini John Cooper Works",
@@ -2201,8 +2159,8 @@
     "name": "Peugeot 308",
     "url": "assets/cars/peugeot-308.jpg",
     "wikiFile": "Peugeot_308_C_1X7A7329.jpg",
-    "anchorX": 50,
-    "anchorY": 50,
+    "anchorX": 9.8,
+    "anchorY": 49.6,
     "maxScale": 2.6,
     "distractors": [
       "Peugeot 208 (Mk2)",
@@ -2215,8 +2173,8 @@
     "name": "Skoda Fabia",
     "url": "assets/cars/skoda-fabia.jpg",
     "wikiFile": "Skoda_Fabia_IV_1X7A0388.jpg",
-    "anchorX": 50,
-    "anchorY": 50,
+    "anchorX": 1.2,
+    "anchorY": 67.8,
     "maxScale": 2.6,
     "distractors": [
       "Skoda Octavia",
@@ -2229,8 +2187,8 @@
     "name": "Seat Ateca",
     "url": "assets/cars/seat-ateca.jpg",
     "wikiFile": "Paris_Motor_Show_2018,_Paris_(1Y7A2062).jpg",
-    "anchorX": 50,
-    "anchorY": 50,
+    "anchorX": 74.6,
+    "anchorY": 49.0,
     "maxScale": 2.6,
     "distractors": [
       "Seat Arona",
@@ -2243,8 +2201,8 @@
     "name": "Seat Arona",
     "url": "assets/cars/seat-arona.jpg",
     "wikiFile": "2019_SEAT_Arona_XCELLENCE_Lux_1.6.jpg",
-    "anchorX": 50,
-    "anchorY": 50,
+    "anchorX": 1.3,
+    "anchorY": 66.0,
     "maxScale": 2.6,
     "distractors": [
       "Seat Ateca",
@@ -2257,8 +2215,8 @@
     "name": "Toyota GR86",
     "url": "assets/cars/toyota-gr86.jpg",
     "wikiFile": "Toyota_GR86_SZ.jpg",
-    "anchorX": 50,
-    "anchorY": 50,
+    "anchorX": 1.1,
+    "anchorY": 63.8,
     "maxScale": 2.6,
     "distractors": [
       "Mazda MX-5",
@@ -2271,8 +2229,8 @@
     "name": "Volkswagen T-Cross",
     "url": "assets/cars/volkswagen-t-cross.jpg",
     "wikiFile": "Volkswagen_T-Cross_1X7A0366.jpg",
-    "anchorX": 50,
-    "anchorY": 50,
+    "anchorX": 2.7,
+    "anchorY": 71.1,
     "maxScale": 2.6,
     "distractors": [
       "Volkswagen T-Roc (2021)",
@@ -2285,8 +2243,8 @@
     "name": "Volkswagen T-Roc (2021)",
     "url": "assets/cars/volkswagen-t-roc-2021.jpg",
     "wikiFile": "Volkswagen_T-Roc_(2021)_1X7A0330.jpg",
-    "anchorX": 50,
-    "anchorY": 50,
+    "anchorX": 50.0,
+    "anchorY": 50.0,
     "maxScale": 2.6,
     "distractors": [
       "Volkswagen T-Cross",
@@ -2299,8 +2257,8 @@
     "name": "Volkswagen ID.5 GTX",
     "url": "assets/cars/volkswagen-id-5-gtx.jpg",
     "wikiFile": "Volkswagen_ID.5_GTX_1X7A0318.jpg",
-    "anchorX": 50,
-    "anchorY": 50,
+    "anchorX": 50.0,
+    "anchorY": 50.0,
     "maxScale": 2.6,
     "distractors": [
       "Tesla Model Y",
@@ -2313,8 +2271,8 @@
     "name": "Smart #3",
     "url": "assets/cars/smart-3.jpg",
     "wikiFile": "Smart_Hashtag_3_DSC_7992.jpg",
-    "anchorX": 50,
-    "anchorY": 50,
+    "anchorX": 91.6,
+    "anchorY": 48.6,
     "maxScale": 2.6,
     "distractors": [
       "Mini Countryman",
