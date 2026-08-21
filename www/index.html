@@ -155,6 +155,11 @@ h1{
 }
 .viewport img.focused{ filter: blur(0px) saturate(1.05); }
 
+/* Mode Facile : pas de zoom, on doit voir toute la voiture -- la plupart des photos sont
+   en paysage, un cadre carre rognait trop les cotes. Cadre 3:2 (plus large, correspond
+   mieux au format des photos) en gardant object-fit:cover -- pas de bandes noires. */
+.viewport.facile{ width: 100%; height: auto; max-width: 100%; aspect-ratio: 3 / 2; }
+
 .img-broken{
   position:absolute; inset:0;
   display:flex; align-items:center; justify-content:center;
@@ -1368,7 +1373,7 @@ function render(picked, correct){
     ${jokersHtml}
 
     <div class="viewport-frame">
-      <div class="viewport">
+      <div class="viewport${mode === 'facile' ? ' facile' : ''}">
         <img id="carimg" src="${imgUrl(car)}" alt="Détail zoomé d'une voiture à deviner" style="transform-origin: ${anchorFor(car).x}% ${anchorFor(car).y}%; transform: scale(${zoomLevelsFor(car)[level]})" onerror="handleImgError()">
         <div class="scanline"></div>
         ${mode === 'facile' ? `` : `<div class="corner-tag">ZOOM ×${zoomLevelsFor(car)[level].toFixed(1)}</div>`}
