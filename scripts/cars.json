@@ -1958,5 +1958,369 @@
       "Ferrari FF"
     ],
     "slug": "porsche-macan-electrique-2024"
+  },
+  {
+    "name": "Alfa Romeo Tonale",
+    "url": "assets/cars/alfa-romeo-tonale.jpg",
+    "wikiFile": "Alfa_Romeo_Tonale_1X7A0319.jpg",
+    "anchorX": 50,
+    "anchorY": 50,
+    "maxScale": 2.6,
+    "distractors": [
+      "Alfa Romeo Giulia",
+      "Audi Q2",
+      "Mini Countryman"
+    ],
+    "slug": "alfa-romeo-tonale"
+  },
+  {
+    "name": "Alfa Romeo Junior",
+    "url": "assets/cars/alfa-romeo-junior.jpg",
+    "wikiFile": "Alfa_Romeo_Junior_IMG_0462.jpg",
+    "anchorX": 50,
+    "anchorY": 50,
+    "maxScale": 2.6,
+    "distractors": [
+      "Alfa Romeo Tonale",
+      "Audi Q2",
+      "Opel Mokka-e"
+    ],
+    "slug": "alfa-romeo-junior"
+  },
+  {
+    "name": "Alfa Romeo Junior (2)",
+    "url": "assets/cars/alfa-romeo-junior-2.jpg",
+    "wikiFile": "Alfa_Romeo_Junior_Auto_Zuerich_2024_DSC_6376.jpg",
+    "anchorX": 50,
+    "anchorY": 50,
+    "maxScale": 2.6,
+    "distractors": [
+      "Alfa Romeo Giulia Quadrifoglio",
+      "Audi Q2",
+      "Ford Puma"
+    ],
+    "slug": "alfa-romeo-junior-2"
+  },
+  {
+    "name": "Audi Q2",
+    "url": "assets/cars/audi-q2.jpg",
+    "wikiFile": "Audi_Q2_FL_1X7A0303.jpg",
+    "anchorX": 50,
+    "anchorY": 50,
+    "maxScale": 2.6,
+    "distractors": [
+      "Audi TT",
+      "BMW X6 M",
+      "Mini Countryman"
+    ],
+    "slug": "audi-q2"
+  },
+  {
+    "name": "Dacia Spring",
+    "url": "assets/cars/dacia-spring.jpg",
+    "wikiFile": "2023_Dacia_Spring_1X7A6282.jpg",
+    "anchorX": 50,
+    "anchorY": 50,
+    "maxScale": 2.6,
+    "distractors": [
+      "Dacia Sandero",
+      "Fiat 500e",
+      "Hyundai Inster"
+    ],
+    "slug": "dacia-spring"
+  },
+  {
+    "name": "Citroen e-C5 Aircross",
+    "url": "assets/cars/citroen-e-c5-aircross.jpg",
+    "wikiFile": "Citro%C3%ABn_%C3%AB-C5_Aircross_Auto_Zuerich_2025_DSC_3486.jpg",
+    "anchorX": 50,
+    "anchorY": 50,
+    "maxScale": 2.6,
+    "distractors": [
+      "Citroën C5 Aircross",
+      "Peugeot 3008 II",
+      "Renault Austral"
+    ],
+    "slug": "citroen-e-c5-aircross"
+  },
+  {
+    "name": "BMW i8",
+    "url": "assets/cars/bmw-i8.jpg",
+    "wikiFile": "2016_BMW_i8.jpg",
+    "anchorX": 50,
+    "anchorY": 50,
+    "maxScale": 2.6,
+    "distractors": [
+      "BMW X6 M",
+      "Porsche 911",
+      "Lamborghini Gallardo"
+    ],
+    "slug": "bmw-i8"
+  },
+  {
+    "name": "Ford Explorer EV",
+    "url": "assets/cars/ford-explorer-ev.jpg",
+    "wikiFile": "Ford_Explorer_EV_IMG_2120.jpg",
+    "anchorX": 50,
+    "anchorY": 50,
+    "maxScale": 2.6,
+    "distractors": [
+      "Ford Kuga",
+      "Renault Megane E-Tech",
+      "Volkswagen ID.5 GTX"
+    ],
+    "slug": "ford-explorer-ev"
+  },
+  {
+    "name": "Ford Capri (2024)",
+    "url": "assets/cars/ford-capri-2024.jpg",
+    "wikiFile": "Ford_Capri_(2024)_Autofr%C3%BChling_Ulm_2025_DSC_8745.jpg",
+    "anchorX": 50,
+    "anchorY": 50,
+    "maxScale": 2.6,
+    "distractors": [
+      "Ford Puma",
+      "Volkswagen ID.5 GTX",
+      "BMW i8"
+    ],
+    "slug": "ford-capri-2024"
+  },
+  {
+    "name": "Hyundai Inster",
+    "url": "assets/cars/hyundai-inster.jpg",
+    "wikiFile": "Hyundai_Inster_DSC_7945.jpg",
+    "anchorX": 50,
+    "anchorY": 50,
+    "maxScale": 2.6,
+    "distractors": [
+      "Dacia Spring",
+      "Fiat 500e",
+      "Renault Twingo III"
+    ],
+    "slug": "hyundai-inster"
+  },
+  {
+    "name": "Suzuki Jimny",
+    "url": "assets/cars/suzuki-jimny.jpg",
+    "wikiFile": "Suzuki_Jimny_on_the_parking_near_%C3%9Eorbj%C3%B6rn_Mountain,_Iceland,_20230430_1630_3697.jpg",
+    "anchorX": 50,
+    "anchorY": 50,
+    "maxScale": 2.6,
+    "distractors": [
+      "Jeep Wrangler",
+      "Land Rover Defender",
+      "Toyota Land Cruiser"
+    ],
+    "slug": "suzuki-jimny"
+  },
+  {
+    "name": "Hyundai Kona",
+    "url": "assets/cars/hyundai-kona.jpg",
+    "wikiFile": "Hyundai_Kona_(SX2)_1X7A1647.jpg",
+    "anchorX": 50,
+    "anchorY": 50,
+    "maxScale": 2.6,
+    "distractors": [
+      "Hyundai Ioniq 6",
+      "Opel Mokka-e",
+      "Nissan Qashqai"
+    ],
+    "slug": "hyundai-kona"
+  },
+  {
+    "name": "Hyundai Ioniq 6",
+    "url": "assets/cars/hyundai-ioniq-6.jpg",
+    "wikiFile": "Hyundai_Ioniq_6_1X7A7083.jpg",
+    "anchorX": 50,
+    "anchorY": 50,
+    "maxScale": 2.6,
+    "distractors": [
+      "Tesla Model Y",
+      "Volkswagen ID.5 GTX",
+      "BMW i8"
+    ],
+    "slug": "hyundai-ioniq-6"
+  },
+  {
+    "name": "Jeep Renegade",
+    "url": "assets/cars/jeep-renegade.jpg",
+    "wikiFile": "2019_Jeep_Renegade_1.6_Multijet.jpg",
+    "anchorX": 50,
+    "anchorY": 50,
+    "maxScale": 2.6,
+    "distractors": [
+      "Jeep Avenger",
+      "Fiat 500X (2024)",
+      "Opel Mokka-e"
+    ],
+    "slug": "jeep-renegade"
+  },
+  {
+    "name": "Jeep Avenger",
+    "url": "assets/cars/jeep-avenger.jpg",
+    "wikiFile": "Jeep_Avenger_IMG_7815.jpg",
+    "anchorX": 50,
+    "anchorY": 50,
+    "maxScale": 2.6,
+    "distractors": [
+      "Jeep Renegade",
+      "Fiat 500X (2024)",
+      "Alfa Romeo Junior"
+    ],
+    "slug": "jeep-avenger"
+  },
+  {
+    "name": "Range Rover Evoque",
+    "url": "assets/cars/range-rover-evoque.jpg",
+    "wikiFile": "Range_Rover_Evoque_(L551)_1X7A7459.jpg",
+    "anchorX": 50,
+    "anchorY": 50,
+    "maxScale": 2.6,
+    "distractors": [
+      "Range Rover",
+      "Range Rover Sport SVR",
+      "Land Rover Defender"
+    ],
+    "slug": "range-rover-evoque"
+  },
+  {
+    "name": "Mini Countryman",
+    "url": "assets/cars/mini-countryman.jpg",
+    "wikiFile": "Mini_Countryman_(U25)_IMG_9521.jpg",
+    "anchorX": 50,
+    "anchorY": 50,
+    "maxScale": 2.6,
+    "distractors": [
+      "Mini John Cooper Works",
+      "Mini Cooper (1ere generation)",
+      "Audi Q2"
+    ],
+    "slug": "mini-countryman"
+  },
+  {
+    "name": "Peugeot 308",
+    "url": "assets/cars/peugeot-308.jpg",
+    "wikiFile": "Peugeot_308_C_1X7A7329.jpg",
+    "anchorX": 50,
+    "anchorY": 50,
+    "maxScale": 2.6,
+    "distractors": [
+      "Peugeot 208 (Mk2)",
+      "Peugeot 2008 II",
+      "Renault Mégane"
+    ],
+    "slug": "peugeot-308"
+  },
+  {
+    "name": "Skoda Fabia",
+    "url": "assets/cars/skoda-fabia.jpg",
+    "wikiFile": "Skoda_Fabia_IV_1X7A0388.jpg",
+    "anchorX": 50,
+    "anchorY": 50,
+    "maxScale": 2.6,
+    "distractors": [
+      "Skoda Octavia",
+      "Skoda Favorit",
+      "Volkswagen Polo"
+    ],
+    "slug": "skoda-fabia"
+  },
+  {
+    "name": "Seat Ateca",
+    "url": "assets/cars/seat-ateca.jpg",
+    "wikiFile": "Paris_Motor_Show_2018,_Paris_(1Y7A2062).jpg",
+    "anchorX": 50,
+    "anchorY": 50,
+    "maxScale": 2.6,
+    "distractors": [
+      "Seat Arona",
+      "Volkswagen T-Roc (2021)",
+      "Nissan Qashqai"
+    ],
+    "slug": "seat-ateca"
+  },
+  {
+    "name": "Seat Arona",
+    "url": "assets/cars/seat-arona.jpg",
+    "wikiFile": "2019_SEAT_Arona_XCELLENCE_Lux_1.6.jpg",
+    "anchorX": 50,
+    "anchorY": 50,
+    "maxScale": 2.6,
+    "distractors": [
+      "Seat Ateca",
+      "Volkswagen T-Cross",
+      "Opel Corsa"
+    ],
+    "slug": "seat-arona"
+  },
+  {
+    "name": "Toyota GR86",
+    "url": "assets/cars/toyota-gr86.jpg",
+    "wikiFile": "Toyota_GR86_SZ.jpg",
+    "anchorX": 50,
+    "anchorY": 50,
+    "maxScale": 2.6,
+    "distractors": [
+      "Mazda MX-5",
+      "Porsche 911",
+      "BMW 323i (E21)"
+    ],
+    "slug": "toyota-gr86"
+  },
+  {
+    "name": "Volkswagen T-Cross",
+    "url": "assets/cars/volkswagen-t-cross.jpg",
+    "wikiFile": "Volkswagen_T-Cross_1X7A0366.jpg",
+    "anchorX": 50,
+    "anchorY": 50,
+    "maxScale": 2.6,
+    "distractors": [
+      "Volkswagen T-Roc (2021)",
+      "Seat Arona",
+      "Peugeot 2008 II"
+    ],
+    "slug": "volkswagen-t-cross"
+  },
+  {
+    "name": "Volkswagen T-Roc (2021)",
+    "url": "assets/cars/volkswagen-t-roc-2021.jpg",
+    "wikiFile": "Volkswagen_T-Roc_(2021)_1X7A0330.jpg",
+    "anchorX": 50,
+    "anchorY": 50,
+    "maxScale": 2.6,
+    "distractors": [
+      "Volkswagen T-Cross",
+      "Seat Ateca",
+      "Audi Q2"
+    ],
+    "slug": "volkswagen-t-roc-2021"
+  },
+  {
+    "name": "Volkswagen ID.5 GTX",
+    "url": "assets/cars/volkswagen-id-5-gtx.jpg",
+    "wikiFile": "Volkswagen_ID.5_GTX_1X7A0318.jpg",
+    "anchorX": 50,
+    "anchorY": 50,
+    "maxScale": 2.6,
+    "distractors": [
+      "Tesla Model Y",
+      "Hyundai Ioniq 6",
+      "Renault Megane E-Tech"
+    ],
+    "slug": "volkswagen-id-5-gtx"
+  },
+  {
+    "name": "Smart #3",
+    "url": "assets/cars/smart-3.jpg",
+    "wikiFile": "Smart_Hashtag_3_DSC_7992.jpg",
+    "anchorX": 50,
+    "anchorY": 50,
+    "maxScale": 2.6,
+    "distractors": [
+      "Mini Countryman",
+      "Fiat 500e",
+      "Hyundai Kona"
+    ],
+    "slug": "smart-3"
   }
 ]

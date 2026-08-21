@@ -1,65 +1,16 @@
-import json, os, re, unicodedata
+import json, os
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 
 with open(os.path.join(BASE, "cars.json"), encoding="utf-8") as f:
     existing = json.load(f)
 
-pending_path = os.path.join(BASE, "new_cars_downloaded_2_final.json")
-pending_raw = []
-if os.path.exists(pending_path):
-    with open(pending_path, encoding="utf-8") as f:
-        pending_raw = json.load(f)
-
-CATEGORY_KEYWORDS = {
-    "luxury_sport": ["aston martin", "bentley", "lamborghini", "rolls-royce", "ferrari", "porsche", "db7", "db12", "urus", "gallardo", "alpine"],
-    "suv_van": ["kangoo", "espace", "kuga", "tiguan", "rav4", "grandland", "sportage", "f-pace", "range rover", "qashqai", "sorento", "wrangler", "defender", "cherokee", "duster", "colorado", "3008", "5008", "austral", "symbioz", "ariya", "aircross", "xc40", "macan", "patrol", "jaecoo", "picasso", "806"],
-    "classic": ["mini", "morris", "audi 100", "renault 4", "beetle", "favorit", "245", "326", "560 sel", "w123", "silver cloud", "e21", "2000 (classique)", "2cv", "topolino", " ds", "traction avant", "punto gt"],
-    "electric": ["leaf", "dolphin", "mokka-e", "e-tech", "model y", "ariya", "e-tense", "e-mehari", "cybertruck", "macan electrique"],
-    "hot_hatch_compact": ["twingo", "golf", "clio", "208", "c2", "c3", "polo", "ibiza", "punto", "panda", "yaris", "corolla", "civic", "megane", "formentor", "micra", "note", "juke", "ypsilon", "mg 3", "mg zs", "500x", "c30"],
-}
-
-def categorize(name):
-    n = name.lower()
-    for cat, kws in CATEGORY_KEYWORDS.items():
-        for kw in kws:
-            if kw in n:
-                return cat
-    return "other"
-
-pool = [{"name": c["name"], "cat": categorize(c["name"])} for c in existing]
-pool += [{"name": c["name_guess"], "cat": categorize(c["name_guess"])} for c in pending_raw]
-
-def default_distractors(name, exclude):
-    cat = categorize(name)
-    same_cat = [p["name"] for p in pool if p["cat"] == cat and p["name"] != name and p["name"] not in exclude]
-    others = [p["name"] for p in pool if p["name"] != name and p["name"] not in exclude and p["name"] not in same_cat]
-    same_cat.sort(key=lambda s: (hash((name, s)) % 10000))
-    others.sort(key=lambda s: (hash((name, s)) % 10000))
-    picks = (same_cat + others)[:3]
-    while len(picks) < 3:
-        picks.append("???")
-    return picks
-
-pending = []
-for c in pending_raw:
-    d = default_distractors(c["name_guess"], exclude={c["name_guess"]})
-    pending.append({
-        "slug": c["slug"],
-        "wikiFile": c["wikiFile"],
-        "url": f"assets/cars/{c['slug']}.jpg",
-        "name": c["name_guess"],
-        "anchorX": 50,
-        "anchorY": 50,
-        "maxScale": 2.6,
-        "distractors": d,
-        "isNew": True,
-    })
-
+# Une carte est consideree "pas encore calibree" (badge NOUVEAU) si elle a encore les
+# valeurs par defaut posees a l'ajout au catalogue (ancrage centre, zoom 2.6x).
 for c in existing:
-    c["isNew"] = False
+    c["isNew"] = (c.get("anchorX") == 50 and c.get("anchorY") == 50 and c.get("maxScale") == 2.6)
 
-ALL_CARS = existing + pending
+ALL_CARS = existing
 ALL_NAMES = [c["name"] for c in ALL_CARS]
 
 CARS_JSON = json.dumps(ALL_CARS, ensure_ascii=False)
@@ -322,4 +273,5 @@ HTML = HTML.replace("__NAME_OPTIONS__", name_options)
 out_path = os.path.join(BASE, "..", "www", "zoom-editor.html")
 with open(out_path, "w", encoding="utf-8", newline="\n") as f:
     f.write(HTML)
-print("Wrote", out_path, "-", len(existing), "existing +", len(pending), "new =", len(ALL_CARS), "total")
+new_count = sum(1 for c in ALL_CARS if c["isNew"])
+print("Wrote", out_path, "-", len(ALL_CARS), "total,", new_count, "pas encore calibrees")

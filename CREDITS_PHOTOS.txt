@@ -1039,3 +1039,185 @@ Ajouts (lot 3 - voitures supplementaires)
   Licence           : CC BY-SA 4.0
   Source            : Own work
   Page              : https://commons.wikimedia.org/wiki/File:Porsche_Macan_4_IMG_2153.jpg
+
+- Alfa Romeo Tonale
+  Fichier Wikimedia : Alfa_Romeo_Tonale_1X7A0319.jpg
+  Auteur            : Alexander Migl
+  Licence           : CC BY-SA 4.0
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Tonale_1X7A0319.jpg
+
+- Alfa Romeo Junior
+  Fichier Wikimedia : Alfa_Romeo_Junior_IMG_0462.jpg
+  Auteur            : Alexander-93
+  Licence           : CC BY-SA 4.0
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Junior_IMG_0462.jpg
+
+- Alfa Romeo Junior (2)
+  Fichier Wikimedia : Alfa_Romeo_Junior_Auto_Zuerich_2024_DSC_6376.jpg
+  Auteur            : Alexander-93
+  Licence           : CC BY-SA 4.0
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Junior_Auto_Zuerich_2024_DSC_6376.jpg
+
+- Audi Q2
+  Fichier Wikimedia : Audi_Q2_FL_1X7A0303.jpg
+  Auteur            : Alexander Migl
+  Licence           : CC BY-SA 4.0
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:Audi_Q2_FL_1X7A0303.jpg
+
+- Dacia Spring
+  Fichier Wikimedia : 2023_Dacia_Spring_1X7A6282.jpg
+  Auteur            : Alexander Migl
+  Licence           : CC BY-SA 4.0
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:2023_Dacia_Spring_1X7A6282.jpg
+
+- Citroen e-C5 Aircross
+  Fichier Wikimedia : Citro%C3%ABn_%C3%AB-C5_Aircross_Auto_Zuerich_2025_DSC_3486.jpg
+  Auteur            : Alexander Migl
+  Licence           : CC BY-SA 4.0
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:Citro%C3%ABn_%C3%AB-C5_Aircross_Auto_Zuerich_2025_DSC_3486.jpg
+
+- BMW i8
+  Fichier Wikimedia : 2016_BMW_i8.jpg
+  Auteur            : Vauxford
+  Licence           : CC BY-SA 4.0
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:2016_BMW_i8.jpg
+
+- Ford Explorer EV
+  Fichier Wikimedia : Ford_Explorer_EV_IMG_2120.jpg
+  Auteur            : Alexander-93
+  Licence           : CC BY-SA 4.0
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:Ford_Explorer_EV_IMG_2120.jpg
+
+- Ford Capri (2024)
+  Fichier Wikimedia : Ford_Capri_(2024)_Autofr%C3%BChling_Ulm_2025_DSC_8745.jpg
+  Auteur            : Alexander Migl
+  Licence           : CC BY-SA 4.0
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:Ford_Capri_(2024)_Autofr%C3%BChling_Ulm_2025_DSC_8745.jpg
+
+- Hyundai Inster
+  Fichier Wikimedia : Hyundai_Inster_DSC_7945.jpg
+  Auteur            : Alexander Migl
+  Licence           : CC BY-SA 4.0
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:Hyundai_Inster_DSC_7945.jpg
+
+- Suzuki Jimny
+  Fichier Wikimedia : Suzuki_Jimny_on_the_parking_near_%C3%9Eorbj%C3%B6rn_Mountain,_Iceland,_20230430_1630_3697.jpg
+  Auteur            : Jakub Hałun
+  Licence           : CC BY-SA 4.0
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:Suzuki_Jimny_on_the_parking_near_%C3%9Eorbj%C3%B6rn_Mountain,_Iceland,_20230430_1630_3697.jpg
+
+- Hyundai Kona
+  Fichier Wikimedia : Hyundai_Kona_(SX2)_1X7A1647.jpg
+  Auteur            : Alexander-93
+  Licence           : CC BY-SA 4.0
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:Hyundai_Kona_(SX2)_1X7A1647.jpg
+
+- Hyundai Ioniq 6
+  Fichier Wikimedia : Hyundai_Ioniq_6_1X7A7083.jpg
+  Auteur            : Alexander-93
+  Licence           : CC BY-SA 4.0
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:Hyundai_Ioniq_6_1X7A7083.jpg
+
+- Jeep Renegade
+  Fichier Wikimedia : 2019_Jeep_Renegade_1.6_Multijet.jpg
+  Auteur            : Corvettec6r
+  Licence           : CC BY-SA 4.0
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:2019_Jeep_Renegade_1.6_Multijet.jpg
+
+- Jeep Avenger
+  Fichier Wikimedia : Jeep_Avenger_IMG_7815.jpg
+  Auteur            : Alexander-93
+  Licence           : CC BY-SA 4.0
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:Jeep_Avenger_IMG_7815.jpg
+
+- Range Rover Evoque
+  Fichier Wikimedia : Range_Rover_Evoque_(L551)_1X7A7459.jpg
+  Auteur            : Alexander-93
+  Licence           : CC BY-SA 4.0
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:Range_Rover_Evoque_(L551)_1X7A7459.jpg
+
+- Mini Countryman
+  Fichier Wikimedia : Mini_Countryman_(U25)_IMG_9521.jpg
+  Auteur            : Alexander-93
+  Licence           : CC BY-SA 4.0
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:Mini_Countryman_(U25)_IMG_9521.jpg
+
+- Peugeot 308
+  Fichier Wikimedia : Peugeot_308_C_1X7A7329.jpg
+  Auteur            : Alexander-93
+  Licence           : CC BY-SA 4.0
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:Peugeot_308_C_1X7A7329.jpg
+
+- Skoda Fabia
+  Fichier Wikimedia : Skoda_Fabia_IV_1X7A0388.jpg
+  Auteur            : Alexander Migl
+  Licence           : CC BY-SA 4.0
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:Skoda_Fabia_IV_1X7A0388.jpg
+
+- Seat Ateca
+  Fichier Wikimedia : Paris_Motor_Show_2018,_Paris_(1Y7A2062).jpg
+  Auteur            : Matti Blume
+  Licence           : CC BY-SA 4.0
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:Paris_Motor_Show_2018,_Paris_(1Y7A2062).jpg
+
+- Seat Arona
+  Fichier Wikimedia : 2019_SEAT_Arona_XCELLENCE_Lux_1.6.jpg
+  Auteur            : Vauxford
+  Licence           : CC BY-SA 4.0
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:2019_SEAT_Arona_XCELLENCE_Lux_1.6.jpg
+
+- Toyota GR86
+  Fichier Wikimedia : Toyota_GR86_SZ.jpg
+  Auteur            : TTTNIS
+  Licence           : CC0
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:Toyota_GR86_SZ.jpg
+
+- Volkswagen T-Cross
+  Fichier Wikimedia : Volkswagen_T-Cross_1X7A0366.jpg
+  Auteur            : Alexander Migl
+  Licence           : CC BY-SA 4.0
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:Volkswagen_T-Cross_1X7A0366.jpg
+
+- Volkswagen T-Roc (2021)
+  Fichier Wikimedia : Volkswagen_T-Roc_(2021)_1X7A0330.jpg
+  Auteur            : Alexander Migl
+  Licence           : CC BY-SA 4.0
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:Volkswagen_T-Roc_(2021)_1X7A0330.jpg
+
+- Volkswagen ID.5 GTX
+  Fichier Wikimedia : Volkswagen_ID.5_GTX_1X7A0318.jpg
+  Auteur            : Alexander Migl
+  Licence           : CC BY-SA 4.0
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:Volkswagen_ID.5_GTX_1X7A0318.jpg
+
+- Smart #3
+  Fichier Wikimedia : Smart_Hashtag_3_DSC_7992.jpg
+  Auteur            : Alexander Migl
+  Licence           : CC BY-SA 4.0
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:Smart_Hashtag_3_DSC_7992.jpg
