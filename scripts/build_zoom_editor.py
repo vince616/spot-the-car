@@ -154,8 +154,18 @@ function render(){
     const vp = card.querySelector(`#vp-${idx}`);
     vp.addEventListener("click", (e) => {
       const rect = vp.getBoundingClientRect();
-      const x = Math.max(0, Math.min(100, ((e.clientX - rect.left) / rect.width) * 100));
-      const y = Math.max(0, Math.min(100, ((e.clientY - rect.top) / rect.height) * 100));
+      // Position du clic dans le cadre affiche (0-100%, tel que vu a l'ecran, donc deja zoome).
+      const vx = Math.max(0, Math.min(100, ((e.clientX - rect.left) / rect.width) * 100));
+      const vy = Math.max(0, Math.min(100, ((e.clientY - rect.top) / rect.height) * 100));
+      // On doit retrouver a quel endroit de l'image REELLE (non zoomee) ca correspond : le
+      // point de pivot (transform-origin) actuel ne bouge jamais a l'ecran quand on zoome,
+      // donc l'ecart entre le clic et ce pivot doit etre divise par le zoom courant pour
+      // retrouver la position reelle. Sans ca, chaque clic partait bien plus loin que
+      // l'endroit reellement clique (d'ou l'impression de ne pas pouvoir se deplacer).
+      const car = state[idx];
+      const s = car.maxScale || 1;
+      const x = Math.max(0, Math.min(100, car.anchorX + (vx - car.anchorX) / s));
+      const y = Math.max(0, Math.min(100, car.anchorY + (vy - car.anchorY) / s));
       state[idx].anchorX = Math.round(x * 10) / 10;
       state[idx].anchorY = Math.round(y * 10) / 10;
       saveState();
