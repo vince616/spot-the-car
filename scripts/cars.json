@@ -504,20 +504,6 @@
     "slug": "volkswagen-golf"
   },
   {
-    "name": "Toyota Corolla",
-    "url": "assets/cars/toyota-corolla.jpg",
-    "wikiFile": "2014%20Toyota%20Corolla%20LED%20Headlight.jpg",
-    "anchorX": 50.0,
-    "anchorY": 50.0,
-    "maxScale": 2.6,
-    "distractors": [
-      "Honda HR-V",
-      "Honda Accord",
-      "Nissan Armada"
-    ],
-    "slug": "toyota-corolla"
-  },
-  {
     "name": "Toyota Yaris",
     "url": "assets/cars/toyota-yaris.jpg",
     "wikiFile": "2022%20Toyota%20Yaris%201.5%20GR%20Sport,%20IIMS%20Hybrid,%20Grand%20City,%20Central%20Surabaya.jpg",
@@ -558,34 +544,6 @@
       "Chevrolet Corvette"
     ],
     "slug": "ford-ranger"
-  },
-  {
-    "name": "Mercedes-Benz Classe E",
-    "url": "assets/cars/mercedes-benz-classe-e.jpg",
-    "wikiFile": "2014%20Mercedes-Benz%20E-Class%20LED%20Headlight.jpg",
-    "anchorX": 50.0,
-    "anchorY": 50.0,
-    "maxScale": 1.4,
-    "distractors": [
-      "BMW 2000 (classique)",
-      "Audi A4",
-      "BMW 320d Touring"
-    ],
-    "slug": "mercedes-benz-classe-e"
-  },
-  {
-    "name": "Volkswagen Phaeton",
-    "url": "assets/cars/volkswagen-phaeton.jpg",
-    "wikiFile": "2003%20Volkswagen%20Phaeton%20VR,%20Techno-Classica%202025,%20Essen%20(P1045896).jpg",
-    "anchorX": 50.0,
-    "anchorY": 50.0,
-    "maxScale": 2.6,
-    "distractors": [
-      "BMW X6 M",
-      "BMW M4",
-      "Porsche 911"
-    ],
-    "slug": "volkswagen-phaeton"
   },
   {
     "name": "Honda HR-V",
@@ -644,20 +602,6 @@
     "slug": "fiat-500e"
   },
   {
-    "name": "Ferrari FF",
-    "url": "assets/cars/ferrari-ff.jpg",
-    "wikiFile": "%22%2012%20-%20ITALY%20-%20Ferrari%20FF%20a%20Bologna%2005.jpg",
-    "anchorX": 50.0,
-    "anchorY": 50.0,
-    "maxScale": 2.6,
-    "distractors": [
-      "Fiat 500L Cross",
-      "Fiat 500e",
-      "Fiat Panda"
-    ],
-    "slug": "ferrari-ff"
-  },
-  {
     "name": "Toyota Land Cruiser",
     "url": "assets/cars/toyota-land-cruiser.jpg",
     "wikiFile": "2024%20Toyota%20Land%20Cruiser%20(United%20States)%20front%20view.jpg",
@@ -670,20 +614,6 @@
       "Lexus GS-F"
     ],
     "slug": "toyota-land-cruiser"
-  },
-  {
-    "name": "Lexus GS-F",
-    "url": "assets/cars/lexus-gs-f.jpg",
-    "wikiFile": "2016%20Lexus%20GS-F%20Fujiweiss%20LED-Scheinwerfer.jpg",
-    "anchorX": 50.0,
-    "anchorY": 50.0,
-    "maxScale": 2.6,
-    "distractors": [
-      "Honda Fit",
-      "Toyota Avalon",
-      "Nissan Ariya"
-    ],
-    "slug": "lexus-gs-f"
   },
   {
     "name": "Peugeot 2008 II",
