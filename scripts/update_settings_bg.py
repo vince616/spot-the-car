@@ -1,11 +1,11 @@
 import base64, io
 from PIL import Image
 
-SRC = r"C:\Users\vincent.krief\Downloads\Spot the car page modes de jeu v2.png"
+SRC = r"C:\Users\vincent.krief\Downloads\Menu mode de jeu V3.png"
 HTML = r"C:\Users\vincent.krief\Downloads\spot-the-car-app\www\index.html"
 
 im = Image.open(SRC).convert("RGB")
-TARGET_W = 941  # keep native resolution, already reasonable
+TARGET_W = 853  # keep native resolution, already reasonable
 if im.width > TARGET_W:
     new_h = round(im.height * TARGET_W / im.width)
     im = im.resize((TARGET_W, new_h), Image.LANCZOS)
