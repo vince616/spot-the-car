@@ -1951,6 +1951,15 @@ function getAdMob(){
   return (window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.AdMob) || null;
 }
 
+function getTcf(){
+  return (window.Capacitor && window.Capacitor.Plugins && window.Capacitor.Plugins.Tcf) || null;
+}
+
+// true si l'utilisateur est en zone GDPR et n'a pas accorde le consentement complet
+// (refus total ou partiel) -- dans ce cas on force une requete non personnalisee (npa),
+// sans degrader les pubs des utilisateurs qui ont accepte ou hors zone GDPR.
+let forceNpa = false;
+
 async function initAds(){
   if(!ADS_ENABLED) return;
   const AdMob = getAdMob();
@@ -1961,6 +1970,20 @@ async function initAds(){
     if(consentInfo.isConsentFormAvailable && consentInfo.status === 'REQUIRED'){
       await AdMob.showConsentForm();
       adLog('consent form affiche et resolu');
+    }
+    if(consentInfo.canRequestAds === false){
+      adLog('canRequestAds=false, on ne charge pas de pub');
+      return;
+    }
+    const Tcf = getTcf();
+    if(Tcf){
+      try{
+        const signals = await Tcf.getConsentSignals();
+        forceNpa = signals.gdprApplies && !signals.fullConsentGranted;
+        adLog('tcf signals: ' + JSON.stringify(signals) + ' -> forceNpa=' + forceNpa);
+      }catch(e){
+        adLog('Tcf.getConsentSignals FAILED: ' + (e && (e.message || JSON.stringify(e))));
+      }
     }
     await AdMob.initialize();
     adLog('AdMob.initialize OK');
@@ -1974,8 +1997,8 @@ function prepareInterstitialAd(){
   const AdMob = getAdMob();
   if(!AdMob) return;
   interstitialReady = false;
-  adLog('prepareInterstitial appele...');
-  AdMob.prepareInterstitial({ adId: ADMOB_INTERSTITIAL_ID, isTesting: ADMOB_USE_TEST_IDS })
+  adLog('prepareInterstitial appele... (npa=' + forceNpa + ')');
+  AdMob.prepareInterstitial({ adId: ADMOB_INTERSTITIAL_ID, isTesting: ADMOB_USE_TEST_IDS, npa: forceNpa })
     .then(() => { interstitialReady = true; adLog('prepareInterstitial OK, prete'); })
     .catch((e) => { interstitialReady = false; adLog('prepareInterstitial FAILED: ' + (e && (e.message || JSON.stringify(e)))); });
 }
