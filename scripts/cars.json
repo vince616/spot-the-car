@@ -17,8 +17,8 @@
     "name": "Fiat 500L Cross",
     "url": "assets/cars/fiat-500l-cross.jpg",
     "wikiFile": "2018%20Fiat%20500L%20Cross%20facelift%201.4%20Front.jpg",
-    "anchorX": 50.0,
-    "anchorY": 50.0,
+    "anchorX": 50.4,
+    "anchorY": 50.2,
     "maxScale": 2.6,
     "distractors": [
       "Alfa Romeo Giulia Quadrifoglio",
@@ -30,10 +30,10 @@
   {
     "name": "Mazda MX-5",
     "url": "assets/cars/mazda-mx-5.jpg",
-    "wikiFile": "2015%20Mazda%20MX-5%20ND%202.0%20SKYACTIV-G%20160%20i-ELOOP%20Rubinrot-Metallic%20LED-Scheinwerfer%20Front-Draufsicht.jpg",
-    "anchorX": 98.5,
-    "anchorY": 88.9,
-    "maxScale": 1.8,
+    "wikiFile": "Mazda%20Roadster%20(MX-5)%20by%20Negawa%20Bridge%20(cropped).jpg",
+    "anchorX": 50.6,
+    "anchorY": 50.3,
+    "maxScale": 2.6,
     "distractors": [
       "Nissan Kicks",
       "Nissan Altima",
@@ -128,9 +128,9 @@
   {
     "name": "Renault 4",
     "url": "assets/cars/renault-4.jpg",
-    "wikiFile": "Deluxe%20Renault%204,%20with%20headlamp%20wipers,%20probably%20to%20get%20rid%20of%20mosquitos%20in%20the%20north%20(10759067994).jpg",
-    "anchorX": 50.0,
-    "anchorY": 50.0,
+    "wikiFile": "Renault%20R4%20BW%202016-07-17%2013-45-32.jpg",
+    "anchorX": 44.5,
+    "anchorY": 74.5,
     "maxScale": 2.6,
     "distractors": [
       "Dacia Duster",
@@ -143,8 +143,8 @@
     "name": "Renault Clio",
     "url": "assets/cars/renault-clio.jpg",
     "wikiFile": "Renault%20Clio%20(front%20quarter)%20red.JPG",
-    "anchorX": 50.0,
-    "anchorY": 50.0,
+    "anchorX": 90.1,
+    "anchorY": 47.4,
     "maxScale": 2.6,
     "distractors": [
       "Peugeot 208 (Mk2)",
@@ -157,8 +157,8 @@
     "name": "Peugeot 208 GTi",
     "url": "assets/cars/peugeot-208-gti.jpg",
     "wikiFile": "The%20frontview%20of%20Peugeot%20208%20GTi.JPG",
-    "anchorX": 50.0,
-    "anchorY": 50.0,
+    "anchorX": 35.1,
+    "anchorY": 64.3,
     "maxScale": 2.6,
     "distractors": [
       "Dacia Duster",
@@ -185,8 +185,8 @@
     "name": "Ford Mustang",
     "url": "assets/cars/ford-mustang.jpg",
     "wikiFile": "2015%20Ford%20Mustang%20Front%20View.jpg",
-    "anchorX": 50.0,
-    "anchorY": 50.0,
+    "anchorX": 35.7,
+    "anchorY": 43.1,
     "maxScale": 2.6,
     "distractors": [
       "Chevrolet Traverse",
@@ -296,9 +296,9 @@
   {
     "name": "Audi A4",
     "url": "assets/cars/audi-a4.jpg",
-    "wikiFile": "2015%20Audi%20A4%20B9%20S%20line%20Tangorot%20LED-Matrix-Scheinwerfer%20Detail.jpg",
-    "anchorX": 50.0,
-    "anchorY": 50.0,
+    "wikiFile": "Audi%20A4%20B9%20sedans%20(FL)%201X7A2441.jpg",
+    "anchorX": 19.9,
+    "anchorY": 66.8,
     "maxScale": 2.6,
     "distractors": [
       "BMW 3.0 CSL",
@@ -367,8 +367,8 @@
     "name": "BMW 320d Touring",
     "url": "assets/cars/bmw-320d-touring.jpg",
     "wikiFile": "BMW%20320d%20%E2%80%94%20E46-3%20(Touring)%20%E2%80%94%20blue%20livery%20%E2%80%94%20parked%20%E2%80%94%20Munich,%20Germany%20%E2%80%94%202005.jpg",
-    "anchorX": 50.0,
-    "anchorY": 50.0,
+    "anchorX": 48.9,
+    "anchorY": 50.3,
     "maxScale": 2.6,
     "distractors": [
       "Porsche 911",
@@ -392,11 +392,11 @@
     "slug": "dacia-duster"
   },
   {
-    "name": "Porsche 911 Turbo S",
+    "name": "Porsche 911 Carrera S",
     "url": "assets/cars/porsche-911-turbo-s.jpg",
-    "wikiFile": "Porsche%20911%20(991)%20Turbo%20S%20LED%20headlight.jpg",
-    "anchorX": 50.0,
-    "anchorY": 50.0,
+    "wikiFile": "Porsche%20992%20Carrera%20S%20coupe%20IMG%205832.jpg",
+    "anchorX": 67.3,
+    "anchorY": 53.4,
     "maxScale": 2.6,
     "distractors": [
       "BMW 3.0 CSL",
@@ -443,7 +443,7 @@
     "distractors": [
       "Mercedes-AMG C-Coupé DTM",
       "Audi TT",
-      "Porsche 911 Turbo S"
+      "Porsche 911 Carrera S"
     ],
     "slug": "bmw-2000-classique"
   },
@@ -478,9 +478,9 @@
   {
     "name": "Audi TT",
     "url": "assets/cars/audi-tt.jpg",
-    "wikiFile": "Audi%20TT%202014%20(13558536333).jpg",
-    "anchorX": 33.8,
-    "anchorY": 52.5,
+    "wikiFile": "2019%20Audi%20TT%20Sport%2040%20TFSi%20S-A%202.0%20Front.jpg",
+    "anchorX": 51.7,
+    "anchorY": 50.3,
     "maxScale": 2.6,
     "distractors": [
       "Volkswagen Golf",
@@ -493,8 +493,8 @@
     "name": "Ford Ranger",
     "url": "assets/cars/ford-ranger.jpg",
     "wikiFile": "2023%20Ford%20Ranger%20Raptor%20Double-Cab%202.0L%20Bi-Turbo%204x4.jpg",
-    "anchorX": 50.0,
-    "anchorY": 50.0,
+    "anchorX": 60.7,
+    "anchorY": 46.4,
     "maxScale": 2.6,
     "distractors": [
       "Chevrolet Camaro",
@@ -591,8 +591,8 @@
     "name": "Opel Corsa",
     "url": "assets/cars/opel-corsa.jpg",
     "wikiFile": "Opel%20Corsa%20D%2020090912%20front.JPG",
-    "anchorX": 50.0,
-    "anchorY": 50.0,
+    "anchorX": 24.8,
+    "anchorY": 66.7,
     "maxScale": 2.6,
     "distractors": [
       "BMW 2000 (classique)",
@@ -620,7 +620,7 @@
     "url": "assets/cars/citroen-c4-iii.jpg",
     "wikiFile": "2021%20Citroen%20C4%20Shine%20Front.jpg",
     "anchorX": 50.0,
-    "anchorY": 50.0,
+    "anchorY": 51.7,
     "maxScale": 2.6,
     "distractors": [
       "Peugeot 308 III",
@@ -693,7 +693,7 @@
     "anchorY": 74.7,
     "maxScale": 2.6,
     "distractors": [
-      "Porsche 911 Turbo S",
+      "Porsche 911 Carrera S",
       "Dacia Duster",
       "Nissan Qashqai"
     ],
@@ -759,8 +759,8 @@
     "name": "Mercedes-Benz 560 SEL (W126)",
     "url": "assets/cars/mercedes-benz-560-sel-w126.jpg",
     "wikiFile": "Picture%20of%20Mercedes%20Benz%20W126%20560%20SEL.jpg",
-    "anchorX": 50.0,
-    "anchorY": 50.0,
+    "anchorX": 47.6,
+    "anchorY": 50.5,
     "maxScale": 2.6,
     "distractors": [
       "BMW 3.0 CSL",
@@ -871,7 +871,7 @@
     "name": "Renault Austral",
     "url": "assets/cars/renault-austral.jpg",
     "wikiFile": "2023%20Renault%20Austral%201.2%20E-Tech%20Hybrid%20techno%20at%20Renault%20Manchester%2001.jpg",
-    "anchorX": 50.0,
+    "anchorX": 51.8,
     "anchorY": 50.0,
     "maxScale": 2.6,
     "distractors": [
@@ -885,8 +885,8 @@
     "name": "Ford Puma",
     "url": "assets/cars/ford-puma.jpg",
     "wikiFile": "2020%20Ford%20Puma%20Titanium%20EcoBoost%20Hybrid%201.0%20Front.jpg",
-    "anchorX": 50.0,
-    "anchorY": 50.0,
+    "anchorX": 14.2,
+    "anchorY": 52.1,
     "maxScale": 2.6,
     "distractors": [
       "Ford Edge",
@@ -899,8 +899,8 @@
     "name": "Opel Mokka-e",
     "url": "assets/cars/opel-mokka-e.jpg",
     "wikiFile": "2025_Opel_Mokka-e_Auto_Zuerich_2024_DSC_6710.jpg",
-    "anchorX": 50.0,
-    "anchorY": 50.0,
+    "anchorX": 50.5,
+    "anchorY": 50.5,
     "maxScale": 2.6,
     "distractors": [
       "Renault Megane E-Tech",
@@ -913,8 +913,8 @@
     "name": "Opel Grandland",
     "url": "assets/cars/opel-grandland.jpg",
     "wikiFile": "Opel_Grandland_1X7A7184.jpg",
-    "anchorX": 50.0,
-    "anchorY": 50.0,
+    "anchorX": 43.8,
+    "anchorY": 51.8,
     "maxScale": 2.6,
     "distractors": [
       "Jeep Wrangler",
@@ -1029,7 +1029,7 @@
     "anchorY": 56.9,
     "maxScale": 2.6,
     "distractors": [
-      "Porsche 911 Turbo S",
+      "Porsche 911 Carrera S",
       "Bentley Continental GT",
       "Porsche 911"
     ],
@@ -1277,8 +1277,8 @@
     "name": "Volkswagen Beetle",
     "url": "assets/cars/volkswagen-beetle.jpg",
     "wikiFile": "Volkswagen_Beetle_9.jpg",
-    "anchorX": 50.0,
-    "anchorY": 50.0,
+    "anchorX": 45.0,
+    "anchorY": 57.2,
     "maxScale": 2.6,
     "distractors": [
       "Audi 100",
@@ -1422,7 +1422,7 @@
     "maxScale": 3.3,
     "distractors": [
       "Porsche 911",
-      "Porsche 911 Turbo S",
+      "Porsche 911 Carrera S",
       "Rolls-Royce Silver Cloud III"
     ],
     "slug": "lamborghini-urus"
@@ -1641,8 +1641,8 @@
     "name": "Peugeot RCZ",
     "url": "assets/cars/peugeot-rcz.jpg",
     "wikiFile": "Peugeot_RCZ_a_St_Trond.jpg",
-    "anchorX": 50.0,
-    "anchorY": 50.0,
+    "anchorX": 51.1,
+    "anchorY": 48.6,
     "maxScale": 2.6,
     "distractors": [
       "Fiat 500L Cross",
@@ -1711,8 +1711,8 @@
     "name": "Nissan Micra (2003)",
     "url": "assets/cars/nissan-micra-2003.jpg",
     "wikiFile": "2003_Nissan_Micra_E_1.0_(Front).jpg",
-    "anchorX": 50.0,
-    "anchorY": 50.0,
+    "anchorX": 44.0,
+    "anchorY": 51.7,
     "maxScale": 2.6,
     "distractors": [
       "Seat Ibiza",
@@ -1725,8 +1725,8 @@
     "name": "Nissan Juke (2019)",
     "url": "assets/cars/nissan-juke-2019.jpg",
     "wikiFile": "2019_Nissan_Juke_Tekna_-_1598cc_1.6_(110PS)_Petrol_-_Black_-_02-2024,_Front.jpg",
-    "anchorX": 50.0,
-    "anchorY": 50.0,
+    "anchorX": 35.2,
+    "anchorY": 50.7,
     "maxScale": 2.6,
     "distractors": [
       "Volkswagen Golf R",
@@ -1899,7 +1899,7 @@
     "distractors": [
       "Lamborghini Urus",
       "Aston Martin DB12",
-      "Porsche 911 Turbo S"
+      "Porsche 911 Carrera S"
     ],
     "slug": "porsche-911-turbo-s-992"
   },
@@ -2280,5 +2280,117 @@
       "Hyundai Kona"
     ],
     "slug": "smart-3"
+  },
+  {
+    "name": "Kia Picanto",
+    "url": "assets/cars/kia-picanto.jpg",
+    "wikiFile": "Kia%20Picanto,%20Auto%202024,%20Zurich%20(PANA0815).jpg",
+    "anchorX": 66.4,
+    "anchorY": 53.2,
+    "maxScale": 2.6,
+    "distractors": [
+      "Hyundai Inster",
+      "Dacia Spring",
+      "Toyota Yaris"
+    ],
+    "slug": "kia-picanto"
+  },
+  {
+    "name": "Subaru Impreza (2002)",
+    "url": "assets/cars/subaru-impreza-gde.jpg",
+    "wikiFile": "2001-2002%20Subaru%20Impreza%20(GDE%20MY02)%20RS%20sedan%20(2011-06-15)%2001.jpg",
+    "anchorX": 97.4,
+    "anchorY": 73.4,
+    "maxScale": 2.6,
+    "distractors": [
+      "Audi A4",
+      "Alfa Romeo Giulia",
+      "BMW 323i (E21)"
+    ],
+    "slug": "subaru-impreza-gde"
+  },
+  {
+    "name": "Renault Vel Satis",
+    "url": "assets/cars/renault-vel-satis.jpg",
+    "wikiFile": "Renault%20Vel%20Satis%203.0%20dCi%20V6%20%E2%80%93%20Frontansicht,%205.%20Mai%202012,%20Ratingen.jpg",
+    "anchorX": 98.9,
+    "anchorY": 55.3,
+    "maxScale": 2.6,
+    "distractors": [
+      "Renault Avantime",
+      "Mercedes-Benz Classe C",
+      "Renault Espace III"
+    ],
+    "slug": "renault-vel-satis"
+  },
+  {
+    "name": "Renault Avantime",
+    "url": "assets/cars/renault-avantime.jpg",
+    "wikiFile": "2002%20Renault%20Avantime%20Privilege%203.0%20Front.jpg",
+    "anchorX": 24.3,
+    "anchorY": 57.3,
+    "maxScale": 2.6,
+    "distractors": [
+      "Renault Vel Satis",
+      "Renault Espace III",
+      "Citroen C4 Picasso"
+    ],
+    "slug": "renault-avantime"
+  },
+  {
+    "name": "Maserati GranTurismo (2023)",
+    "url": "assets/cars/maserati-granturismo.jpg",
+    "wikiFile": "Maserati%20GranTurismo%20Trofeo%201X7A0828.jpg",
+    "anchorX": 84.0,
+    "anchorY": 56.7,
+    "maxScale": 2.6,
+    "distractors": [
+      "Aston Martin DB12",
+      "Bentley Continental GT",
+      "Porsche 911 Carrera S"
+    ],
+    "slug": "maserati-granturismo"
+  },
+  {
+    "name": "BMW X6 (E71)",
+    "url": "assets/cars/bmw-x6-e71.jpg",
+    "wikiFile": "BMW%20X6%20xDrive30d%20(E71)%20%E2%80%93%20Frontansicht,%2026.%20M%C3%A4rz%202011,%20D%C3%BCsseldorf.jpg",
+    "anchorX": 48.7,
+    "anchorY": 50.2,
+    "maxScale": 2.6,
+    "distractors": [
+      "Range Rover Sport SVR",
+      "Jaguar F-Pace",
+      "Porsche Macan Electrique (2024)"
+    ],
+    "slug": "bmw-x6-e71"
+  },
+  {
+    "name": "Renault Clio II RS",
+    "url": "assets/cars/renault-clio-ii-rs.jpg",
+    "wikiFile": "Clio%20RS%202.2.jpg",
+    "anchorX": 2.6,
+    "anchorY": 70.2,
+    "maxScale": 2.6,
+    "distractors": [
+      "Peugeot 208 GTi",
+      "Volkswagen Golf R",
+      "Renault Twingo III"
+    ],
+    "slug": "renault-clio-ii-rs"
+  },
+  {
+    "name": "Renault Clio VI",
+    "url": "assets/cars/renault-clio-vi.jpg",
+    "wikiFile": "Renault%20Clio%20TCe%20115%20Techno%20(VI)%20%E2%80%93%20h%2017032026.jpg",
+    "anchorX": 74.1,
+    "anchorY": 41.5,
+    "maxScale": 2.6,
+    "distractors": [
+      "Peugeot 208 (Mk2)",
+      "Renault Captur",
+      "Citroën C3 III"
+    ],
+    "slug": "renault-clio-vi"
   }
 ]

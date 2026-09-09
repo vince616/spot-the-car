@@ -16,11 +16,11 @@ Credits photos — Wikimedia Commons (Spot the Car)
   Page              : https://commons.wikimedia.org/wiki/File:2018%20Fiat%20500L%20Cross%20facelift%201.4%20Front.jpg
 
 - Mazda MX-5
-  Fichier Wikimedia : 2015%20Mazda%20MX-5%20ND%202.0%20SKYACTIV-G%20160%20i-ELOOP%20Rubinrot-Metallic%20LED-Scheinwerfer%20Front-Draufsicht.jpg
-  Auteur            : Kickaffe (Mario von Berg)
+  Fichier Wikimedia : Mazda%20Roadster%20(MX-5)%20by%20Negawa%20Bridge%20(cropped).jpg
+  Auteur            : 根川大橋 (Negawa Ohashi)
   Licence           : CC BY-SA 4.0
   Source            : Own work
-  Page              : https://commons.wikimedia.org/wiki/File:2015%20Mazda%20MX-5%20ND%202.0%20SKYACTIV-G%20160%20i-ELOOP%20Rubinrot-Metallic%20LED-Scheinwerfer%20Front-Draufsicht.jpg
+  Page              : https://commons.wikimedia.org/wiki/File:Mazda%20Roadster%20(MX-5)%20by%20Negawa%20Bridge%20(cropped).jpg
 
 - Volvo 245
   Fichier Wikimedia : Auto%20Volvo%20245%20Mayakovskogo%20street%20Mayakovskogo%20street%202025-01%20040.JPG
@@ -93,11 +93,11 @@ Credits photos — Wikimedia Commons (Spot the Car)
   Page              : https://commons.wikimedia.org/wiki/File:%2712%20Jeep%20Grand%20Cherokee%20SRT-8%20(MIAS%20%2712).JPG
 
 - Renault 4
-  Fichier Wikimedia : Deluxe%20Renault%204,%20with%20headlamp%20wipers,%20probably%20to%20get%20rid%20of%20mosquitos%20in%20the%20north%20(10759067994).jpg
-  Auteur            : Jeroen Komen from Utrecht, Netherlands
-  Licence           : CC BY-SA 2.0
-  Source            : Deluxe Renault 4, with headlamp wipers, probably to get rid of mosquitos in the north
-  Page              : https://commons.wikimedia.org/wiki/File:Deluxe%20Renault%204,%20with%20headlamp%20wipers,%20probably%20to%20get%20rid%20of%20mosquitos%20in%20the%20north%20(10759067994).jpg
+  Fichier Wikimedia : Renault%20R4%20BW%202016-07-17%2013-45-32.jpg
+  Auteur            : Berthold Werner
+  Licence           : CC BY-SA 3.0
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:Renault%20R4%20BW%202016-07-17%2013-45-32.jpg
 
 - Renault Clio
   Fichier Wikimedia : Renault%20Clio%20(front%20quarter)%20red.JPG
@@ -177,11 +177,11 @@ Credits photos — Wikimedia Commons (Spot the Car)
   Page              : https://commons.wikimedia.org/wiki/File:Fiat%20500%20L%20(1967%E2%80%9371%20model).jpg
 
 - Audi A4
-  Fichier Wikimedia : 2015%20Audi%20A4%20B9%20S%20line%20Tangorot%20LED-Matrix-Scheinwerfer%20Detail.jpg
-  Auteur            : Kickaffe (Mario von Berg)
+  Fichier Wikimedia : Audi%20A4%20B9%20sedans%20(FL)%201X7A2441.jpg
+  Auteur            : Alexander-93
   Licence           : CC BY-SA 4.0
   Source            : Own work
-  Page              : https://commons.wikimedia.org/wiki/File:2015%20Audi%20A4%20B9%20S%20line%20Tangorot%20LED-Matrix-Scheinwerfer%20Detail.jpg
+  Page              : https://commons.wikimedia.org/wiki/File:Audi%20A4%20B9%20sedans%20(FL)%201X7A2441.jpg
 
 - Fiat Punto
   Fichier Wikimedia : %22%2012%20-%20ITALY%20-%20Fiat%20Punto%202012%2004.JPG
@@ -225,12 +225,12 @@ Credits photos — Wikimedia Commons (Spot the Car)
   Source            : Own work
   Page              : https://commons.wikimedia.org/wiki/File:Dacia%20Duster%20III%20GIMS%202024%201X7A2016.jpg
 
-- Porsche 911 Turbo S
-  Fichier Wikimedia : Porsche%20911%20(991)%20Turbo%20S%20LED%20headlight.jpg
-  Auteur            : Yahya S. on Flickr : https://www.flickr.com/photos/128326674@N06/
-  Licence           : CC BY 2.0
-  Source            : https://www.flickr.com/photos/128326674@N06/15554775398/
-  Page              : https://commons.wikimedia.org/wiki/File:Porsche%20911%20(991)%20Turbo%20S%20LED%20headlight.jpg
+- Porsche 911 Carrera S
+  Fichier Wikimedia : Porsche%20992%20Carrera%20S%20coupe%20IMG%205832.jpg
+  Auteur            : Alexander Migl
+  Licence           : CC BY-SA 4.0
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:Porsche%20992%20Carrera%20S%20coupe%20IMG%205832.jpg
 
 - Toyota RAV4
   Fichier Wikimedia : 2016%20Toyota%20RAV4%20Hybrid%202.5%20VVT-i%20marlingrau-metallic%20Frontalansicht.jpg
@@ -275,11 +275,11 @@ Credits photos — Wikimedia Commons (Spot the Car)
   Page              : https://commons.wikimedia.org/wiki/File:2022%20Toyota%20Yaris%201.5%20GR%20Sport,%20IIMS%20Hybrid,%20Grand%20City,%20Central%20Surabaya.jpg
 
 - Audi TT
-  Fichier Wikimedia : Audi%20TT%202014%20(13558536333).jpg
-  Auteur            : Robert Basic from Germany
-  Licence           : CC BY-SA 2.0
-  Source            : Audi TT 2014
-  Page              : https://commons.wikimedia.org/wiki/File:Audi%20TT%202014%20(13558536333).jpg
+  Fichier Wikimedia : 2019%20Audi%20TT%20Sport%2040%20TFSi%20S-A%202.0%20Front.jpg
+  Auteur            : Vauxford
+  Licence           : CC BY-SA 4.0
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:2019%20Audi%20TT%20Sport%2040%20TFSi%20S-A%202.0%20Front.jpg
 
 - Ford Ranger
   Fichier Wikimedia : 2023%20Ford%20Ranger%20Raptor%20Double-Cab%202.0L%20Bi-Turbo%204x4.jpg
@@ -1221,3 +1221,59 @@ Ajouts (lot 3 - voitures supplementaires)
   Licence           : CC BY-SA 4.0
   Source            : Own work
   Page              : https://commons.wikimedia.org/wiki/File:Smart_Hashtag_3_DSC_7992.jpg
+
+- Kia Picanto
+  Fichier Wikimedia : Kia%20Picanto,%20Auto%202024,%20Zurich%20(PANA0815).jpg
+  Auteur            : Matti Blume
+  Licence           : CC BY-SA 4.0
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:Kia%20Picanto,%20Auto%202024,%20Zurich%20(PANA0815).jpg
+
+- Subaru Impreza (2002)
+  Fichier Wikimedia : 2001-2002%20Subaru%20Impreza%20(GDE%20MY02)%20RS%20sedan%20(2011-06-15)%2001.jpg
+  Auteur            : OSX
+  Licence           : Public domain
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:2001-2002%20Subaru%20Impreza%20(GDE%20MY02)%20RS%20sedan%20(2011-06-15)%2001.jpg
+
+- Renault Vel Satis
+  Fichier Wikimedia : Renault%20Vel%20Satis%203.0%20dCi%20V6%20%E2%80%93%20Frontansicht,%205.%20Mai%202012,%20Ratingen.jpg
+  Auteur            : M 93
+  Licence           : CC BY-SA 3.0 de
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:Renault%20Vel%20Satis%203.0%20dCi%20V6%20%E2%80%93%20Frontansicht,%205.%20Mai%202012,%20Ratingen.jpg
+
+- Renault Avantime
+  Fichier Wikimedia : 2002%20Renault%20Avantime%20Privilege%203.0%20Front.jpg
+  Auteur            : Vauxford
+  Licence           : CC BY-SA 4.0
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:2002%20Renault%20Avantime%20Privilege%203.0%20Front.jpg
+
+- Maserati GranTurismo (2023)
+  Fichier Wikimedia : Maserati%20GranTurismo%20Trofeo%201X7A0828.jpg
+  Auteur            : Alexander-93
+  Licence           : CC BY-SA 4.0
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:Maserati%20GranTurismo%20Trofeo%201X7A0828.jpg
+
+- BMW X6 (E71)
+  Fichier Wikimedia : BMW%20X6%20xDrive30d%20(E71)%20%E2%80%93%20Frontansicht,%2026.%20M%C3%A4rz%202011,%20D%C3%BCsseldorf.jpg
+  Auteur            : M 93
+  Licence           : Attribution
+  Source            : Self-photographed
+  Page              : https://commons.wikimedia.org/wiki/File:BMW%20X6%20xDrive30d%20(E71)%20%E2%80%93%20Frontansicht,%2026.%20M%C3%A4rz%202011,%20D%C3%BCsseldorf.jpg
+
+- Renault Clio II RS
+  Fichier Wikimedia : Clio%20RS%202.2.jpg
+  Auteur            : RobindesB
+  Licence           : CC BY-SA 3.0
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:Clio%20RS%202.2.jpg
+
+- Renault Clio VI
+  Fichier Wikimedia : Renault%20Clio%20TCe%20115%20Techno%20(VI)%20%E2%80%93%20h%2017032026.jpg
+  Auteur            : © M 93
+  Licence           : CC BY-SA 3.0 de
+  Source            : Own work
+  Page              : https://commons.wikimedia.org/wiki/File:Renault%20Clio%20TCe%20115%20Techno%20(VI)%20%E2%80%93%20h%2017032026.jpg
