@@ -52,3 +52,4 @@ jobs:
         with:
           name: spot-the-car-release-aab
           path: android/app/build/outputs/bundle/release/app-release.aab
+          retention-days: 7
