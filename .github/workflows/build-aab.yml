@@ -1,5 +1,7 @@
 name: Build signed release AAB
 
+# Redeclenche l'indexation du workflow par GitHub (peut disparaitre de l'onglet
+# Actions si tous ses runs ont ete supprimes).
 on:
   workflow_dispatch:
 
