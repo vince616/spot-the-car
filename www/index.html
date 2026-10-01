@@ -329,6 +329,11 @@ h1{
   gap: 6px;
   flex-shrink: 0;
 }
+/* Dans un conteneur flex en colonne, le flex:1 (flex-basis:0%) du bouton .btn
+   prend le pas sur sa hauteur explicite (axe principal = vertical ici), ce qui
+   l'ecrasait a quasi rien. flex:none lui rend sa hauteur normale tout en
+   gardant la pleine largeur (stretch, par defaut sur l'axe croise). */
+.expert-form .btn{ flex: none; }
 .expert-input{
   width: 100%;
   box-sizing: border-box;
