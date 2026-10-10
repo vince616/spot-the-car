@@ -36,6 +36,7 @@ jobs:
           mkdir -p _site/privacy _site/play
           cp -r www/. _site/
           cp -r docs/. _site/privacy/
+          mv _site/privacy/ads.txt _site/ads.txt
           mkdir -p _site/mentions-legales
           mv _site/privacy/mentions-legales.html _site/mentions-legales/index.html
           sed -i "s/__BUILD__/${GITHUB_SHA::7}/" _site/sw.js
