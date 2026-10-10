@@ -799,6 +799,26 @@ html.web .pc-hit.pc-play:hover{
   box-shadow: 0 0 34px rgba(255,214,64,0.5);
   background: rgba(255,255,255,0.07);
 }
+/* Liens obligatoires (confidentialite, mentions legales) : accueil et menu uniquement */
+html.web .web-legal{
+  display: none;
+  position: fixed;
+  left: 50%;
+  bottom: max(6px, env(safe-area-inset-bottom));
+  transform: translateX(-50%);
+  z-index: 20;
+  gap: 4px;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(10,10,20,0.62);
+  font: 12px/1.4 -apple-system, 'Segoe UI', Arial, sans-serif;
+  white-space: nowrap;
+}
+html.web body:has(.home-screen) .web-legal{ display: flex; }
+html.web .web-legal a{ color: rgba(255,255,255,0.82); text-decoration: none; padding: 4px 6px; }
+html.web .web-legal a:hover, html.web .web-legal a:focus-visible{ color: #fff; text-decoration: underline; }
+html.web .web-legal span{ color: rgba(255,255,255,0.35); }
 /* Coche du mode choisi : coin haut-droit de la carte, a l'interieur */
 html.web .pc-check{
   position: absolute;
@@ -2367,6 +2387,17 @@ function initKeyboard(){
 
 // Version web uniquement (pas dans l'app Android/Capacitor) : permet l'installation sur
 // l'ecran d'accueil (iPhone : Partager > Sur l'ecran d'accueil) et le jeu hors-ligne.
+// Liens obligatoires de la version web (politique de confidentialite, mentions legales, contact).
+function initLegalLinks(){
+  const nav = document.createElement('nav');
+  nav.className = 'web-legal';
+  nav.setAttribute('aria-label', 'Informations légales');
+  nav.innerHTML = '<a href="/privacy/">Confidentialité</a><span>·</span>' +
+    '<a href="/mentions-legales/">Mentions légales</a><span>·</span>' +
+    '<a href="mailto:yunastudiosgames@gmail.com">Contact</a>';
+  document.body.appendChild(nav);
+}
+
 function registerServiceWorker(){
   if(IS_NATIVE_APP || !('serviceWorker' in navigator)) return;
   window.addEventListener('load', () => {
@@ -2379,6 +2410,7 @@ initAds();
 initBackButton();
 if(!IS_NATIVE_APP){
   initKeyboard();
+  initLegalLinks();
   // Passage portrait <-> paysage (redimensionnement de la fenetre) : on change de visuel d'accueil.
   let lastPcLayout = isPcLayout();
   window.addEventListener('resize', () => {
