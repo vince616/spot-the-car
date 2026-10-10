@@ -1,8 +1,8 @@
 name: Deploy web version (GitHub Pages)
 
-# Publie la version web du jeu sur https://<utilisateur>.github.io/<repo>/play/
-# et conserve la page de politique de confidentialite (docs/) a la racine, donc
-# a la meme URL qu'avant.
+# Publie la version web du jeu a la racine du site (https://spot-the-car.com/),
+# la politique de confidentialite (docs/) sur /privacy/, et une redirection
+# /play/ -> / pour les liens deja partages.
 on:
   workflow_dispatch:
   push:
@@ -33,10 +33,18 @@ jobs:
 
       - name: Assemble site
         run: |
-          mkdir -p _site/play
-          cp -r docs/. _site/
-          cp -r www/. _site/play/
-          sed -i "s/__BUILD__/${GITHUB_SHA::7}/" _site/play/sw.js
+          mkdir -p _site/privacy _site/play
+          cp -r www/. _site/
+          cp -r docs/. _site/privacy/
+          sed -i "s/__BUILD__/${GITHUB_SHA::7}/" _site/sw.js
+          cat > _site/play/index.html <<'HTML'
+          <!DOCTYPE html>
+          <html lang="fr"><head><meta charset="UTF-8">
+          <title>Spot the Car</title>
+          <link rel="canonical" href="/">
+          <meta http-equiv="refresh" content="0; url=/">
+          </head><body><a href="/">Spot the Car</a></body></html>
+          HTML
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
