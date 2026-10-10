@@ -27,7 +27,7 @@ for i, c in enumerate(cars):
         wait = 1.5 * attempt
         print(f"[{i+1}/{len(cars)}] {c['name']} (try {attempt})...", flush=True)
         r = subprocess.run(
-            ["curl", "-sS", "-L", "--ssl-no-revoke", "-A", "SpotTheCarBot/1.0 (contact: vincent.krief@octopia.com)",
+            ["curl", "-sS", "-L", "--ssl-no-revoke", "-A", "SpotTheCarBot/1.0 (Wikimedia Commons credits fetch)",
              "-o", out, "-w", "%{http_code}", c["url"]],
             capture_output=True, text=True
         )

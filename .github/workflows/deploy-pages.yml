@@ -1,0 +1,51 @@
+name: Deploy web version (GitHub Pages)
+
+# Publie la version web du jeu sur https://<utilisateur>.github.io/<repo>/play/
+# et conserve la page de politique de confidentialite (docs/) a la racine, donc
+# a la meme URL qu'avant.
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - 'www/**'
+      - 'docs/**'
+      - '.github/workflows/deploy-pages.yml'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Assemble site
+        run: |
+          mkdir -p _site/play
+          cp -r docs/. _site/
+          cp -r www/. _site/play/
+          sed -i "s/__BUILD__/${GITHUB_SHA::7}/" _site/play/sw.js
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

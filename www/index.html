@@ -4,6 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 <title>Spot the Car — Devine le phare</title>
+<meta name="description" content="Devine la voiture à partir d'un détail zoomé. Un quiz auto gratuit, jouable dans le navigateur.">
+<meta name="theme-color" content="#14141a">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Spot the Car">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=JetBrains+Mono:wght@500;700&family=Work+Sans:wght@400;500;600&display=swap');
 
@@ -31,7 +40,6 @@ html,body{
   color: var(--text);
   font-family: 'Work Sans', sans-serif;
 }
-
 .app{
   max-width: 480px;
   margin: 0 auto;
@@ -350,6 +358,10 @@ h1{
 .expert-input.correct{ border-color: var(--green); color: var(--green); font-weight: 700; }
 .expert-input:disabled{ opacity: 0.85; }
 .expert-input.invalid{ border-color: var(--red); }
+/* iOS Safari zoome la page des qu'un champ de saisie a une police < 16px */
+@supports (-webkit-touch-callout: none){
+  .expert-input{ font-size: 16px; }
+}
 
 .expert-field{ position: relative; }
 .expert-dropdown{
@@ -685,6 +697,129 @@ h1{
     box-shadow: 0 20px 60px rgba(0,0,0,0.5);
   }
 }
+
+/* =====================================================================================
+   VERSION WEB UNIQUEMENT (PC, iPhone...). La classe .web est posee sur <html> par le JS
+   uniquement hors app native (Capacitor) : rien de ce bloc ne s'applique a l'app Android,
+   qui peut ainsi evoluer en parallele sans etre impactee.
+   ===================================================================================== */
+html.web{
+  touch-action: manipulation;
+  overscroll-behavior: none;
+  -webkit-text-size-adjust: 100%;
+}
+html.web .app{
+  /* 47vh = largeur des ecrans-images (menus) a la hauteur courante : evite qu'ils soient
+     rogines (et les zones cliquables decalees) sur les ecrans hauts. */
+  max-width: max(480px, 47vh);
+  max-width: max(480px, 47dvh);
+  height: 100vh;
+  height: 100dvh;
+}
+/* Souris + clavier : petit numero 1-4 sur chaque reponse (raccourcis, voir initKeyboard) */
+@media (hover: hover) and (pointer: fine){
+  html.web .options{ counter-reset: opt; }
+  html.web .options .opt{ position: relative; padding-left: 26px; padding-right: 26px; }
+  html.web .options .opt::before{
+    counter-increment: opt;
+    content: counter(opt);
+    position: absolute;
+    left: 7px; top: 50%;
+    transform: translateY(-50%);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    line-height: 14px;
+    padding: 0 4px;
+    color: var(--amber);
+    opacity: 0.8;
+    border: 1px solid rgba(255,176,32,0.35);
+    border-radius: 4px;
+  }
+}
+/* Grand ecran : carte centree, devant le decor paysage du garage (assets/pc/bg-game.jpg) */
+@media (min-width: 860px) and (min-height: 560px){
+  html.web body{ background: transparent; }
+  html.web body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: #0b0716 url('assets/pc/bg-game.jpg') center / cover no-repeat;
+  }
+  html.web .app{
+    height: 100vh;
+    height: 100dvh;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: calc(1vh + 10px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.06);
+  }
+  html.web .app:has(.home-screen){ padding: 0; }
+}
+
+/* Accueil PC (paysage) : le visuel remplit la fenetre, sans la "carte" mobile */
+html.web .app:has(.home-screen-pc){
+  max-width: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+}
+html.web .home-screen-pc{
+  position: relative;
+  background: #0b0716;
+}
+/* Meme visuel, flou et assombri, pour combler les bandes si la fenetre n'est pas en 16:9 */
+html.web .home-screen-pc::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('assets/pc/home-pc.jpg') center / cover no-repeat;
+  filter: blur(22px) brightness(0.5);
+  transform: scale(1.1);
+}
+/* Taille et position du visuel : calculees en JS (layoutPcHome) pour remplir la fenetre sans
+   jamais rogner la zone utile. Des bandes floutees (le meme visuel) comblent le reste si besoin. */
+html.web .home-pc-box{
+  position: absolute;
+  z-index: 1;
+  container-type: inline-size;
+  background: url('assets/pc/home-pc.jpg') center / 100% 100% no-repeat;
+}
+html.web .pc-hit{
+  border-radius: 14px;
+  border-radius: 0.9cqw;
+  transition: box-shadow 0.15s ease, background 0.15s ease;
+}
+html.web .pc-hit:hover{
+  box-shadow: 0 0 0 2px rgba(255,176,32,0.85), 0 0 22px rgba(255,176,32,0.35);
+  background: rgba(255,176,32,0.07);
+}
+html.web .pc-hit.pc-play{ border-radius: 44px; }
+html.web .pc-hit.pc-play:hover{
+  box-shadow: 0 0 34px rgba(255,214,64,0.5);
+  background: rgba(255,255,255,0.07);
+}
+/* Coche du mode choisi : coin haut-droit de la carte, a l'interieur */
+html.web .pc-check{
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+  width: min(2.2vw, 3.9vh);
+  height: min(2.2vw, 3.9vh);
+  width: 1.7cqw;
+  height: 1.7cqw;
+  transform: translate(-125%, 25%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--amber);
+  color: #fff;
+  font-size: min(1.4vw, 2.5vh);
+  font-size: 1.1cqw;
+  font-weight: 800;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.6);
+}
 </style>
 </head>
 <body>
@@ -692,6 +827,14 @@ h1{
 <div class="app" id="app"></div>
 
 <script>
+// Meme code pour l'app Android (Capacitor) et la version web. IS_NATIVE_APP permet de reserver
+// du code a l'une ou l'autre sans les faire dependre l'une de l'autre. Par prudence, si
+// Capacitor est present mais sans isNativePlatform(), on considere que c'est l'app native.
+const IS_NATIVE_APP = !!window.Capacitor && (
+  typeof window.Capacitor.isNativePlatform === 'function' ? window.Capacitor.isNativePlatform() : true
+);
+if(!IS_NATIVE_APP) document.documentElement.classList.add('web');
+
 const CARS = [
   { name: "Peugeot 208 (Mk2)", url: "assets/cars/peugeot-208-mk2.jpg", wikiFile: "Peugeot%20208%20A%20Facelift%20(80915).jpg", brand: "Peugeot", model: "208", anchorX: 49.7, anchorY: 30.6, maxScale: 4.6, distractors: ["Renault 4", "Citroën C2", "Dacia Duster"] },
   { name: "Fiat 500L Cross", url: "assets/cars/fiat-500l-cross.jpg", wikiFile: "2018%20Fiat%20500L%20Cross%20facelift%201.4%20Front.jpg", brand: "Fiat", model: "500L", anchorX: 50.4, anchorY: 50.2, maxScale: 2.6, distractors: ["Alfa Romeo Giulia Quadrifoglio", "Ferrari FF", "Alfa Romeo Giulia"] },
@@ -1011,7 +1154,68 @@ function playPreferredMode(){
   }
 }
 
+// ---- Accueil PC (version web uniquement) : accueil + choix du mode sur un seul ecran paysage ----
+// Ecran large et paysage (PC, tablette en paysage) -> visuel paysage. Sinon (telephone, app
+// Android) -> visuels portrait habituels, inchanges.
+function isPcLayout(){
+  return !IS_NATIVE_APP && innerWidth >= 900 && innerWidth / innerHeight >= 1.3;
+}
+
+// Zones cliquables, en % du visuel assets/pc/home-pc.jpg (1672 x 941).
+const PC_CARD_TOP = 45.27;
+const PC_CARD_HEIGHT = 17.54;
+const PC_HOME_CARDS = [
+  { mode: 'classique', label: 'Mode classique', left: 32.71, width: 8.07 },
+  { mode: '2joueurs',  label: '2 joueurs',      left: 41.27, width: 8.43 },
+  { mode: 'facile',    label: 'Mode facile',    left: 50.18, width: 8.49 },
+  { mode: 'expert',    label: 'Mode expert',    left: 59.15, width: 8.61 },
+  { mode: 'rapide',    label: 'Partie rapide',  left: 68.24, width: 8.79 },
+  { mode: 'illimitee', label: 'Mort subite',    left: 77.57, width: 8.49 },
+];
+
+// Le visuel a de larges marges decoratives : on le "remplit" dans la fenetre (cover), mais
+// sans jamais rogner la zone utile (logo YUNA -> bouton JOUER, cartes), en pixels du visuel.
+const PC_IMG = { w: 1672, h: 941, safeTop: 30, safeBottom: 758, safeLeft: 530, safeRight: 1455 };
+function layoutPcHome(){
+  const box = document.querySelector('.home-pc-box');
+  if(!box) return;
+  const host = box.parentElement;
+  const vw = host.clientWidth, vh = host.clientHeight;
+  if(!vw || !vh) return;
+  const s = Math.min(
+    Math.max(vw / PC_IMG.w, vh / PC_IMG.h),            // remplir la fenetre
+    vh / (PC_IMG.safeBottom - PC_IMG.safeTop),         // zone utile entiere en hauteur
+    vw / (PC_IMG.safeRight - PC_IMG.safeLeft)          // ... et en largeur
+  );
+  const bw = PC_IMG.w * s, bh = PC_IMG.h * s;
+  // On centre la zone utile (pas l'image) dans la fenetre, sans decoller l'image des bords.
+  const place = (view, size, safeA, safeB) => {
+    const want = view / 2 - ((safeA + safeB) / 2) * s;
+    return size >= view ? Math.min(0, Math.max(view - size, want)) : (view - size) / 2;
+  };
+  box.style.width = bw + 'px';
+  box.style.height = bh + 'px';
+  box.style.left = place(vw, bw, PC_IMG.safeLeft, PC_IMG.safeRight) + 'px';
+  box.style.top = place(vh, bh, PC_IMG.safeTop, PC_IMG.safeBottom) + 'px';
+}
+
+function renderHomePc(){
+  const pref = getPreferredMode();
+  const cards = PC_HOME_CARDS.map(c => `
+        <div class="home-hit pc-hit" style="left:${c.left}%; top:${PC_CARD_TOP}%; width:${c.width}%; height:${PC_CARD_HEIGHT}%;" onclick="chooseMode('${c.mode}')" role="button" aria-label="${c.label}"></div>
+        ${pref === c.mode ? `<div class="pc-check" style="left:${(c.left + c.width).toFixed(2)}%; top:${PC_CARD_TOP}%;">✓</div>` : ``}`).join('');
+  document.getElementById("app").innerHTML = `
+    <div class="home-screen home-screen-pc">
+      <div class="home-pc-box">${cards}
+        <div class="home-hit pc-hit pc-play" style="left:41.63%; top:69.29%; width:19.26%; height:9.56%;" onclick="playPreferredMode()" role="button" aria-label="Jouer"></div>
+      </div>
+    </div>
+  `;
+  layoutPcHome();
+}
+
 function renderHome(){
+  if(isPcLayout()){ renderHomePc(); return; }
   document.getElementById("app").innerHTML = `
     <div class="home-screen">
       <div class="home-photo" style="background-image:url('data:image/jpeg;base64,${HOME_BG_B64}')">
@@ -1053,6 +1257,7 @@ function modeCheckHtml(m){
 }
 
 function renderSettings(){
+  if(isPcLayout()){ renderHome(); return; }
   document.getElementById("app").innerHTML = `
     <div class="home-screen">
       <div class="home-photo" style="background-image:url('data:image/jpeg;base64,${SETTINGS_BG_B64}'); aspect-ratio: 852 / 1846;">
@@ -1079,7 +1284,8 @@ function renderSettings(){
 // (mode par defaut persiste) -- seul le bouton "Jouer" de l'accueil lance une partie.
 function chooseMode(m){
   setPreferredMode(m);
-  renderSettings();
+  if(isPcLayout()) renderHome();
+  else renderSettings();
 }
 
 // Cle marque+modele d'un nom de voiture du catalogue (null si le nom n'existe pas
@@ -2122,9 +2328,70 @@ function handleImgError(){
   }
 }
 
+// Raccourcis clavier (version PC) : 1-4 = repondre, Entree/Espace = voiture suivante,
+// D = dezoomer, Echap = fermer une fenetre. Sans effet sur mobile (pas de clavier physique).
+function initKeyboard(){
+  document.addEventListener('keydown', (e) => {
+    if(e.ctrlKey || e.metaKey || e.altKey || e.repeat) return;
+    const t = e.target;
+    const tag = t && t.tagName;
+
+    if(e.key === 'Escape'){
+      if(document.getElementById('wikiConfirmOverlay')) closeWikiConfirm();
+      else if(document.getElementById('infoOverlay')) closeCarInfo();
+      return;
+    }
+    if(tag === 'INPUT' || tag === 'TEXTAREA') return;
+    if(document.getElementById('wikiConfirmOverlay') || document.getElementById('infoOverlay')) return;
+
+    // Accueil PC : 1-6 = choisir le mode, Entree/Espace = jouer
+    if(document.querySelector('.home-screen-pc')){
+      if(e.key >= '1' && e.key <= '6'){ chooseMode(PC_HOME_CARDS[Number(e.key) - 1].mode); }
+      else if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); playPreferredMode(); }
+      return;
+    }
+    if(!document.getElementById('carimg')) return; // seulement sur l'ecran de question
+
+    if(e.key >= '1' && e.key <= '4'){
+      const opt = document.querySelectorAll('.options .opt')[Number(e.key) - 1];
+      if(opt && !opt.disabled){ e.preventDefault(); opt.click(); }
+    } else if((e.key === 'Enter' || e.key === ' ') && tag !== 'BUTTON' && tag !== 'A'){
+      const next = document.querySelector('.controls .btn-primary');
+      if(next){ e.preventDefault(); next.click(); }
+    } else if(e.key === 'd' || e.key === 'D'){
+      const dezoom = !resolved && document.querySelector('.controls .btn-ghost:not(:disabled)');
+      if(dezoom){ e.preventDefault(); dezoom.click(); }
+    }
+  });
+}
+
+// Version web uniquement (pas dans l'app Android/Capacitor) : permet l'installation sur
+// l'ecran d'accueil (iPhone : Partager > Sur l'ecran d'accueil) et le jeu hors-ligne.
+function registerServiceWorker(){
+  if(IS_NATIVE_APP || !('serviceWorker' in navigator)) return;
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js').catch(() => {});
+  });
+}
+
 renderHome();
 initAds();
 initBackButton();
+if(!IS_NATIVE_APP){
+  initKeyboard();
+  // Passage portrait <-> paysage (redimensionnement de la fenetre) : on change de visuel d'accueil.
+  let lastPcLayout = isPcLayout();
+  window.addEventListener('resize', () => {
+    const now = isPcLayout();
+    if(now !== lastPcLayout){
+      lastPcLayout = now;
+      if(document.querySelector('.home-screen')) renderHome();
+    } else if(now){
+      layoutPcHome();
+    }
+  });
+}
+registerServiceWorker();
 </script>
 </body>
 </html>

@@ -24,7 +24,7 @@ for batch in batched(cars, BATCH):
            "&prop=imageinfo&iiprop=extmetadata&format=json")
     for attempt in range(5):
         r = subprocess.run(["curl", "-sS", "-L", "--ssl-no-revoke",
-                             "-A", "SpotTheCarBot/1.0 (contact: vincent.krief@octopia.com)", url],
+                             "-A", "SpotTheCarBot/1.0 (Wikimedia Commons credits fetch)", url],
                             capture_output=True, text=True)
         try:
             data = json.loads(r.stdout)
