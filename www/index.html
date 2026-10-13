@@ -5,6 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 <title>Spot the Car — Devine le phare</title>
 <meta name="google-adsense-account" content="ca-pub-6262147498535174">
+<script>
+/* Balise AdSense : chargee uniquement sur la version web. Jamais dans l'app Android (Capacitor),
+   qui utilise AdMob. Le message de consentement RGPD est servi par cette meme balise. */
+(function(){
+  var c = window.Capacitor;
+  if(c && (typeof c.isNativePlatform !== 'function' || c.isNativePlatform())) return;
+  var s = document.createElement('script');
+  s.async = true;
+  s.crossOrigin = 'anonymous';
+  s.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6262147498535174';
+  document.head.appendChild(s);
+})();
+</script>
 <meta name="description" content="Devine la voiture à partir d'un détail zoomé. Un quiz auto gratuit, jouable dans le navigateur.">
 <meta name="theme-color" content="#14141a">
 <link rel="manifest" href="manifest.webmanifest">
