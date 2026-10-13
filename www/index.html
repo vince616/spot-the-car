@@ -813,6 +813,42 @@ html.web .pc-hit.pc-play:hover{
   box-shadow: 0 0 34px rgba(255,214,64,0.5);
   background: rgba(255,255,255,0.07);
 }
+/* Publicites AdSense (web uniquement, jamais sur l'accueil/menu). Un bloc n'est visible qu'une fois
+   rempli par Google (.is-filled) : aucun cadre vide. Reserve de place : voir initWebAds(). */
+html.web .web-ad{
+  display: none;
+  position: fixed;
+  z-index: 15;
+  visibility: hidden;
+  text-align: center;
+  font: 10px/1.3 -apple-system, 'Segoe UI', Arial, sans-serif;
+  color: rgba(255,255,255,0.45);
+}
+html.web .web-ad.is-active{ display: block; }
+html.web .web-ad.is-filled{ visibility: visible; }
+html.web .web-ad::before{ content: "Publicité"; display: block; padding: 0 0 2px; }
+html.web .web-ad ins{ display: block; width: 100%; }
+html.web body:has(.home-screen) .web-ad{ display: none; }
+html.web .web-ad-rail{
+  top: 50%;
+  transform: translateY(-50%);
+  width: var(--web-rail-w, 160px);
+}
+/* Bandes de chaque cote de la carte de jeu (largeur de la carte = celle de .app) */
+html.web .web-ad-left{ right: calc(50% + max(240px, 23.5dvh) + 20px); }
+html.web .web-ad-right{ left: calc(50% + max(240px, 23.5dvh) + 20px); }
+/* Banniere en haut : les boutons du jeu sont en bas, on evite les clics accidentels */
+html.web .web-ad-top{
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: min(100%, max(480px, 47dvh));
+  padding: max(3px, env(safe-area-inset-top)) 0 3px;
+  background: rgba(10,10,20,0.92);
+}
+html.web:has(.web-ad-top.is-active.is-filled) .app:not(:has(.home-screen)){
+  padding-top: calc(var(--web-ad-h, 0px) + 8px);
+}
 /* Liens obligatoires (confidentialite, mentions legales) : accueil et menu uniquement */
 html.web .web-legal{
   display: none;
@@ -2408,8 +2444,76 @@ function initLegalLinks(){
   nav.setAttribute('aria-label', 'Informations légales');
   nav.innerHTML = '<a href="/privacy/">Confidentialité</a><span>·</span>' +
     '<a href="/mentions-legales/">Mentions légales</a><span>·</span>' +
+    '<a href="/privacy/#cookies" id="cookieChoices">Cookies</a><span>·</span>' +
     '<a href="mailto:yunastudiosgames@gmail.com">Contact</a>';
   document.body.appendChild(nav);
+  // "Gérer mes choix" : rouvre le message de consentement Google s'il est disponible,
+  // sinon renvoie vers la section cookies de la politique de confidentialité.
+  document.getElementById('cookieChoices').addEventListener('click', (e) => {
+    const fc = window.googlefc;
+    if(fc && typeof fc.showRevocationMessage === 'function'){ e.preventDefault(); fc.showRevocationMessage(); }
+  });
+}
+
+// Publicites AdSense de la version web : bandes laterales (grand ecran) ou banniere en haut (mobile).
+// Un bloc n'est demande a Google que lorsqu'il est visible (jamais sur l'accueil/menu).
+const WEB_ADS = {
+  client: 'ca-pub-6262147498535174',
+  slotRail: '3951925047',     // STC-pc-cote
+  slotTop: '7529489237',      // STC-mobile-bas (bloc horizontal, place en haut)
+};
+function initWebAds(){
+  const root = document.getElementById('app');
+  const requested = new Set();
+  // Le <ins> n'est cree qu'au moment de la demande : AdSense traite les <ins> dans l'ordre du
+  // document, un <ins> masque (largeur 0) ferait echouer le suivant.
+  const make = (cls, slot, format) => {
+    const box = document.createElement('aside');
+    box.className = 'web-ad ' + cls;
+    box.setAttribute('aria-label', 'Publicité');
+    box.dataset.slot = slot;
+    box.dataset.format = format;
+    document.body.appendChild(box);
+    return box;
+  };
+  const left = make('web-ad-rail web-ad-left', WEB_ADS.slotRail, 'vertical');
+  const right = make('web-ad-rail web-ad-right', WEB_ADS.slotRail, 'vertical');
+  const top = make('web-ad-top', WEB_ADS.slotTop, 'horizontal');
+  const request = (box) => {
+    if(requested.has(box)) return;
+    requested.add(box);
+    box.classList.add('is-active');
+    const ins = document.createElement('ins');
+    ins.className = 'adsbygoogle';
+    ins.setAttribute('data-ad-client', WEB_ADS.client);
+    ins.setAttribute('data-ad-slot', box.dataset.slot);
+    ins.setAttribute('data-ad-format', box.dataset.format);
+    ins.setAttribute('data-full-width-responsive', 'true');
+    box.appendChild(ins);
+    new MutationObserver(() => {
+      box.classList.toggle('is-filled', ins.getAttribute('data-ad-status') === 'filled');
+      if(box === top) document.documentElement.style.setProperty('--web-ad-h', box.classList.contains('is-filled') ? box.offsetHeight + 'px' : '0px');
+    }).observe(ins, { attributes: true, attributeFilter: ['data-ad-status'] });
+    try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch(e) {}
+  };
+  const refresh = () => {
+    if(document.querySelector('.home-screen')) return;
+    const cardW = Math.max(480, innerHeight * 0.47);
+    const side = (innerWidth - cardW) / 2;
+    const rails = innerWidth >= 1100 && innerHeight >= 700 && side >= 200;
+    [left, right, top].forEach(b => b.classList.remove('is-active'));
+    if(rails){
+      document.documentElement.style.setProperty('--web-rail-w', (side >= 360 ? 300 : 160) + 'px');
+      request(left); request(right);
+      [left, right].forEach(b => b.classList.add('is-active'));
+    } else {
+      request(top);
+      top.classList.add('is-active');
+    }
+  };
+  new MutationObserver(refresh).observe(root, { childList: true });
+  window.addEventListener('resize', refresh);
+  refresh();
 }
 
 function registerServiceWorker(){
@@ -2425,6 +2529,7 @@ initBackButton();
 if(!IS_NATIVE_APP){
   initKeyboard();
   initLegalLinks();
+  initWebAds();
   // Passage portrait <-> paysage (redimensionnement de la fenetre) : on change de visuel d'accueil.
   let lastPcLayout = isPcLayout();
   window.addEventListener('resize', () => {
